@@ -1,0 +1,342 @@
+{
+  "packId": "science-and-nature",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Science and Nature",
+  "description": "Experiments, forces and the science of everyday things.",
+  "icon": "bulb",
+  "ageRange": "6-8",
+  "color": "#f97316",
+  "entries": [
+    {
+      "id": "gravity",
+      "title": "Gravity",
+      "summary": "Gravity pulls things down towards the ground.",
+      "body": "Everything near Earth is pulled towards the centre of the Earth. That pull is called gravity. It keeps us on the ground, makes a ball fall down and keeps the Moon circling around us.",
+      "facts": [
+        "Gravity gets weaker the further you are from Earth.",
+        "On the Moon you would jump much higher because gravity is weaker there.",
+        "The Moon is held in orbit by Earth's gravity."
+      ],
+      "imageIds": [
+        "gravity"
+      ],
+      "keywords": [
+        "science",
+        "gravity"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "magnets",
+      "title": "Magnets",
+      "summary": "Magnets pull on iron, nickel and cobalt.",
+      "body": "A magnet has two ends called the north pole and the south pole. Two opposite poles pull together and two same poles push apart. Magnets are used in speakers, fridges, compasses and even in brakes for trains.",
+      "facts": [
+        "The Earth itself works like a giant magnet, which is why compasses work.",
+        "Magnets lose their strength slowly if they are heated.",
+        "You can magnetise a needle by stroking it with a magnet."
+      ],
+      "imageIds": [
+        "magnet"
+      ],
+      "keywords": [
+        "science",
+        "magnet"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "states-of-matter",
+      "title": "Solid, Liquid and Gas",
+      "summary": "Things can be a solid, a liquid or a gas.",
+      "body": "In a solid the particles stay in the same place. In a liquid they move around but stay close. In a gas they fly everywhere. Heating a solid makes it a liquid, and heating a liquid makes it a gas.",
+      "facts": [
+        "Ice is water in the solid state.",
+        "Steam is water in the gas state.",
+        "Water freezes at 0 degrees Celsius."
+      ],
+      "imageIds": [
+        "water-states"
+      ],
+      "keywords": [
+        "science",
+        "matter"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "plants-food",
+      "title": "How Plants Make Food",
+      "summary": "Plants use sunlight to make their own food.",
+      "body": "Leaves take in sunlight, water from the roots and carbon dioxide from the air. With these they make sugar for energy, and they give out oxygen that we breathe. This is called photosynthesis.",
+      "facts": [
+        "Plants make oxygen for us to breathe.",
+        "Leaves are green because of chlorophyll.",
+        "Cactus spines are changed leaves that stop water loss."
+      ],
+      "imageIds": [
+        "leaf-photosynthesis"
+      ],
+      "keywords": [
+        "science",
+        "plants"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "simple-machines",
+      "title": "Simple Machines",
+      "summary": "Simple machines make work easier.",
+      "body": "A lever, a wheel and a pulley all make it easier to move heavy things. A seesaw is a lever, a bicycle has wheels and a pulley helps you lift a flag. Using ramps and wheels means less force but more distance.",
+      "facts": [
+        "A ramp is a simple machine called an inclined plane.",
+        "The wheel and axle is one of the first machines people invented.",
+        "Simple machines do not create energy - they change the way we use it."
+      ],
+      "imageIds": [
+        "lever"
+      ],
+      "keywords": [
+        "science",
+        "machines"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "sound",
+      "title": "Sound",
+      "summary": "Sound is a vibration that travels through the air.",
+      "body": "When something vibrates it pushes the air around it. Those pushes travel out as sound waves. We hear them when they reach our ears and make our ear drum shake. Sound cannot travel through a vacuum, so there is no sound in space.",
+      "facts": [
+        "Sound travels about 340 metres per second in air.",
+        "Sound travels faster in water than in air.",
+        "Bats use sound to see in the dark."
+      ],
+      "imageIds": [
+        "sound-waves"
+      ],
+      "keywords": [
+        "science",
+        "sound"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "sn-q1",
+      "type": "multiple-choice",
+      "prompt": "What pulls things down to the ground?",
+      "options": [
+        "Magnetism",
+        "Gravity",
+        "Friction"
+      ],
+      "answerIndex": 1,
+      "explanation": "Earth's gravity pulls everything towards its centre.",
+      "imageId": "gravity",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q2",
+      "type": "multiple-choice",
+      "prompt": "How many poles does a magnet have?",
+      "options": [
+        "One",
+        "Two",
+        "Four"
+      ],
+      "answerIndex": 1,
+      "explanation": "A magnet has a north pole and a south pole.",
+      "imageId": "magnet",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q3",
+      "type": "true-false",
+      "prompt": "Two north poles of magnets push each other away.",
+      "answer": true,
+      "explanation": "The same poles push apart and opposite poles pull together.",
+      "imageId": "magnet",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q4",
+      "type": "multiple-choice",
+      "prompt": "What is ice?",
+      "options": [
+        "Water as a solid",
+        "Water as a gas",
+        "Salt water"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ice is water in its solid state.",
+      "imageId": "water-states",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q5",
+      "type": "multiple-choice",
+      "prompt": "What do plants use to make their food?",
+      "options": [
+        "Sunlight, water and air",
+        "Soil and stones",
+        "Darkness and cold"
+      ],
+      "answerIndex": 0,
+      "explanation": "Leaves use sunlight, water and carbon dioxide to make sugar and oxygen.",
+      "imageId": "leaf-photosynthesis",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q6",
+      "type": "multiple-choice",
+      "prompt": "Which of these is a simple machine?",
+      "options": [
+        "A seesaw",
+        "A battery",
+        "A magnet"
+      ],
+      "answerIndex": 0,
+      "explanation": "A seesaw is a lever, one of the simple machines.",
+      "imageId": "lever",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q7",
+      "type": "true-false",
+      "prompt": "Sound can travel through space.",
+      "answer": false,
+      "explanation": "Sound needs something to travel through, and space is nearly empty.",
+      "imageId": "sound-waves",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q8",
+      "type": "short-answer",
+      "prompt": "What do we call the green colour in leaves?",
+      "acceptedAnswers": [
+        "chlorophyll",
+        "chlorophyll"
+      ],
+      "explanation": "Chlorophyll is the green colour that helps leaves catch sunlight.",
+      "imageId": "leaf-photosynthesis",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "sn-q9",
+      "type": "multiple-choice",
+      "prompt": "What happens to water when you heat it a lot?",
+      "options": [
+        "It becomes a solid",
+        "It becomes a gas",
+        "It turns black"
+      ],
+      "answerIndex": 1,
+      "explanation": "Heated water becomes vapour, which is a gas.",
+      "imageId": "water-states",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sn-q10",
+      "type": "multiple-choice",
+      "prompt": "How fast does sound travel in air?",
+      "options": [
+        "About 34 m/s",
+        "About 340 m/s",
+        "About 3400 m/s"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sound travels about 340 metres per second in air.",
+      "imageId": "sound-waves",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "gravity",
+      "full": "images/gravity.webp",
+      "thumb": "images/gravity.thumb.webp"
+    },
+    {
+      "id": "magnet",
+      "full": "images/magnet.webp",
+      "thumb": "images/magnet.thumb.webp"
+    },
+    {
+      "id": "water-states",
+      "full": "images/water-states.webp",
+      "thumb": "images/water-states.thumb.webp"
+    },
+    {
+      "id": "leaf-photosynthesis",
+      "full": "images/leaf-photosynthesis.webp",
+      "thumb": "images/leaf-photosynthesis.thumb.webp"
+    },
+    {
+      "id": "lever",
+      "full": "images/lever.webp",
+      "thumb": "images/lever.thumb.webp"
+    },
+    {
+      "id": "sound-waves",
+      "full": "images/sound-waves.webp",
+      "thumb": "images/sound-waves.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "gravity": {
+      "title": "Anomalia grawitacyjna",
+      "creator": "SkywalkerPL",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anomalia_grawitacyjna.jpg",
+      "attributionRequired": true
+    },
+    "magnet": {
+      "title": "Aimant droit et limaille de fer",
+      "creator": "Own work",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aimant_droit_et_limaille_de_fer.jpg",
+      "attributionRequired": true
+    },
+    "water-states": {
+      "title": "Aurora traversing loose pack ice entering the Durville Sea, Dec. 1913 (2869002271)",
+      "creator": "Frank Hurley",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurora_traversing_loose_pack_ice_entering_the_Durville_Sea,_Dec._1913_(2869002271).jpg",
+      "attributionRequired": true
+    },
+    "leaf-photosynthesis": {
+      "title": "A Leaf in the Late Afternoon Sun",
+      "creator": "SavidgeMichael",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Leaf_in_the_Late_Afternoon_Sun.jpg",
+      "attributionRequired": true
+    },
+    "lever": {
+      "title": "1968 wereldrecord wippen bij speeltuin Haarlem-Oost",
+      "creator": "Fotopersbureau De Boer,",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1968_wereldrecord_wippen_bij_speeltuin_Haarlem-Oost.jpg",
+      "attributionRequired": true
+    },
+    "sound-waves": {
+      "title": "A tuning fork placed on sheet music",
+      "creator": "Lukasz Kobus, European Commission",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_tuning_fork_placed_on_sheet_music.jpg",
+      "attributionRequired": true
+    }
+  }
+}

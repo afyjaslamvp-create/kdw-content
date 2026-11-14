@@ -1,0 +1,335 @@
+{
+  "packId": "mathematics",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Mathematics",
+  "description": "Numbers, shapes and fun problems to solve.",
+  "icon": "number",
+  "ageRange": "6-8",
+  "color": "#3b82f6",
+  "entries": [
+    {
+      "id": "counting",
+      "title": "Counting",
+      "summary": "Counting tells us how many things there are.",
+      "body": "When we count we say one number for each thing. Numbers help us know how many, in what order and how much more or less. Numbers are used everywhere - from counting sheep to telling the time.",
+      "facts": [
+        "The number after 9 is 10.",
+        "We can count forwards or backwards.",
+        "Even numbers end in 0, 2, 4, 6 or 8."
+      ],
+      "imageIds": [
+        "numbers"
+      ],
+      "keywords": [
+        "maths",
+        "numbers"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "addition",
+      "title": "Adding",
+      "summary": "Adding means joining numbers together.",
+      "body": "When we add we put two numbers together to find the total. If you have 3 apples and I give you 2 more, you have 5 apples. Adding is one of the four things we do with numbers.",
+      "facts": [
+        "2 + 3 = 5",
+        "Addition helps us work out totals.",
+        "You can add numbers in any order: 2 + 3 is the same as 3 + 2."
+      ],
+      "imageIds": [
+        "numbers"
+      ],
+      "keywords": [
+        "maths",
+        "adding"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "shapes",
+      "title": "Shapes",
+      "summary": "Shapes are all around us.",
+      "body": "A circle is round and has no corners. A square has four equal sides. A triangle has three sides. A rectangle has four sides but they are not all the same length. Shapes can be 2D like a drawing or 3D like a box.",
+      "facts": [
+        "A cube has 6 square faces.",
+        "A cone has a point and a round base.",
+        "A sphere is a perfectly round 3D shape."
+      ],
+      "imageIds": [
+        "shapes"
+      ],
+      "keywords": [
+        "maths",
+        "shapes"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "time",
+      "title": "Telling the Time",
+      "summary": "A clock shows us the time of day.",
+      "body": "There are 60 seconds in a minute and 60 minutes in an hour. The short hand points to the hour and the long hand points to the minutes. There are 24 hours in a day.",
+      "facts": [
+        "Half past seven means 30 minutes past seven.",
+        "A day has 24 hours and a year has 12 months.",
+        "The minute hand is the long one."
+      ],
+      "imageIds": [
+        "clock"
+      ],
+      "keywords": [
+        "maths",
+        "time"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "patterns",
+      "title": "Patterns",
+      "summary": "Patterns repeat in a predictable way.",
+      "body": "A pattern is something that repeats in an order. Red, blue, red, blue is a pattern. Patterns help us work out what comes next, and you can find them in floor tiles, music, animals and the stars.",
+      "facts": [
+        "ABAB is an alternating pattern.",
+        "You can find patterns in the spirals of shells.",
+        "Patterns help your brain to learn new things faster."
+      ],
+      "imageIds": [
+        "pattern"
+      ],
+      "keywords": [
+        "maths",
+        "patterns"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "measuring",
+      "title": "Measuring",
+      "summary": "Measuring tells us how big, long or heavy something is.",
+      "body": "We measure with rulers, scales, tape measures and clocks. In the old days people measured with their hands, feet and body parts, which is why an inch was once called a thumb.",
+      "facts": [
+        "A metre is 100 centimetres.",
+        "A kilogram is 1000 grams.",
+        "You need a scale to measure weight and a ruler for length."
+      ],
+      "imageIds": [
+        "ruler"
+      ],
+      "keywords": [
+        "maths",
+        "measuring"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "ma-q1",
+      "type": "multiple-choice",
+      "prompt": "What is 7 + 5?",
+      "options": [
+        "10",
+        "12",
+        "13"
+      ],
+      "answerIndex": 1,
+      "explanation": "7 + 5 = 12.",
+      "imageId": "numbers",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q2",
+      "type": "multiple-choice",
+      "prompt": "How many sides does a triangle have?",
+      "options": [
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answerIndex": 1,
+      "explanation": "A triangle has three sides and three corners.",
+      "imageId": "shapes",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q3",
+      "type": "multiple-choice",
+      "prompt": "How many minutes are in an hour?",
+      "options": [
+        "30",
+        "60",
+        "100"
+      ],
+      "answerIndex": 1,
+      "explanation": "There are 60 minutes in an hour.",
+      "imageId": "clock",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q4",
+      "type": "multiple-choice",
+      "prompt": "Which shape has no corners?",
+      "options": [
+        "Square",
+        "Circle",
+        "Triangle"
+      ],
+      "answerIndex": 1,
+      "explanation": "A circle is completely round with no corners.",
+      "imageId": "shapes",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q5",
+      "type": "short-answer",
+      "prompt": "What comes after the number 9?",
+      "acceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "explanation": "The number after 9 is 10.",
+      "imageId": "numbers",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "ma-q6",
+      "type": "multiple-choice",
+      "prompt": "How many faces does a cube have?",
+      "options": [
+        "Four",
+        "Six",
+        "Eight"
+      ],
+      "answerIndex": 1,
+      "explanation": "A cube has six square faces.",
+      "imageId": "shapes",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q7",
+      "type": "true-false",
+      "prompt": "Adding 2 and 3 gives the same answer as adding 3 and 2.",
+      "answer": true,
+      "explanation": "Addition works in any order.",
+      "imageId": "numbers",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q8",
+      "type": "multiple-choice",
+      "prompt": "What do we use to measure length?",
+      "options": [
+        "A scale",
+        "A ruler",
+        "A clock"
+      ],
+      "answerIndex": 1,
+      "explanation": "A ruler or tape measure is used for length.",
+      "imageId": "ruler",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q9",
+      "type": "multiple-choice",
+      "prompt": "In the pattern ABAB, what comes after AB?",
+      "options": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerIndex": 1,
+      "explanation": "The pattern repeats, so after AB comes AB again.",
+      "imageId": "pattern",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ma-q10",
+      "type": "multiple-choice",
+      "prompt": "How many hours are in a full day?",
+      "options": [
+        "12",
+        "24",
+        "60"
+      ],
+      "answerIndex": 1,
+      "explanation": "There are 24 hours in a day.",
+      "imageId": "clock",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "numbers",
+      "full": "images/numbers.webp",
+      "thumb": "images/numbers.thumb.webp"
+    },
+    {
+      "id": "shapes",
+      "full": "images/shapes.webp",
+      "thumb": "images/shapes.thumb.webp"
+    },
+    {
+      "id": "clock",
+      "full": "images/clock.webp",
+      "thumb": "images/clock.thumb.webp"
+    },
+    {
+      "id": "pattern",
+      "full": "images/pattern.webp",
+      "thumb": "images/pattern.thumb.webp"
+    },
+    {
+      "id": "ruler",
+      "full": "images/ruler.webp",
+      "thumb": "images/ruler.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "numbers": {
+      "title": "9-Multiples Explanation",
+      "creator": "GregWelch8",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:9-Multiples_Explanation.jpg",
+      "attributionRequired": true
+    },
+    "shapes": {
+      "title": "Colourful domes at Saint Basil's Cathedral (19340936374)",
+      "creator": "Jorge Láscar from Melbourne, Australia",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colourful_domes_at_Saint_Basil's_Cathedral_(19340936374).jpg",
+      "attributionRequired": true
+    },
+    "clock": {
+      "title": "Antique clock dial (Unsplash)",
+      "creator": "Brooke Campbell bcampbell",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antique_clock_dial_(Unsplash).jpg",
+      "attributionRequired": true
+    },
+    "pattern": {
+      "title": "001117 15-44-2002-To-grupper-rosa-Qajar-Fliser2",
+      "creator": "Qajar Persia Gol o bolbol (English:\"Rose and Nightingale\") motif, earthenware tiles",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:001117_15-44-2002-To-grupper-rosa-Qajar-Fliser2.jpg",
+      "attributionRequired": true
+    },
+    "ruler": {
+      "title": "2023 Metr krawiecki",
+      "creator": "Jacek Halicki",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Metr_krawiecki.jpg",
+      "attributionRequired": true
+    }
+  }
+}

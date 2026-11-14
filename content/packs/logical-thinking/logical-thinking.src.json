@@ -1,0 +1,348 @@
+{
+  "packId": "logical-thinking",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Logical Thinking",
+  "description": "Puzzles, patterns and careful thinking.",
+  "icon": "puzzle",
+  "ageRange": "6-8",
+  "color": "#7c3aed",
+  "entries": [
+    {
+      "id": "sequences",
+      "title": "Finding the Next in a Sequence",
+      "summary": "Look for what changes each time.",
+      "body": "In a sequence, each step follows the same rule. 2, 4, 6, 8 comes from adding 2 each time. When you cannot see the rule, try the next few numbers - sometimes the rule is only clear later.",
+      "facts": [
+        "Each step in a sequence follows a rule.",
+        "Adding two each time gives 2, 4, 6, 8.",
+        "Sometimes you need to write a few more terms to see the pattern."
+      ],
+      "imageIds": [
+        "sequence"
+      ],
+      "keywords": [
+        "logic",
+        "patterns"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "odd-one-out",
+      "title": "The Odd One Out",
+      "summary": "Find what does not belong.",
+      "body": "When three things share a feature and one does not, that one is the odd one out. A square, a circle and a triangle are all shapes, but a square and a triangle have corners and a circle does not.",
+      "facts": [
+        "The odd one out breaks the shared rule.",
+        "Look for the feature most of them share.",
+        "There can be more than one good answer if you explain it."
+      ],
+      "imageIds": [
+        "odd-one-out"
+      ],
+      "keywords": [
+        "logic",
+        "reasoning"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "sorting",
+      "title": "Sorting",
+      "summary": "Sorting puts things into groups.",
+      "body": "Sorting is one of the most useful thinking skills. You can sort by colour, size, shape, sound or any rule you choose. Good sorters often notice that a thing can fit in more than one group.",
+      "facts": [
+        "Sorting uses a rule you choose.",
+        "The same object can belong to more than one group.",
+        "Sorting helps us find patterns."
+      ],
+      "imageIds": [
+        "sorting-blocks"
+      ],
+      "keywords": [
+        "logic",
+        "sorting"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "clues",
+      "title": "Solving Clues",
+      "summary": "Good clues let you work out an answer.",
+      "body": "When a puzzle gives you clues, write down what you know and cross things out as you find them out. A clue like 'it is not red and it is taller than the box' is two clues in one sentence.",
+      "facts": [
+        "Write down what you know as you go.",
+        "Some clues have two parts in them.",
+        "Look for clues that rule things out."
+      ],
+      "imageIds": [
+        "clue-card"
+      ],
+      "keywords": [
+        "logic",
+        "puzzles"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "lateral",
+      "title": "Thinking Sideways",
+      "summary": "Sometimes the answer needs a new idea.",
+      "body": "Some puzzles cannot be solved by thinking in the usual way. You have to look at the problem from a different angle. Asking 'why' instead of 'how' is often the key.",
+      "facts": [
+        "Sideways thinking means looking at the problem differently.",
+        "Asking why can unlock a stuck puzzle.",
+        "Different ideas can all lead to a good answer."
+      ],
+      "imageIds": [
+        "lightbulb-think"
+      ],
+      "keywords": [
+        "logic",
+        "thinking"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "planning",
+      "title": "Planning",
+      "summary": "A good plan saves time.",
+      "body": "Before you start a job, think about the steps. What has to be done first? What could go wrong? Planning a trip, a game or a piece of work makes it go more smoothly.",
+      "facts": [
+        "Plan the steps before you start.",
+        "Think about what could go wrong and be ready.",
+        "A plan can be changed as you learn more."
+      ],
+      "imageIds": [
+        "planning-board"
+      ],
+      "keywords": [
+        "logic",
+        "planning"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "lt-q1",
+      "type": "multiple-choice",
+      "prompt": "What comes next: 2, 4, 6, 8?",
+      "options": [
+        "9",
+        "10",
+        "12"
+      ],
+      "answerIndex": 1,
+      "explanation": "The rule is adding 2 each time, so the next number is 10.",
+      "imageId": "sequence",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q2",
+      "type": "multiple-choice",
+      "prompt": "What comes next: 1, 3, 5, 7?",
+      "options": [
+        "8",
+        "9",
+        "10"
+      ],
+      "answerIndex": 1,
+      "explanation": "Odd numbers go up by 2, so the next is 9.",
+      "imageId": "sequence",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q3",
+      "type": "multiple-choice",
+      "prompt": "Which is the odd one out: square, circle, triangle?",
+      "options": [
+        "Square",
+        "Circle",
+        "Triangle"
+      ],
+      "answerIndex": 1,
+      "explanation": "A circle has no corners while the others do.",
+      "imageId": "odd-one-out",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q4",
+      "type": "short-answer",
+      "prompt": "What is sorting?",
+      "acceptedAnswers": [
+        "grouping things by a rule",
+        "grouping",
+        "sorting things into groups"
+      ],
+      "explanation": "Sorting means grouping things using a rule you choose.",
+      "imageId": "sorting-blocks",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "lt-q5",
+      "type": "multiple-choice",
+      "prompt": "What should you do first when solving a clue puzzle?",
+      "options": [
+        "Write down what you know",
+        "Guess quickly",
+        "Change the puzzle"
+      ],
+      "answerIndex": 0,
+      "explanation": "Writing down the facts helps you spot what is left.",
+      "imageId": "clue-card",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q6",
+      "type": "multiple-choice",
+      "prompt": "What is sideways thinking?",
+      "options": [
+        "Looking at a problem from a different angle",
+        "Thinking while lying down",
+        "Thinking fast"
+      ],
+      "answerIndex": 0,
+      "explanation": "Sideways thinking means finding a new angle on the problem.",
+      "imageId": "lightbulb-think",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q7",
+      "type": "multiple-choice",
+      "prompt": "Which question often unlocks a stuck puzzle?",
+      "options": [
+        "Why?",
+        "Who?",
+        "When?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Asking why gets to the heart of the problem.",
+      "imageId": "lightbulb-think",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q8",
+      "type": "multiple-choice",
+      "prompt": "Why plan before starting a job?",
+      "options": [
+        "It saves time",
+        "It looks clever",
+        "It is a rule"
+      ],
+      "answerIndex": 0,
+      "explanation": "A plan means fewer mistakes and less time wasted.",
+      "imageId": "planning-board",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q9",
+      "type": "true-false",
+      "prompt": "One object can belong to more than one group when sorting.",
+      "answer": true,
+      "explanation": "You can sort by colour and also by size at the same time.",
+      "imageId": "sorting-blocks",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "lt-q10",
+      "type": "multiple-choice",
+      "prompt": "What comes next: 5, 10, 15, 20?",
+      "options": [
+        "25",
+        "22",
+        "30"
+      ],
+      "answerIndex": 0,
+      "explanation": "The rule is adding 5 each time, so the next is 25.",
+      "imageId": "sequence",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "sequence",
+      "full": "images/sequence.webp",
+      "thumb": "images/sequence.thumb.webp"
+    },
+    {
+      "id": "odd-one-out",
+      "full": "images/odd-one-out.webp",
+      "thumb": "images/odd-one-out.thumb.webp"
+    },
+    {
+      "id": "sorting-blocks",
+      "full": "images/sorting-blocks.webp",
+      "thumb": "images/sorting-blocks.thumb.webp"
+    },
+    {
+      "id": "clue-card",
+      "full": "images/clue-card.webp",
+      "thumb": "images/clue-card.thumb.webp"
+    },
+    {
+      "id": "lightbulb-think",
+      "full": "images/lightbulb-think.webp",
+      "thumb": "images/lightbulb-think.thumb.webp"
+    },
+    {
+      "id": "planning-board",
+      "full": "images/planning-board.webp",
+      "thumb": "images/planning-board.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "sequence": {
+      "title": "\"Swiss Army Knife\" Abacus",
+      "creator": "Jccsvq",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Swiss_Army_Knife%22_Abacus.jpg",
+      "attributionRequired": true
+    },
+    "odd-one-out": {
+      "title": "(Four geometric shapes) - DPLA - 3b29138f4231227dcbbfc9e49c558010",
+      "creator": "MacLaren, Thomas, 1863-1928",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Four_geometric_shapes)_-_DPLA_-_3b29138f4231227dcbbfc9e49c558010.jpg",
+      "attributionRequired": true
+    },
+    "sorting-blocks": {
+      "title": "Print (BM 1937,0710,0.136)",
+      "creator": "Published by: Nishimuraya Yohachi (西村屋与八)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Print_(BM_1937,0710,0.136).jpg",
+      "attributionRequired": true
+    },
+    "clue-card": {
+      "title": "0565-vector-orange-man-inspection",
+      "creator": "LeoBlanchette",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:0565-vector-orange-man-inspection.jpg",
+      "attributionRequired": true
+    },
+    "lightbulb-think": {
+      "title": "\"What a Brilliant Idea!\" Barnstar.xcf",
+      "creator": "Dickbauch, KMJ, Kjetil_r  and others",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22What_a_Brilliant_Idea!%22_Barnstar.xcf",
+      "attributionRequired": true
+    },
+    "planning-board": {
+      "title": "\"A forest of piles\" Information Board, Princes Pier, Melbourne Australia",
+      "creator": "Diggers2004",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22A_forest_of_piles%22_Information_Board,_Princes_Pier,_Melbourne_Australia.jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "packId": "life-skills-and-safety",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Life Skills and Safety",
+  "description": "Everyday skills that keep you safe and confident.",
+  "icon": "shield",
+  "ageRange": "6-8",
+  "color": "#dc2626",
+  "entries": [
+    {
+      "id": "stranger",
+      "title": "Talking to Strangers",
+      "summary": "Be safe with people you do not know.",
+      "body": "A grown-up you trust should always know where you are. If a stranger asks you to keep a secret, that is a big red flag - tell an adult straight away. You can always say no, and you never have to feel rude about it.",
+      "facts": [
+        "Never keep a secret from a grown-up you trust.",
+        "You do not have to go anywhere with someone who worries you.",
+        "If you feel unsafe, go to a place with other people."
+      ],
+      "imageIds": [
+        "safe-helmet"
+      ],
+      "keywords": [
+        "safety",
+        "people"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "fire",
+      "title": "What To Do in a Fire",
+      "summary": "Get out fast and stay out.",
+      "body": "If there is a fire, get out of the building and go to a safe place, then call the fire service. Never hide under a bed or in a cupboard. Crawling low keeps you below the smoke, which is very dangerous.",
+      "facts": [
+        "Get out and call the fire service.",
+        "Stay below the smoke - crawl low.",
+        "Never go back inside for belongings."
+      ],
+      "imageIds": [
+        "fire"
+      ],
+      "keywords": [
+        "safety",
+        "fire"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "water-safety",
+      "title": "Water Safety",
+      "summary": "Water can be dangerous if you are not careful.",
+      "body": "Never swim alone, always obey the flags at a beach, and always wear a life jacket on a boat. Drowning happens quietly and quickly, so stay close to an adult near water.",
+      "facts": [
+        "Never swim alone.",
+        "Red and yellow flags mean the water is dangerous.",
+        "Wear a life jacket on a boat."
+      ],
+      "imageIds": [
+        "life-jacket"
+      ],
+      "keywords": [
+        "safety",
+        "water"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "money",
+      "title": "Money",
+      "summary": "Money can be spent, saved or given.",
+      "body": "Money buys things and services. Some things you need, some you want, and some you can do without. Saving money means keeping it safe for something you really want later.",
+      "facts": [
+        "Coins and notes are money; a debit card is also money.",
+        "It is smart to save for something you want.",
+        "Never share your PIN with anyone."
+      ],
+      "imageIds": [
+        "coins"
+      ],
+      "keywords": [
+        "life skills",
+        "money"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "asking",
+      "title": "Asking for Help",
+      "summary": "Asking for help is a skill, not a weakness.",
+      "body": "If something is too hard, if you are worried, or if you made a mistake, tell a grown-up or a teacher. Saying 'I need help with this' is something strong people do all the time.",
+      "facts": [
+        "Adults expect to help - that is their job.",
+        "Telling someone early stops small problems becoming big ones.",
+        "It is fine to ask for help with something you find hard."
+      ],
+      "imageIds": [
+        "helping-hands"
+      ],
+      "keywords": [
+        "life skills",
+        "help"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "tidy",
+      "title": "Looking After Your Things",
+      "summary": "Being organised makes life easier.",
+      "body": "Putting things away where they belong means you can find them later and nothing gets lost. Making your bed and packing your bag the night before makes a morning much calmer.",
+      "facts": [
+        "Put things back where they belong.",
+        "Packing your bag the night before saves time in the morning.",
+        "Looking after your things means losing them less often."
+      ],
+      "imageIds": [
+        "tidy-room"
+      ],
+      "keywords": [
+        "life skills",
+        "tidy"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "ls-q1",
+      "type": "multiple-choice",
+      "prompt": "What should you do if a stranger asks you to keep a secret?",
+      "options": [
+        "Keep it",
+        "Tell a trusted adult",
+        "Write it down"
+      ],
+      "answerIndex": 1,
+      "explanation": "Secrets from adults are a warning sign. Always tell someone you trust.",
+      "imageId": "safe-helmet",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q2",
+      "type": "multiple-choice",
+      "prompt": "What should you do in a fire?",
+      "options": [
+        "Hide in a cupboard",
+        "Get out and call the fire service",
+        "Open the windows"
+      ],
+      "answerIndex": 1,
+      "explanation": "Get out fast, stay out, and call the fire service.",
+      "imageId": "fire",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q3",
+      "type": "multiple-choice",
+      "prompt": "When should you wear a life jacket?",
+      "options": [
+        "On a boat",
+        "In bed",
+        "At school"
+      ],
+      "answerIndex": 0,
+      "explanation": "Always wear a life jacket on a boat.",
+      "imageId": "life-jacket",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q4",
+      "type": "multiple-choice",
+      "prompt": "What should you do if a task feels too hard?",
+      "options": [
+        "Give up quietly",
+        "Ask for help",
+        "Do it dangerously"
+      ],
+      "answerIndex": 1,
+      "explanation": "Asking for help is a strong and sensible thing to do.",
+      "imageId": "helping-hands",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q5",
+      "type": "true-false",
+      "prompt": "You should never swim alone.",
+      "answer": true,
+      "explanation": "Drowning happens quickly and quietly, so stay near an adult.",
+      "imageId": "life-jacket",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q6",
+      "type": "multiple-choice",
+      "prompt": "What is a good habit for the night before school?",
+      "options": [
+        "Pack your bag",
+        "Play all night",
+        "Skip breakfast"
+      ],
+      "answerIndex": 0,
+      "explanation": "Packing the night before makes the morning much easier.",
+      "imageId": "tidy-room",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q7",
+      "type": "multiple-choice",
+      "prompt": "Which is a safety rule on a beach?",
+      "options": [
+        "Obey the flags",
+        "Swim at night",
+        "Go alone"
+      ],
+      "answerIndex": 0,
+      "explanation": "Red and yellow flags mean the water is dangerous.",
+      "imageId": "life-jacket",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q8",
+      "type": "short-answer",
+      "prompt": "What should you never share with anyone?",
+      "acceptedAnswers": [
+        "your PIN",
+        "pin",
+        "my PIN"
+      ],
+      "explanation": "Never share your PIN or your passwords.",
+      "imageId": "coins",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "ls-q9",
+      "type": "multiple-choice",
+      "prompt": "What is the best thing to do with money you save?",
+      "options": [
+        "Keep it for something you really want",
+        "Spend it at once",
+        "Give it all away"
+      ],
+      "answerIndex": 0,
+      "explanation": "Saving means keeping it safe for later.",
+      "imageId": "coins",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ls-q10",
+      "type": "multiple-choice",
+      "prompt": "What does being organised stop?",
+      "options": [
+        "Losing your things",
+        "Having fun",
+        "Learning"
+      ],
+      "answerIndex": 0,
+      "explanation": "Putting things away means you can find them later.",
+      "imageId": "tidy-room",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "safe-helmet",
+      "full": "images/safe-helmet.webp",
+      "thumb": "images/safe-helmet.thumb.webp"
+    },
+    {
+      "id": "fire",
+      "full": "images/fire.webp",
+      "thumb": "images/fire.thumb.webp"
+    },
+    {
+      "id": "life-jacket",
+      "full": "images/life-jacket.webp",
+      "thumb": "images/life-jacket.thumb.webp"
+    },
+    {
+      "id": "coins",
+      "full": "images/coins.webp",
+      "thumb": "images/coins.thumb.webp"
+    },
+    {
+      "id": "helping-hands",
+      "full": "images/helping-hands.webp",
+      "thumb": "images/helping-hands.thumb.webp"
+    },
+    {
+      "id": "tidy-room",
+      "full": "images/tidy-room.webp",
+      "thumb": "images/tidy-room.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "safe-helmet": {
+      "title": "Eielson teaches child safety awareness 120430-F-UP786-039",
+      "creator": "Staff Sgt. Jim Araos",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eielson_teaches_child_safety_awareness_120430-F-UP786-039.jpg",
+      "attributionRequired": true
+    },
+    "fire": {
+      "title": "Alsager Carnival - 1953 Dennis fire engine - Jun 2025",
+      "creator": "Dominic Nelson",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alsager_Carnival_-_1953_Dennis_fire_engine_-_Jun_2025.jpg",
+      "attributionRequired": true
+    },
+    "life-jacket": {
+      "title": "1870s Cork Life Vest",
+      "creator": "Mbrickn",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1870s_Cork_Life_Vest.jpg",
+      "attributionRequired": true
+    },
+    "coins": {
+      "title": "Argentina 1828 8 Escudos",
+      "creator": "National Museum of American History",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argentina_1828_8_Escudos.jpg",
+      "attributionRequired": true
+    },
+    "helping-hands": {
+      "title": "\"Zwarte Piet,\" Sinterklaas' helping hand Black Pete",
+      "creator": "Hans Pama from Hoogezand, Netherlands",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Zwarte_Piet,%22_Sinterklaas'_helping_hand_Black_Pete.jpg",
+      "attributionRequired": true
+    },
+    "tidy-room": {
+      "title": "2nd flr Kids Bedroom 6255",
+      "creator": "Chris Light",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2nd_flr_Kids_Bedroom_6255.jpg",
+      "attributionRequired": true
+    }
+  }
+}

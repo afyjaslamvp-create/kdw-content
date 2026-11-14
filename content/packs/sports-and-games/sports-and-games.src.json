@@ -1,0 +1,347 @@
+{
+  "packId": "sports-and-games",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Sports and Games",
+  "description": "Playing, sharing and having fun.",
+  "icon": "ball",
+  "ageRange": "6-8",
+  "color": "#f97316",
+  "entries": [
+    {
+      "id": "team-sports",
+      "title": "Team Sports",
+      "summary": "Team sports need everyone to work together.",
+      "body": "In football, basketball or netball, everybody has a job. Passing the ball and moving your teammates into space is more useful than keeping the ball yourself. A good team listens to each other.",
+      "facts": [
+        "Passing helps your whole team.",
+        "Every player has a role in a team.",
+        "Listening to your teammates makes you stronger."
+      ],
+      "imageIds": [
+        "football"
+      ],
+      "keywords": [
+        "sport",
+        "team"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "fair-play",
+      "title": "Fair Play",
+      "summary": "Playing fair means following the rules.",
+      "body": "Good players tell the referee when they do something wrong. They wait for their turn, they do not cheat to win, and they say sorry when they make a mistake. Winning fairly feels better later.",
+      "facts": [
+        "Telling the truth about a mistake is the honest thing to do.",
+        "Everyone gets a turn.",
+        "A fair win feels better than a cheat."
+      ],
+      "imageIds": [
+        "sportsmanship"
+      ],
+      "keywords": [
+        "sport",
+        "fair play"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "swimming",
+      "title": "Swimming",
+      "summary": "Swimming is a skill everybody can learn.",
+      "body": "People float because the water pushes them up. Swimming needs confidence, practice and breathing control. Learning in shallow water with an adult nearby is the safest way to start.",
+      "facts": [
+        "Your body floats because of buoyancy.",
+        "Practice and lessons help a lot.",
+        "Children should learn to swim with an adult nearby."
+      ],
+      "imageIds": [
+        "swimming"
+      ],
+      "keywords": [
+        "sport",
+        "swimming"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "cycling",
+      "title": "Cycling",
+      "summary": "Cycling is fun exercise and a great way to travel.",
+      "body": "A bike needs three things to be safe: a helmet that fits, a check that the brakes and tyres work, and lights for evenings. Learning to ride takes practice, but most children learn in a day or two.",
+      "facts": [
+        "A helmet must fit properly to protect you.",
+        "Check the brakes and tyres before you ride.",
+        "You need lights when riding in the dark."
+      ],
+      "imageIds": [
+        "bicycle"
+      ],
+      "keywords": [
+        "sport",
+        "cycling"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "games",
+      "title": "Board Games",
+      "summary": "Board games teach planning and patience.",
+      "body": "In a board game you follow rules, you take turns and you have to plan ahead. Games like chess teach you to think a few moves ahead, and games like Snakes and Ladders teach patience with good and bad luck.",
+      "facts": [
+        "Board games teach planning and taking turns.",
+        "Chess teaches you to think ahead.",
+        "Even games with luck teach patience."
+      ],
+      "imageIds": [
+        "board-game"
+      ],
+      "keywords": [
+        "games",
+        "games"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "winning",
+      "title": "Winning and Losing",
+      "summary": "How you win matters as much as winning.",
+      "body": "Everybody loses sometimes. What matters is how you handle it: try again, learn from what went wrong and cheer for your friends. A good sportsperson is happy for the team, not only for themselves.",
+      "facts": [
+        "Losing happens to everybody, even champions.",
+        "Learning from a loss makes you better.",
+        "Cheering for friends is part of being a good sportsperson."
+      ],
+      "imageIds": [
+        "medal"
+      ],
+      "keywords": [
+        "sport",
+        "sportmanship"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "sg-q1",
+      "type": "multiple-choice",
+      "prompt": "Why is passing the ball useful?",
+      "options": [
+        "It helps the whole team",
+        "It looks clever",
+        "It saves energy"
+      ],
+      "answerIndex": 0,
+      "explanation": "Passing moves your teammates and gives everyone a chance.",
+      "imageId": "football",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q2",
+      "type": "multiple-choice",
+      "prompt": "What should you do if you make a mistake in a game?",
+      "options": [
+        "Hide it",
+        "Tell the referee",
+        "Argue"
+      ],
+      "answerIndex": 1,
+      "explanation": "Telling the truth is what fair play means.",
+      "imageId": "sportsmanship",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q3",
+      "type": "multiple-choice",
+      "prompt": "Why do we float in water?",
+      "options": [
+        "The water pushes us up",
+        "We are light",
+        "The air holds us"
+      ],
+      "answerIndex": 0,
+      "explanation": "Buoyancy pushes up on our bodies from below.",
+      "imageId": "swimming",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q4",
+      "type": "multiple-choice",
+      "prompt": "What is the most important piece of safety gear when cycling?",
+      "options": [
+        "A helmet",
+        "A bell",
+        "A basket"
+      ],
+      "answerIndex": 0,
+      "explanation": "A properly fitting helmet protects your head.",
+      "imageId": "bicycle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q5",
+      "type": "multiple-choice",
+      "prompt": "Which game teaches you to think a few moves ahead?",
+      "options": [
+        "Chess",
+        "Tag",
+        "Hide and seek"
+      ],
+      "answerIndex": 0,
+      "explanation": "Chess is about planning ahead.",
+      "imageId": "board-game",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q6",
+      "type": "true-false",
+      "prompt": "Even the best players lose sometimes.",
+      "answer": true,
+      "explanation": "Losing is part of sport, and how you handle it matters.",
+      "imageId": "medal",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q7",
+      "type": "multiple-choice",
+      "prompt": "What is good sportsmanship?",
+      "options": [
+        "Cheating to win",
+        "Following the rules and being kind",
+        "Refusing to play"
+      ],
+      "answerIndex": 1,
+      "explanation": "Good sportsmanship means playing by the rules and treating others well.",
+      "imageId": "sportsmanship",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q8",
+      "type": "short-answer",
+      "prompt": "What do we call a game played on a board with pieces?",
+      "acceptedAnswers": [
+        "a board game",
+        "board game"
+      ],
+      "explanation": "It is called a board game.",
+      "imageId": "board-game",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "sg-q9",
+      "type": "multiple-choice",
+      "prompt": "What should you check before a bike ride?",
+      "options": [
+        "The brakes and tyres",
+        "The price",
+        "The colour"
+      ],
+      "answerIndex": 0,
+      "explanation": "Checking the brakes and tyres keeps you safe.",
+      "imageId": "bicycle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sg-q10",
+      "type": "multiple-choice",
+      "prompt": "What should you do when you lose?",
+      "options": [
+        "Try again and learn",
+        "Blame others",
+        "Quit for ever"
+      ],
+      "answerIndex": 0,
+      "explanation": "Learning from a loss makes you better next time.",
+      "imageId": "medal",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "football",
+      "full": "images/football.webp",
+      "thumb": "images/football.thumb.webp"
+    },
+    {
+      "id": "sportsmanship",
+      "full": "images/sportsmanship.webp",
+      "thumb": "images/sportsmanship.thumb.webp"
+    },
+    {
+      "id": "swimming",
+      "full": "images/swimming.webp",
+      "thumb": "images/swimming.thumb.webp"
+    },
+    {
+      "id": "bicycle",
+      "full": "images/bicycle.webp",
+      "thumb": "images/bicycle.thumb.webp"
+    },
+    {
+      "id": "board-game",
+      "full": "images/board-game.webp",
+      "thumb": "images/board-game.thumb.webp"
+    },
+    {
+      "id": "medal",
+      "full": "images/medal.webp",
+      "thumb": "images/medal.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "football": {
+      "title": "Cal poly soccer match 01 1960",
+      "creator": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cal_poly_soccer_match_01_1960.jpg",
+      "attributionRequired": true
+    },
+    "sportsmanship": {
+      "title": "2024 Super League Grand Final Post-Match Sportsmanship 01",
+      "creator": "Hullian111",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Super_League_Grand_Final_Post-Match_Sportsmanship_01.jpg",
+      "attributionRequired": true
+    },
+    "swimming": {
+      "title": "A cheerful child is splashing in a pool while sitting on a bright pink flamingo float",
+      "creator": "Shixart1985",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_cheerful_child_is_splashing_in_a_pool_while_sitting_on_a_bright_pink_flamingo_float.jpg",
+      "attributionRequired": true
+    },
+    "bicycle": {
+      "title": "20180924 UCI Road World Championships Innsbruck Men U23 ITT Callum Scotson 850 8281",
+      "creator": "Granada",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20180924_UCI_Road_World_Championships_Innsbruck_Men_U23_ITT_Callum_Scotson_850_8281.jpg",
+      "attributionRequired": true
+    },
+    "board-game": {
+      "title": "Chess and backgammon board MET 3668",
+      "creator": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chess_and_backgammon_board_MET_3668.jpg",
+      "attributionRequired": true
+    },
+    "medal": {
+      "title": "1912 Stockholm Olympoic games England polo team, gold medal winners",
+      "creator": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1912_Stockholm_Olympoic_games_England_polo_team,_gold_medal_winners.jpg",
+      "attributionRequired": true
+    }
+  }
+}

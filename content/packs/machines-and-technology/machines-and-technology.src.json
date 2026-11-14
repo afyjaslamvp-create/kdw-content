@@ -1,0 +1,336 @@
+{
+  "packId": "machines-and-technology",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Machines and Technology",
+  "description": "How machines help us every day.",
+  "icon": "gear",
+  "ageRange": "6-8",
+  "color": "#64748b",
+  "entries": [
+    {
+      "id": "machine",
+      "title": "What Is a Machine?",
+      "summary": "A machine makes work easier.",
+      "body": "A machine uses a force to do work. A wheel and axle, a lever and a pulley are all simple machines. Complex machines like a car or a washing machine are made of lots of simple machines working together.",
+      "facts": [
+        "Machines change the size or direction of a force.",
+        "A machine never creates energy - it changes how we use it.",
+        "Most machines need a power source like electricity, fuel or muscle."
+      ],
+      "imageIds": [
+        "gears"
+      ],
+      "keywords": [
+        "technology",
+        "machines"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "gears",
+      "title": "Gears",
+      "summary": "Gears are wheels with teeth that work together.",
+      "body": "Gears move power from one part of a machine to another. If a small gear turns a big gear, the big gear turns more slowly but with more force. Gears are in clocks, bicycles, cars and robot toys.",
+      "facts": [
+        "Gears in a bicycle make pedalling easier.",
+        "A big gear turns more slowly but with more strength.",
+        "Watches and clocks use tiny gears."
+      ],
+      "imageIds": [
+        "gears"
+      ],
+      "keywords": [
+        "technology",
+        "gears"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "electricity",
+      "title": "Electricity",
+      "summary": "Electricity powers most of our machines.",
+      "body": "Electricity flows through wires. When it reaches a motor it makes movement, and when it reaches a light it makes light. Electricity can come from wind, sun, water and gas as well as from coal and oil.",
+      "facts": [
+        "A light bulb turns electricity into light and heat.",
+        "Wind and solar power make electricity without using fuel.",
+        "Never touch a broken wire - electricity can hurt you."
+      ],
+      "imageIds": [
+        "electricity"
+      ],
+      "keywords": [
+        "technology",
+        "electricity"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "robot",
+      "title": "Robots",
+      "summary": "Robots are machines that can do tasks by themselves.",
+      "body": "A robot has a body, sensors to know what is around it, and a program that tells it what to do. Robots help in factories, in hospitals and in exploring places that are dangerous for people.",
+      "facts": [
+        "Robots use sensors to see, hear or feel.",
+        "A robot follows the instructions in its program.",
+        "Some robots explore the sea and even other planets."
+      ],
+      "imageIds": [
+        "robot"
+      ],
+      "keywords": [
+        "technology",
+        "robots"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "transport-tech",
+      "title": "How Transport Changed",
+      "summary": "New technology changed how people travel.",
+      "body": "For thousands of years people walked, rode horses and sailed. The steam engine, the train, the car and the aeroplane each made travel much faster. Now electric trains and electric cars are making it cleaner again.",
+      "facts": [
+        "The first steam trains ran in the early 1800s.",
+        "Electric cars make no exhaust at the tailpipe.",
+        "Trains are usually the fastest way to travel long distances on land."
+      ],
+      "imageIds": [
+        "train"
+      ],
+      "keywords": [
+        "technology",
+        "transport"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "safety",
+      "title": "Staying Safe with Machines",
+      "summary": "Machines are useful but they can hurt.",
+      "body": "Always follow the instructions and warnings on a machine. Keep your hands clear of moving parts, and never try a machine that looks broken. Adult supervision is important for anything that heats, cuts or spins.",
+      "facts": [
+        "Never put your fingers near a moving part.",
+        "If a machine looks damaged, do not use it - tell an adult.",
+        "Warning stickers show where machines can hurt you."
+      ],
+      "imageIds": [
+        "warning"
+      ],
+      "keywords": [
+        "technology",
+        "safety"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "mt-q1",
+      "type": "multiple-choice",
+      "prompt": "What does a machine do?",
+      "options": [
+        "Makes work easier",
+        "Creates energy",
+        "Makes things wet"
+      ],
+      "answerIndex": 0,
+      "explanation": "A machine changes the size or direction of a force to make work easier.",
+      "imageId": "gears",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q2",
+      "type": "multiple-choice",
+      "prompt": "What happens when a small gear turns a big gear?",
+      "options": [
+        "The big gear turns faster",
+        "The big gear turns slower with more force",
+        "Nothing"
+      ],
+      "answerIndex": 1,
+      "explanation": "Big gears trade speed for strength.",
+      "imageId": "gears",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q3",
+      "type": "multiple-choice",
+      "prompt": "What turns electricity into movement?",
+      "options": [
+        "A motor",
+        "A bulb",
+        "A battery"
+      ],
+      "answerIndex": 0,
+      "explanation": "An electric motor turns electricity into turning movement.",
+      "imageId": "electricity",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q4",
+      "type": "multiple-choice",
+      "prompt": "What tells a robot what to do?",
+      "options": [
+        "Its program",
+        "Its colour",
+        "Its size"
+      ],
+      "answerIndex": 0,
+      "explanation": "A robot follows instructions written in a program.",
+      "imageId": "robot",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q5",
+      "type": "multiple-choice",
+      "prompt": "Which of these makes electricity without fuel?",
+      "options": [
+        "A coal fire",
+        "A wind turbine",
+        "A petrol engine"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wind and solar power make electricity without burning fuel.",
+      "imageId": "electricity",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q6",
+      "type": "true-false",
+      "prompt": "A machine can create energy out of nothing.",
+      "answer": false,
+      "explanation": "Machines never create energy; they only change the way we use it.",
+      "imageId": "gears",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q7",
+      "type": "multiple-choice",
+      "prompt": "What should you do if a machine looks damaged?",
+      "options": [
+        "Try it carefully",
+        "Do not use it and tell an adult",
+        "Fix it yourself"
+      ],
+      "answerIndex": 1,
+      "explanation": "A damaged machine can be dangerous. Tell an adult.",
+      "imageId": "warning",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q8",
+      "type": "multiple-choice",
+      "prompt": "Which machine helped people travel first in history?",
+      "options": [
+        "The steam engine",
+        "The electric car",
+        "The jet engine"
+      ],
+      "answerIndex": 0,
+      "explanation": "Steam engines powered the first trains in the early 1800s.",
+      "imageId": "train",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "mt-q9",
+      "type": "short-answer",
+      "prompt": "What do we call the part of a robot that senses the world?",
+      "acceptedAnswers": [
+        "a sensor",
+        "sensor",
+        "sensors"
+      ],
+      "explanation": "Sensors are like the eyes and ears of a robot.",
+      "imageId": "robot",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "mt-q10",
+      "type": "multiple-choice",
+      "prompt": "What do warning stickers on machines tell you?",
+      "options": [
+        "Where it is cheap",
+        "Where it can hurt you",
+        "The maker's name"
+      ],
+      "answerIndex": 1,
+      "explanation": "Warning stickers show the dangerous parts to keep away from.",
+      "imageId": "warning",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "gears",
+      "full": "images/gears.webp",
+      "thumb": "images/gears.thumb.webp"
+    },
+    {
+      "id": "electricity",
+      "full": "images/electricity.webp",
+      "thumb": "images/electricity.thumb.webp"
+    },
+    {
+      "id": "robot",
+      "full": "images/robot.webp",
+      "thumb": "images/robot.thumb.webp"
+    },
+    {
+      "id": "train",
+      "full": "images/train.webp",
+      "thumb": "images/train.thumb.webp"
+    },
+    {
+      "id": "warning",
+      "full": "images/warning.webp",
+      "thumb": "images/warning.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "gears": {
+      "title": "Antikythera Fragment A (Front)",
+      "creator": "Logg Tandy",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antikythera_Fragment_A_(Front).webp",
+      "attributionRequired": true
+    },
+    "electricity": {
+      "title": "ATC High-Voltage Electric Power Lines - panoramio",
+      "creator": "Corey Coyle",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ATC_High-Voltage_Electric_Power_Lines_-_panoramio.jpg",
+      "attributionRequired": true
+    },
+    "robot": {
+      "title": "Detail of a hydraulic toy robot arm",
+      "creator": "Scoid",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detail_of_a_hydraulic_toy_robot_arm.jpg",
+      "attributionRequired": true
+    },
+    "train": {
+      "title": "Abandoned Train at Janakpur station, Nepal Railways--IMG 7925",
+      "creator": "Bijay chaurasia",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abandoned_Train_at_Janakpur_station,_Nepal_Railways--IMG_7925.jpg",
+      "attributionRequired": true
+    },
+    "warning": {
+      "title": "0037jfQuezon City Barangays South Triangle Timog Avenuefvf 07",
+      "creator": "Judgefloro",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:0037jfQuezon_City_Barangays_South_Triangle_Timog_Avenuefvf_07.jpg",
+      "attributionRequired": true
+    }
+  }
+}

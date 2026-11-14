@@ -1,0 +1,342 @@
+{
+  "packId": "english-language",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "English Language",
+  "description": "Letters, words, sounds and stories.",
+  "icon": "abc",
+  "ageRange": "6-8",
+  "color": "#a855f7",
+  "entries": [
+    {
+      "id": "alphabet",
+      "title": "The Alphabet",
+      "summary": "English has 26 letters.",
+      "body": "Letters are the building blocks of words. The letters A to Z are the alphabet. A capital letter is the big one and a small letter is the little one. Some letters look the same but say different things, like C and K.",
+      "facts": [
+        "English has 26 letters.",
+        "The letters Q and X are the ones children use least.",
+        "Some words begin with a silent letter, like 'know'."
+      ],
+      "imageIds": [
+        "alphabet"
+      ],
+      "keywords": [
+        "english",
+        "letters"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "vowels",
+      "title": "Vowels and Consonants",
+      "summary": "Five letters make the vowel sounds.",
+      "body": "A, E, I, O and U are the vowel letters. The rest of the letters are consonants. Vowels make the words sing - try saying 'a' for a long time and your throat keeps going.",
+      "facts": [
+        "There are five vowel letters.",
+        "The letter Y can act as a vowel, as in 'yes'.",
+        "Most words have more consonants than vowels."
+      ],
+      "imageIds": [
+        "letters"
+      ],
+      "keywords": [
+        "english",
+        "letters"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "punctuation",
+      "title": "Punctuation Marks",
+      "summary": "Punctuation marks show us how to read a sentence.",
+      "body": "A full stop says a sentence has finished. A comma shows a small pause. A question mark asks a question and an exclamation mark shows excitement. A capital letter always starts a sentence and a name.",
+      "facts": [
+        "A question needs a question mark.",
+        "The capital letter is always the bigger one.",
+        "An exclamation mark shows a strong feeling."
+      ],
+      "imageIds": [
+        "punctuation"
+      ],
+      "keywords": [
+        "english",
+        "writing"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "rhymes",
+      "title": "Rhyming Words",
+      "summary": "Rhyming words end with the same sounds.",
+      "body": "Cat and hat rhyme. Moon and spoon rhyme. Rhyming words are used in poems and songs because they make the language feel musical. Poets have used rhyme for thousands of years.",
+      "facts": [
+        "Rhyming words end with the same sound.",
+        "Rhyme makes poems and songs easy to remember.",
+        "'Orange' has no perfect rhyming word in English."
+      ],
+      "imageIds": [
+        "rhyme"
+      ],
+      "keywords": [
+        "english",
+        "poems"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "story-parts",
+      "title": "Parts of a Story",
+      "summary": "Stories have a beginning, a middle and an end.",
+      "body": "Every story has characters - the people or animals in it. The setting is where and when the story happens. The problem is what goes wrong, and the solution fixes it.",
+      "facts": [
+        "The setting tells us where a story happens.",
+        "The characters are the people or animals in the story.",
+        "A story usually has a problem and a solution."
+      ],
+      "imageIds": [
+        "storybook"
+      ],
+      "keywords": [
+        "english",
+        "stories"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "describing",
+      "title": "Describing Things",
+      "summary": "Good describing uses the five senses.",
+      "body": "When you describe something you can talk about how it looks, sounds, smells, feels or tastes. 'A rough, shiny, green leaf' tells us much more than 'a leaf'.",
+      "facts": [
+        "Using the five senses makes descriptions stronger.",
+        "Adjectives describe, like 'soft' or 'bright'.",
+        "Similes use 'like' or 'as', as in 'as fast as a cheetah'."
+      ],
+      "imageIds": [
+        "describing"
+      ],
+      "keywords": [
+        "english",
+        "writing"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "el-q1",
+      "type": "multiple-choice",
+      "prompt": "How many letters are in the English alphabet?",
+      "options": [
+        "20",
+        "26",
+        "30"
+      ],
+      "answerIndex": 1,
+      "explanation": "There are 26 letters from A to Z.",
+      "imageId": "alphabet",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q2",
+      "type": "multiple-choice",
+      "prompt": "Which mark shows a question?",
+      "options": [
+        "A full stop",
+        "A question mark",
+        "A comma"
+      ],
+      "answerIndex": 1,
+      "explanation": "A question mark shows that someone is asking a question.",
+      "imageId": "punctuation",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q3",
+      "type": "multiple-choice",
+      "prompt": "Which letters are vowels?",
+      "options": [
+        "A, E, I, O and U",
+        "B, C, D, E and F",
+        "X, Y and Z"
+      ],
+      "answerIndex": 0,
+      "explanation": "A, E, I, O and U are the five vowel letters.",
+      "imageId": "letters",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q4",
+      "type": "short-answer",
+      "prompt": "Which two words rhyme: cat and what?",
+      "acceptedAnswers": [
+        "hat",
+        "the hat"
+      ],
+      "explanation": "Cat and hat rhyme because they end with the same sound.",
+      "imageId": "rhyme",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "el-q5",
+      "type": "multiple-choice",
+      "prompt": "What is the setting of a story?",
+      "options": [
+        "Where and when it happens",
+        "The characters",
+        "The ending"
+      ],
+      "answerIndex": 0,
+      "explanation": "The setting tells us where and when the story takes place.",
+      "imageId": "storybook",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q6",
+      "type": "true-false",
+      "prompt": "A sentence always starts with a capital letter.",
+      "answer": true,
+      "explanation": "Every sentence begins with a capital letter and ends with a full stop, a question mark or an exclamation mark.",
+      "imageId": "punctuation",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q7",
+      "type": "multiple-choice",
+      "prompt": "Which word is an adjective?",
+      "options": [
+        "Run",
+        "Quick",
+        "Jump"
+      ],
+      "answerIndex": 1,
+      "explanation": "'Quick' describes a noun, so it is an adjective.",
+      "imageId": "describing",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q8",
+      "type": "multiple-choice",
+      "prompt": "Which mark shows a strong feeling?",
+      "options": [
+        "A comma",
+        "An exclamation mark",
+        "A full stop"
+      ],
+      "answerIndex": 1,
+      "explanation": "An exclamation mark shows excitement or surprise.",
+      "imageId": "punctuation",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q9",
+      "type": "true-false",
+      "prompt": "Rhyming words end with the same sounds.",
+      "answer": true,
+      "explanation": "Rhyme makes language musical and easy to remember.",
+      "imageId": "rhyme",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "el-q10",
+      "type": "multiple-choice",
+      "prompt": "Which of these is a simile?",
+      "options": [
+        "It was very big",
+        "It was as big as a house",
+        "The house was big"
+      ],
+      "answerIndex": 1,
+      "explanation": "A simile compares two things using 'like' or 'as'.",
+      "imageId": "describing",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "alphabet",
+      "full": "images/alphabet.webp",
+      "thumb": "images/alphabet.thumb.webp"
+    },
+    {
+      "id": "letters",
+      "full": "images/letters.webp",
+      "thumb": "images/letters.thumb.webp"
+    },
+    {
+      "id": "punctuation",
+      "full": "images/punctuation.webp",
+      "thumb": "images/punctuation.thumb.webp"
+    },
+    {
+      "id": "rhyme",
+      "full": "images/rhyme.webp",
+      "thumb": "images/rhyme.thumb.webp"
+    },
+    {
+      "id": "storybook",
+      "full": "images/storybook.webp",
+      "thumb": "images/storybook.thumb.webp"
+    },
+    {
+      "id": "describing",
+      "full": "images/describing.webp",
+      "thumb": "images/describing.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "alphabet": {
+      "title": "Albanian alphabet in da Lecce (1716)",
+      "creator": "Francesco Maria da Lecce",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albanian_alphabet_in_da_Lecce_(1716).png",
+      "attributionRequired": true
+    },
+    "letters": {
+      "title": "Blocks, alphabet (51359801586)",
+      "creator": "Auckland Museum  Collections from Auckland, Aotearoa New Zealand",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blocks,_alphabet_(51359801586).jpg",
+      "attributionRequired": true
+    },
+    "punctuation": {
+      "title": "A Cure for the Heart Ache St. David's Day 1800",
+      "creator": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Cure_for_the_Heart_Ache_St._David's_Day_1800.jpg",
+      "attributionRequired": true
+    },
+    "rhyme": {
+      "title": "Image taken from page 137 of '(Sing-Song. A nursery rhyme book. ... With ... illustrations by A. Hughes, etc.)' (11129611713)",
+      "creator": "The British Library",
+      "license": "No restrictions",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Image_taken_from_page_137_of_'(Sing-Song._A_nursery_rhyme_book._..._With_..._illustrations_by_A._Hughes,_etc.)'_(11129611713).jpg",
+      "attributionRequired": true
+    },
+    "storybook": {
+      "title": "\"A Dog's Trail\" story reading (8814578)",
+      "creator": "U.S. Army USAG-S by Bardia Khajenoori",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22A_Dog's_Trail%22_story_reading_(8814578).jpg",
+      "attributionRequired": true
+    },
+    "describing": {
+      "title": "(Young child drawing plans in Osaka, Japan) - DPLA - 861c2f4276154f3cd39cdca394c8762b",
+      "creator": "Carlquist, Sherwin John, 1930-2021",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Young_child_drawing_plans_in_Osaka,_Japan)_-_DPLA_-_861c2f4276154f3cd39cdca394c8762b.jpg",
+      "attributionRequired": true
+    }
+  }
+}

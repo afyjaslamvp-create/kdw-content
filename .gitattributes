@@ -1,0 +1,9 @@
+# Keep every text file as LF so the GitHub Actions runner and the Python
+# tools behave the same on Windows and on Linux.
+* text=auto eol=lf
+
+# Pictures are binary.
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary

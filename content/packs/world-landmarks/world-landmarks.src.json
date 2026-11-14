@@ -1,0 +1,347 @@
+{
+  "packId": "world-landmarks",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "World Landmarks",
+  "description": "Famous places to look at and learn about.",
+  "icon": "landmark",
+  "ageRange": "6-8",
+  "color": "#0891b2",
+  "entries": [
+    {
+      "id": "eiffel",
+      "title": "The Eiffel Tower",
+      "summary": "The Eiffel Tower in Paris is 330 metres tall.",
+      "body": "The Eiffel Tower was built in 1889 for the World's Fair. It is made of iron and weighs about 10,000 tonnes. It was the tallest building in the world for 41 years.",
+      "facts": [
+        "It is painted every seven years.",
+        "About 7 million people visit it each year.",
+        "It can grow about 15 centimetres in hot weather."
+      ],
+      "imageIds": [
+        "eiffel-tower"
+      ],
+      "keywords": [
+        "landmarks",
+        "france"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "pyramid-landmark",
+      "title": "The Pyramids of Giza",
+      "summary": "The pyramids stand in the desert near Cairo.",
+      "body": "The three Great Pyramids were built as tombs for kings of Egypt about 4,500 years ago. The Great Pyramid is made of around 2.3 million stone blocks that were floated down the Nile and cut on site.",
+      "facts": [
+        "The Great Pyramid was the tallest building for 3,800 years.",
+        "The blocks were carried down the river on boats.",
+        "The pyramids are still standing after 4,500 years."
+      ],
+      "imageIds": [
+        "pyramid"
+      ],
+      "keywords": [
+        "landmarks",
+        "egypt"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "taj",
+      "title": "The Taj Mahal",
+      "summary": "The Taj Mahal is a white marble tomb in India.",
+      "body": "The Taj Mahal was built by the emperor Shah Jahan for his wife Mumtaz Mahal. It took about 20 years and thousands of workers. It is called the 'pearl of India'.",
+      "facts": [
+        "It is made of white marble.",
+        "It was built as a tomb for Mumtaz Mahal.",
+        "It is UNESCO World Heritage Site number 252."
+      ],
+      "imageIds": [
+        "taj-mahal"
+      ],
+      "keywords": [
+        "landmarks",
+        "india"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "kualalumpur",
+      "title": "Petronas Towers",
+      "summary": "The Petronas Towers are in Kuala Lumpur, Malaysia.",
+      "body": "The Petronas Towers were finished in 1998 and were the tallest buildings in the world for a while. They are joined by a skybridge on the 41st and 42nd floors. The design is based on Islamic patterns.",
+      "facts": [
+        "The towers are joined by a skybridge.",
+        "Their shape comes from Islamic geometric patterns.",
+        "They stand in Kuala Lumpur, Malaysia."
+      ],
+      "imageIds": [
+        "petronas-towers"
+      ],
+      "keywords": [
+        "landmarks",
+        "malaysia"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "machu",
+      "title": "Machu Picchu",
+      "summary": "Machu Picchu is an ancient Inca city in Peru.",
+      "body": "Machu Picchu was built by the Inca people about 600 years ago, high in the Andes mountains. It was never found by Spanish explorers, so it stayed a secret for a long time.",
+      "facts": [
+        "Machu Picchu is about 2,430 metres above sea level.",
+        "It was built by the Inca people.",
+        "It was hidden from the Spanish for centuries."
+      ],
+      "imageIds": [
+        "machu-picchu"
+      ],
+      "keywords": [
+        "landmarks",
+        "peru"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "burj-landmark",
+      "title": "The Burj Khalifa",
+      "summary": "The Burj Khalifa in Dubai is the tallest building on Earth.",
+      "body": "The Burj Khalifa was finished in 2010. It is more than 828 metres tall and has 163 floors. Its shape is inspired by a desert flower called a Hymenocallis.",
+      "facts": [
+        "It is over 828 metres tall.",
+        "Its shape is inspired by a desert flower.",
+        "It is in Dubai, in the United Arab Emirates."
+      ],
+      "imageIds": [
+        "burj-khalifa"
+      ],
+      "keywords": [
+        "landmarks",
+        "uae"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "wl-q1",
+      "type": "multiple-choice",
+      "prompt": "How tall is the Eiffel Tower?",
+      "options": [
+        "330 metres",
+        "33 metres",
+        "3,300 metres"
+      ],
+      "answerIndex": 0,
+      "explanation": "The Eiffel Tower in Paris is 330 metres tall.",
+      "imageId": "eiffel-tower",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q2",
+      "type": "multiple-choice",
+      "prompt": "What are the Egyptian pyramids?",
+      "options": [
+        "Tombs for kings",
+        "Houses",
+        "Temples for rain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The pyramids were built as tombs for the kings of Egypt.",
+      "imageId": "pyramid",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q3",
+      "type": "multiple-choice",
+      "prompt": "What is the Taj Mahal made of?",
+      "options": [
+        "Wood",
+        "White marble",
+        "Glass"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Taj Mahal is built from white marble in India.",
+      "imageId": "taj-mahal",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q4",
+      "type": "multiple-choice",
+      "prompt": "Which city has the Petronas Towers?",
+      "options": [
+        "Dubai",
+        "Kuala Lumpur",
+        "Perth"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Petronas Towers are in Kuala Lumpur, Malaysia.",
+      "imageId": "petronas-towers",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q5",
+      "type": "short-answer",
+      "prompt": "In which country is Machu Picchu?",
+      "acceptedAnswers": [
+        "Peru",
+        "peru"
+      ],
+      "explanation": "Machu Picchu is an Inca site high in the Andes of Peru.",
+      "imageId": "machu-picchu",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "wl-q6",
+      "type": "multiple-choice",
+      "prompt": "How tall is the Burj Khalifa?",
+      "options": [
+        "828 metres",
+        "82 metres",
+        "8,280 metres"
+      ],
+      "answerIndex": 0,
+      "explanation": "It stands more than 828 metres tall.",
+      "imageId": "burj-khalifa",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q7",
+      "type": "true-false",
+      "prompt": "The Petronas Towers are joined by a skybridge.",
+      "answer": true,
+      "explanation": "A skybridge joins the towers at the 41st and 42nd floors.",
+      "imageId": "petronas-towers",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q8",
+      "type": "multiple-choice",
+      "prompt": "Who built Machu Picchu?",
+      "options": [
+        "The Romans",
+        "The Inca people",
+        "The Vikings"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Inca people built Machu Picchu about 600 years ago.",
+      "imageId": "machu-picchu",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q9",
+      "type": "multiple-choice",
+      "prompt": "How often is the Eiffel Tower painted?",
+      "options": [
+        "Every year",
+        "Every seven years",
+        "Never"
+      ],
+      "answerIndex": 1,
+      "explanation": "It is repainted every seven years to protect the iron.",
+      "imageId": "eiffel-tower",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "wl-q10",
+      "type": "multiple-choice",
+      "prompt": "Which landmark is in the United Arab Emirates?",
+      "options": [
+        "The Colosseum",
+        "The Burj Khalifa",
+        "Machu Picchu"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Burj Khalifa is in Dubai.",
+      "imageId": "burj-khalifa",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "eiffel-tower",
+      "full": "images/eiffel-tower.webp",
+      "thumb": "images/eiffel-tower.thumb.webp"
+    },
+    {
+      "id": "pyramid",
+      "full": "images/pyramid.webp",
+      "thumb": "images/pyramid.thumb.webp"
+    },
+    {
+      "id": "taj-mahal",
+      "full": "images/taj-mahal.webp",
+      "thumb": "images/taj-mahal.thumb.webp"
+    },
+    {
+      "id": "petronas-towers",
+      "full": "images/petronas-towers.webp",
+      "thumb": "images/petronas-towers.thumb.webp"
+    },
+    {
+      "id": "machu-picchu",
+      "full": "images/machu-picchu.webp",
+      "thumb": "images/machu-picchu.thumb.webp"
+    },
+    {
+      "id": "burj-khalifa",
+      "full": "images/burj-khalifa.webp",
+      "thumb": "images/burj-khalifa.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "eiffel-tower": {
+      "title": "American soldiers watch as the Tricolor flies from the Eiffel Tower again",
+      "creator": "Unknown authorUnknown author or not provided",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_soldiers_watch_as_the_Tricolor_flies_from_the_Eiffel_Tower_again.jpg",
+      "attributionRequired": true
+    },
+    "pyramid": {
+      "title": "Egypt.Giza.Sphinx.01",
+      "creator": "en:User:Hajor",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egypt.Giza.Sphinx.01.jpg",
+      "attributionRequired": true
+    },
+    "taj-mahal": {
+      "title": "20191204 Jawab, Taj Mahal, Agra 0657 6562",
+      "creator": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191204_Jawab,_Taj_Mahal,_Agra_0657_6562.jpg",
+      "attributionRequired": true
+    },
+    "petronas-towers": {
+      "title": "2016 Kuala Lumpur, Petronas Towers (10)",
+      "creator": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Kuala_Lumpur,_Petronas_Towers_(10).jpg",
+      "attributionRequired": true
+    },
+    "machu-picchu": {
+      "title": "80 - Machu Picchu - Juin 2009 - edit.2",
+      "creator": "Martin St-Amant (S23678)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:80_-_Machu_Picchu_-_Juin_2009_-_edit.2.jpg",
+      "attributionRequired": true
+    },
+    "burj-khalifa": {
+      "title": "124th floor @ At the Top SKY @ Burj Khalifa @ Dubai (15697909208)",
+      "creator": "Guilhem Vellut from Annecy, France",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:124th_floor_%40_At_the_Top_SKY_%40_Burj_Khalifa_%40_Dubai_(15697909208).jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "packId": "inventions-and-discoveries",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Inventions and Discoveries",
+  "description": "Big ideas that changed daily life.",
+  "icon": "bulb",
+  "ageRange": "6-8",
+  "color": "#d946ef",
+  "entries": [
+    {
+      "id": "wheel",
+      "title": "The Wheel",
+      "summary": "The wheel was one of the first really important inventions.",
+      "body": "Nobody knows exactly who invented the wheel, but it appeared about 5,500 years ago. The wheel made carts, carts made trade easier, and trade changed how people lived.",
+      "facts": [
+        "The earliest wheels were probably made of wood.",
+        "The wheel is one of the oldest inventions we know.",
+        "Wheels made heavy things much easier to move."
+      ],
+      "imageIds": [
+        "wheel"
+      ],
+      "keywords": [
+        "inventions"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "paper",
+      "title": "Paper",
+      "summary": "Paper lets us write and share ideas cheaply.",
+      "body": "Paper was invented in China about 2,000 years ago. Before paper, people wrote on bamboo strips or animal skin, which were heavy and expensive. Paper made books possible for many more people.",
+      "facts": [
+        "Paper was invented in China.",
+        "Before paper, books were written on heavy materials.",
+        "Paper made knowledge much cheaper to spread."
+      ],
+      "imageIds": [
+        "paper-scroll"
+      ],
+      "keywords": [
+        "inventions",
+        "writing"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "steam",
+      "title": "The Steam Engine",
+      "summary": "The steam engine changed travel and factories.",
+      "body": "A steam engine burns fuel to make steam, and the steam pushes a piston. James Watt made it much more efficient in the 1700s. Soon trains and steamships could drive anywhere.",
+      "facts": [
+        "The steam engine was made much better by James Watt.",
+        "Steam engines powered the first trains and steamships.",
+        "Steam power made factories work without wind or water."
+      ],
+      "imageIds": [
+        "steam-engine"
+      ],
+      "keywords": [
+        "inventions",
+        "machines"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "lightbulb",
+      "title": "The Electric Light Bulb",
+      "summary": "A practical light bulb changed the evening.",
+      "body": "Early electric lights were tried in the 1800s, but they burned out quickly. Thomas Edison made a bulb that lasted much longer, and in 1879 he demonstrated it. Soon homes and streets could be lit up.",
+      "facts": [
+        "Edison's bulb lasted far longer than the first attempts.",
+        "It was demonstrated in 1879.",
+        "Electric light changed how people worked in the evening."
+      ],
+      "imageIds": [
+        "lightbulb"
+      ],
+      "keywords": [
+        "inventions",
+        "electricity"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "telephone",
+      "title": "The Telephone",
+      "summary": "The telephone let people speak far apart.",
+      "body": "Alexander Graham Bell made the first working telephone in 1876. People could talk to each other over wires. Today phones send pictures, messages and video all around the world in a second.",
+      "facts": [
+        "Bell made the first working telephone in 1876.",
+        "Modern phones use radio waves and satellites, not only wires.",
+        "The telephone changed how people kept in touch."
+      ],
+      "imageIds": [
+        "telephone"
+      ],
+      "keywords": [
+        "inventions",
+        "communication"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "penicillin",
+      "title": "Penicillin",
+      "summary": "Penicillin saved millions of lives.",
+      "body": "In 1928 Alexander Fleming noticed that a mould killed the bacteria in his dish. Scientists turned it into medicine, and during the Second World War it saved countless lives. Antibiotics are still one of the greatest medical discoveries.",
+      "facts": [
+        "Alexander Fleming discovered penicillin in 1928.",
+        "It was the first antibiotic medicine.",
+        "Antibiotics fight bacteria that make us ill."
+      ],
+      "imageIds": [
+        "microscope"
+      ],
+      "keywords": [
+        "inventions",
+        "medicine"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "id-q1",
+      "type": "multiple-choice",
+      "prompt": "About how old is the wheel?",
+      "options": [
+        "About 500 years",
+        "About 5,500 years",
+        "About 50 years"
+      ],
+      "answerIndex": 1,
+      "explanation": "The wheel is one of the oldest inventions we know about.",
+      "imageId": "wheel",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q2",
+      "type": "multiple-choice",
+      "prompt": "Where was paper invented?",
+      "options": [
+        "China",
+        "France",
+        "Egypt"
+      ],
+      "answerIndex": 0,
+      "explanation": "Paper was invented in China about 2,000 years ago.",
+      "imageId": "paper-scroll",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q3",
+      "type": "multiple-choice",
+      "prompt": "Who made the steam engine much more efficient?",
+      "options": [
+        "Thomas Edison",
+        "James Watt",
+        "Alexander Bell"
+      ],
+      "answerIndex": 1,
+      "explanation": "James Watt improved the steam engine in the 1700s.",
+      "imageId": "steam-engine",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q4",
+      "type": "multiple-choice",
+      "prompt": "In what year was the electric light bulb demonstrated?",
+      "options": [
+        "1879",
+        "1928",
+        "1976"
+      ],
+      "answerIndex": 0,
+      "explanation": "Thomas Edison demonstrated a practical bulb in 1879.",
+      "imageId": "lightbulb",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q5",
+      "type": "short-answer",
+      "prompt": "What did Alexander Fleming discover?",
+      "acceptedAnswers": [
+        "penicillin",
+        "the telephone",
+        "the steam engine"
+      ],
+      "explanation": "Fleming discovered penicillin in 1928.",
+      "imageId": "microscope",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "id-q6",
+      "type": "multiple-choice",
+      "prompt": "What is a telephone used for?",
+      "options": [
+        "Speaking to people far away",
+        "Making light",
+        "Moving cars"
+      ],
+      "answerIndex": 0,
+      "explanation": "The telephone lets people talk over long distances.",
+      "imageId": "telephone",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q7",
+      "type": "true-false",
+      "prompt": "Antibiotics fight bacteria that make people ill.",
+      "answer": true,
+      "explanation": "Penicillin was the first antibiotic medicine and saved millions of lives.",
+      "imageId": "microscope",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q8",
+      "type": "multiple-choice",
+      "prompt": "Why was paper such a big invention?",
+      "options": [
+        "Books became cheaper for more people",
+        "It was prettier",
+        "It was waterproof"
+      ],
+      "answerIndex": 0,
+      "explanation": "Paper made writing and books affordable for many more people.",
+      "imageId": "paper-scroll",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q9",
+      "type": "multiple-choice",
+      "prompt": "What did the wheel make possible?",
+      "options": [
+        "Carts and easier transport",
+        "Rain",
+        "Fire"
+      ],
+      "answerIndex": 0,
+      "explanation": "The wheel made heavy things much easier to move and trade.",
+      "imageId": "wheel",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "id-q10",
+      "type": "multiple-choice",
+      "prompt": "Which invention lets you talk to someone across the world?",
+      "options": [
+        "The wheel",
+        "The telephone",
+        "The paper"
+      ],
+      "answerIndex": 1,
+      "explanation": "The telephone, invented by Alexander Graham Bell, started it all.",
+      "imageId": "telephone",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "wheel",
+      "full": "images/wheel.webp",
+      "thumb": "images/wheel.thumb.webp"
+    },
+    {
+      "id": "paper-scroll",
+      "full": "images/paper-scroll.webp",
+      "thumb": "images/paper-scroll.thumb.webp"
+    },
+    {
+      "id": "steam-engine",
+      "full": "images/steam-engine.webp",
+      "thumb": "images/steam-engine.thumb.webp"
+    },
+    {
+      "id": "lightbulb",
+      "full": "images/lightbulb.webp",
+      "thumb": "images/lightbulb.thumb.webp"
+    },
+    {
+      "id": "telephone",
+      "full": "images/telephone.webp",
+      "thumb": "images/telephone.thumb.webp"
+    },
+    {
+      "id": "microscope",
+      "full": "images/microscope.webp",
+      "thumb": "images/microscope.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "wheel": {
+      "title": "2023.04.26 Cart Wheel on Stone Installation in Tsna Minsk Belarus",
+      "creator": "Rabbi Mendl",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023.04.26_Cart_Wheel_on_Stone_Installation_in_Tsna_Minsk_Belarus.jpg",
+      "attributionRequired": true
+    },
+    "paper-scroll": {
+      "title": "15th century Chinese scholar-physician, Japanese woodcut Wellcome L0034720",
+      "creator": "https://wellcomeimages.org/indexplus/obf_images/46/1f/f21073ca02aace385a2fa5ff895b.jpg\n\nGallery: https://wellcomeimages.org/indexplus/image/L0034720.html\nWellcome Collection gallery (2018-03-21): https://wellcomecollection.org/works/krvvb6xj CC-BY-4.0",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:15th_century_Chinese_scholar-physician,_Japanese_woodcut_Wellcome_L0034720.jpg",
+      "attributionRequired": true
+    },
+    "steam-engine": {
+      "title": "Anon - A Steam Engine - 11911",
+      "creator": "AnonymousUnknown author",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anon_-_A_Steam_Engine_-_11911.jpg",
+      "attributionRequired": true
+    },
+    "lightbulb": {
+      "title": "Edison-patent-light-bulb-l",
+      "creator": "The National Archives",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edison-patent-light-bulb-l.jpg",
+      "attributionRequired": true
+    },
+    "telephone": {
+      "title": "Antique German telephone (28401976212)",
+      "creator": "Thomas Quine",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antique_German_telephone_(28401976212).jpg",
+      "attributionRequired": true
+    },
+    "microscope": {
+      "title": "Barbara McClintock (1902-1992) shown in her laboratory in 1947",
+      "creator": "Smithsonian Institution/Science Service; Restored by Adam Cuerden",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barbara_McClintock_(1902-1992)_shown_in_her_laboratory_in_1947.jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "packId": "marine-life",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Marine Life",
+  "description": "Life under the waves.",
+  "icon": "fish",
+  "ageRange": "6-8",
+  "color": "#06b6d4",
+  "entries": [
+    {
+      "id": "ocean",
+      "title": "The Ocean",
+      "summary": "The ocean covers most of our planet.",
+      "body": "The ocean is a huge body of salty water. It makes about 70 percent of the Earth's surface. The water moves around in currents that travel all around the world.",
+      "facts": [
+        "The Pacific Ocean is the biggest ocean.",
+        "Ocean water is salty because rivers wash salt into it.",
+        "Most ocean life lives near the surface."
+      ],
+      "imageIds": [
+        "ocean"
+      ],
+      "keywords": [
+        "ocean",
+        "water"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "coral",
+      "title": "Coral Reefs",
+      "summary": "Coral reefs are busy underwater cities.",
+      "body": "Corals are small animals that build hard skeletons. Over many years these skeletons grow into big reefs. Fish, crabs and turtles all live in the reef, and reefs are home to about a quarter of all sea creatures.",
+      "facts": [
+        "Reefs are found in warm, shallow water.",
+        "Coral reefs are very bright and full of colour.",
+        "Coral is alive - it is not a rock."
+      ],
+      "imageIds": [
+        "coral-reef"
+      ],
+      "keywords": [
+        "coral",
+        "reef"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "whale",
+      "title": "Whales",
+      "summary": "Whales are the biggest animals on Earth.",
+      "body": "The blue whale is bigger than any dinosaur. Whales are mammals, so they have to come up to the surface to breathe. They travel long distances and sing to each other across many kilometres of water.",
+      "facts": [
+        "A blue whale's heart is as big as a small car.",
+        "Whales give birth to live babies and feed them with milk.",
+        "Sperm whales can dive deeper than any other animal."
+      ],
+      "imageIds": [
+        "whale"
+      ],
+      "keywords": [
+        "whale",
+        "ocean"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "octopus",
+      "title": "Octopus",
+      "summary": "Octopuses are clever sea animals with eight arms.",
+      "body": "An octopus has eight arms covered in suction cups. It can change colour to match the sea floor, squeeze into tiny cracks and open jars. Octopuses are very smart.",
+      "facts": [
+        "Octopuses have three hearts.",
+        "An octopus can taste things with its arms.",
+        "Baby octopuses are called paralarvae."
+      ],
+      "imageIds": [
+        "octopus"
+      ],
+      "keywords": [
+        "octopus",
+        "sea"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "turtle",
+      "title": "Sea Turtles",
+      "summary": "Sea turtles swim long distances to lay their eggs.",
+      "body": "A mother sea turtle comes out of the sea at night and lays her eggs in the warm sand. When the eggs hatch, the baby turtles race to the water. They come back to the same beach when they are grown.",
+      "facts": [
+        "Sea turtles can live for more than 50 years.",
+        "They feel the Earth's magnetic field to find their way.",
+        "Plastic bags look like jellyfish to turtles and can hurt them."
+      ],
+      "imageIds": [
+        "sea-turtle"
+      ],
+      "keywords": [
+        "turtle",
+        "sea"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "shark",
+      "title": "Sharks",
+      "summary": "Sharks have strong jaws and a great sense of smell.",
+      "body": "A shark's body is smooth and slippery and it swims by moving its tail from side to side. Sharks have an amazing sense of smell and can find food from far away. Most sharks are not dangerous to people.",
+      "facts": [
+        "A shark's teeth are replaced many times in its life.",
+        "Sharks have to keep swimming to breathe over their gills.",
+        "There are more than 500 kinds of shark."
+      ],
+      "imageIds": [
+        "shark"
+      ],
+      "keywords": [
+        "shark",
+        "fish"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "ml-q1",
+      "type": "multiple-choice",
+      "prompt": "How much of the Earth is covered by ocean?",
+      "options": [
+        "About 70 percent",
+        "About 20 percent",
+        "About 5 percent"
+      ],
+      "answerIndex": 0,
+      "explanation": "The ocean covers roughly 70 percent of our planet.",
+      "imageId": "ocean",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q2",
+      "type": "multiple-choice",
+      "prompt": "How many arms does an octopus have?",
+      "options": [
+        "Six",
+        "Eight",
+        "Ten"
+      ],
+      "answerIndex": 1,
+      "explanation": "An octopus has eight arms covered in suction cups.",
+      "imageId": "octopus",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q3",
+      "type": "true-false",
+      "prompt": "Whales are mammals, not fish.",
+      "answer": true,
+      "explanation": "Whales breathe air and feed their babies with milk.",
+      "imageId": "whale",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q4",
+      "type": "multiple-choice",
+      "prompt": "Where do sea turtles lay their eggs?",
+      "options": [
+        "In the sand",
+        "In the water",
+        "In coral"
+      ],
+      "answerIndex": 0,
+      "explanation": "The mother digs a hole in warm sand and lays her eggs there.",
+      "imageId": "sea-turtle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q5",
+      "type": "multiple-choice",
+      "prompt": "What do coral reefs look like?",
+      "options": [
+        "Bright underwater cities",
+        "Flat grey rocks",
+        "Empty sand"
+      ],
+      "answerIndex": 0,
+      "explanation": "Reefs are colourful and full of fish and other sea creatures.",
+      "imageId": "coral-reef",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q6",
+      "type": "short-answer",
+      "prompt": "What is the biggest animal on Earth?",
+      "acceptedAnswers": [
+        "the blue whale",
+        "blue whale",
+        "whale"
+      ],
+      "explanation": "The blue whale is the biggest animal that has ever lived.",
+      "imageId": "whale",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "ml-q7",
+      "type": "true-false",
+      "prompt": "A shark can smell food from very far away.",
+      "answer": true,
+      "explanation": "Sharks have a very strong sense of smell.",
+      "imageId": "shark",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q8",
+      "type": "multiple-choice",
+      "prompt": "What do baby turtles do first?",
+      "options": [
+        "Swim to the sea",
+        "Fly",
+        "Hunt for food"
+      ],
+      "answerIndex": 0,
+      "explanation": "The hatchlings hurry down the beach into the water.",
+      "imageId": "sea-turtle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q9",
+      "type": "multiple-choice",
+      "prompt": "Why do sharks have to keep swimming?",
+      "options": [
+        "To stay warm",
+        "To keep water moving over their gills",
+        "To look bigger"
+      ],
+      "answerIndex": 1,
+      "explanation": "Water must flow over the gills so the shark can breathe.",
+      "imageId": "shark",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ml-q10",
+      "type": "short-answer",
+      "prompt": "What is a coral reef full of?",
+      "acceptedAnswers": [
+        "fish",
+        "fish and other sea creatures",
+        "sand"
+      ],
+      "explanation": "Reefs are home to about a quarter of all sea creatures.",
+      "imageId": "coral-reef",
+      "difficulty": 2,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "ocean",
+      "full": "images/ocean.webp",
+      "thumb": "images/ocean.thumb.webp"
+    },
+    {
+      "id": "coral-reef",
+      "full": "images/coral-reef.webp",
+      "thumb": "images/coral-reef.thumb.webp"
+    },
+    {
+      "id": "whale",
+      "full": "images/whale.webp",
+      "thumb": "images/whale.thumb.webp"
+    },
+    {
+      "id": "octopus",
+      "full": "images/octopus.webp",
+      "thumb": "images/octopus.thumb.webp"
+    },
+    {
+      "id": "sea-turtle",
+      "full": "images/sea-turtle.webp",
+      "thumb": "images/sea-turtle.thumb.webp"
+    },
+    {
+      "id": "shark",
+      "full": "images/shark.webp",
+      "thumb": "images/shark.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "ocean": {
+      "title": "2010 mavericks competition edit1",
+      "creator": "2010_mavericks_competition.jpg: Shalom Jacobovitz\nderivative work: Brocken Inaglory ([[User talk:Brocken Inaglory|talk]])",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_mavericks_competition_edit1.jpg",
+      "attributionRequired": true
+    },
+    "coral-reef": {
+      "title": "Coral (Acropora hemprichii), Ras Katy, Sharm el-Sheij, Egipto, 2022-03-26, DD 108",
+      "creator": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coral_(Acropora_hemprichii),_Ras_Katy,_Sharm_el-Sheij,_Egipto,_2022-03-26,_DD_108.jpg",
+      "attributionRequired": true
+    },
+    "whale": {
+      "title": "2024-08-11 Blue whale Isfjord Svalbard 04",
+      "creator": "Carina Gsottbauer",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-08-11_Blue_whale_Isfjord_Svalbard_04.jpg",
+      "attributionRequired": true
+    },
+    "octopus": {
+      "title": "Octopus (28836592458)",
+      "creator": "Ansgar Gruber",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Octopus_(28836592458).jpg",
+      "attributionRequired": true
+    },
+    "sea-turtle": {
+      "title": "Chelonia mydas albino p1440273",
+      "creator": "David Monniaux",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chelonia_mydas_albino_p1440273.jpg",
+      "attributionRequired": true
+    },
+    "shark": {
+      "title": "Carcharodon carcharias (Linnaeus, 1758) (AM MA120955-1)",
+      "creator": "https://www.aucklandmuseum.com/collections-research/collections/record/am_naturalsciences-object-792543",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carcharodon_carcharias_(Linnaeus,_1758)_(AM_MA120955-1).jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "packId": "birds-and-insects",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Birds and Insects",
+  "description": "Feathers, wings and tiny busy bodies.",
+  "icon": "bird",
+  "ageRange": "6-8",
+  "color": "#0ea5e9",
+  "entries": [
+    {
+      "id": "birds-flight",
+      "title": "How Birds Fly",
+      "summary": "Birds have wings and feathers that help them fly.",
+      "body": "A bird's wing is shaped like a curved blade. When the bird moves its wings up and down, air pushes the wing up and lets the bird float forward. Feathers keep the body warm and help the bird steer.",
+      "facts": [
+        "Birds have hollow bones that make them light.",
+        "A bird can fly because its wings push air downwards.",
+        "Feathers are made of the same stuff as our hair."
+      ],
+      "imageIds": [
+        "eagle"
+      ],
+      "keywords": [
+        "bird",
+        "fly"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "beak",
+      "title": "Beaks",
+      "summary": "A bird's beak tells us what it eats.",
+      "body": "A hummingbird has a very long thin beak for drinking flower nectar. An eagle has a strong hooked beak for tearing meat. A duck has a flat wide beak for scooping food from water.",
+      "facts": [
+        "Birds do not have teeth - their beaks do the work.",
+        "A flamingo's beak is bent because it eats upside down.",
+        "Woodpeckers have strong beaks for drilling into wood."
+      ],
+      "imageIds": [
+        "duck-bill"
+      ],
+      "keywords": [
+        "bird",
+        "beak"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "bee",
+      "title": "Bees",
+      "summary": "Bees make honey and help flowers grow fruit.",
+      "body": "A bee drinks sweet nectar from a flower. Pollen sticks to its fuzzy body, and when the bee visits the next flower it carries the pollen with it. That is how fruit grows. Bees make honey from the extra nectar.",
+      "facts": [
+        "A bee visits about 2,000 flowers in one day.",
+        "Bees can see colours that we cannot see.",
+        "A bee's home is called a hive."
+      ],
+      "imageIds": [
+        "bee"
+      ],
+      "keywords": [
+        "bee",
+        "insect",
+        "honey"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "butterfly",
+      "title": "Butterflies",
+      "summary": "Butterflies change completely as they grow.",
+      "body": "A butterfly starts life as a tiny egg. It becomes a caterpillar that eats leaves, then it makes a chrysalis and stays inside while its body changes. Then a beautiful butterfly comes out.",
+      "facts": [
+        "Butterflies drink nectar with a tube like a straw.",
+        "Some butterflies travel thousands of kilometres.",
+        "You can tell a butterfly's age by counting the spots on its wings."
+      ],
+      "imageIds": [
+        "butterfly"
+      ],
+      "keywords": [
+        "butterfly",
+        "insect"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "ant",
+      "title": "Ants",
+      "summary": "Ants are tiny but they work together in huge teams.",
+      "body": "An ant colony has a queen, some workers and some soldiers. The workers carry food, clean the nest and look after the young. Ants talk to each other with smells.",
+      "facts": [
+        "An ant can carry many times its own weight.",
+        "Ants do not have ears, they feel vibrations through the ground.",
+        "Ants are found on almost every continent."
+      ],
+      "imageIds": [
+        "ant"
+      ],
+      "keywords": [
+        "ant",
+        "insect"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "bird-nests",
+      "title": "Nests",
+      "summary": "Birds build nests to keep their eggs safe.",
+      "body": "A nest is a safe home for eggs and baby birds. Some birds build nests from twigs, others from mud, grass or even their own saliva. The male swift builds its nest from saliva and sticks it to a cliff.",
+      "facts": [
+        "Some birds lay one egg and others lay many.",
+        "Baby birds are called chicks.",
+        "Nest shapes are different for every kind of bird."
+      ],
+      "imageIds": [
+        "nest"
+      ],
+      "keywords": [
+        "bird",
+        "nest"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "bi-q1",
+      "type": "multiple-choice",
+      "prompt": "What do bees collect from flowers?",
+      "options": [
+        "Nectar and pollen",
+        "Leaves",
+        "Small stones"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bees collect sweet nectar and pollen to make honey and to feed the young.",
+      "imageId": "bee",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q2",
+      "type": "multiple-choice",
+      "prompt": "What is a butterfly's baby called?",
+      "options": [
+        "A worm",
+        "A caterpillar",
+        "A pupa"
+      ],
+      "answerIndex": 1,
+      "explanation": "The caterpillar eats leaves, then becomes a chrysalis and then a butterfly.",
+      "imageId": "butterfly",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q3",
+      "type": "multiple-choice",
+      "prompt": "Why are bird bones hollow?",
+      "options": [
+        "So they are light for flying",
+        "So they can grow",
+        "So they are strong"
+      ],
+      "answerIndex": 0,
+      "explanation": "Hollow bones make birds light so flying takes less energy.",
+      "imageId": "eagle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q4",
+      "type": "short-answer",
+      "prompt": "What is an ant's home called?",
+      "acceptedAnswers": [
+        "a nest",
+        "nest",
+        "a colony",
+        "colony"
+      ],
+      "explanation": "Ants live together in a colony, usually in a nest.",
+      "imageId": "ant",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "bi-q5",
+      "type": "true-false",
+      "prompt": "All birds have the same shaped beak.",
+      "answer": false,
+      "explanation": "Each bird has a beak shaped for the food it eats.",
+      "imageId": "duck-bill",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q6",
+      "type": "multiple-choice",
+      "prompt": "How do baby birds get food?",
+      "options": [
+        "The parent brings it",
+        "They find it themselves",
+        "They eat dirt"
+      ],
+      "answerIndex": 0,
+      "explanation": "The mother and father bring food to the nest for the chicks.",
+      "imageId": "nest",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q7",
+      "type": "multiple-choice",
+      "prompt": "Which bird has a long thin beak for flower nectar?",
+      "options": [
+        "Duck",
+        "Hummingbird",
+        "Eagle"
+      ],
+      "answerIndex": 1,
+      "explanation": "A hummingbird's long beak reaches deep into flowers.",
+      "imageId": "eagle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q8",
+      "type": "true-false",
+      "prompt": "Ants can carry many times their own weight.",
+      "answer": true,
+      "explanation": "An ant can lift many times its own body weight.",
+      "imageId": "ant",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q9",
+      "type": "multiple-choice",
+      "prompt": "What is the baby of a bird called?",
+      "options": [
+        "A chick",
+        "A calf",
+        "A pup"
+      ],
+      "answerIndex": 0,
+      "explanation": "A baby bird is called a chick.",
+      "imageId": "nest",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "bi-q10",
+      "type": "short-answer",
+      "prompt": "What do we call the hard case a butterfly makes?",
+      "acceptedAnswers": [
+        "a chrysalis",
+        "chrysalis",
+        "a cocoon"
+      ],
+      "explanation": "It is called a chrysalis. Inside, the butterfly changes shape.",
+      "imageId": "butterfly",
+      "difficulty": 2,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "eagle",
+      "full": "images/eagle.webp",
+      "thumb": "images/eagle.thumb.webp"
+    },
+    {
+      "id": "duck-bill",
+      "full": "images/duck-bill.webp",
+      "thumb": "images/duck-bill.thumb.webp"
+    },
+    {
+      "id": "bee",
+      "full": "images/bee.webp",
+      "thumb": "images/bee.thumb.webp"
+    },
+    {
+      "id": "butterfly",
+      "full": "images/butterfly.webp",
+      "thumb": "images/butterfly.thumb.webp"
+    },
+    {
+      "id": "ant",
+      "full": "images/ant.webp",
+      "thumb": "images/ant.thumb.webp"
+    },
+    {
+      "id": "nest",
+      "full": "images/nest.webp",
+      "thumb": "images/nest.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "eagle": {
+      "title": "2017-09-09 (151) Falconry with Haliaeetus vocifer (African fish eagle) at Oberkapfenberg castle",
+      "creator": "GT1976",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-09-09_(151)_Falconry_with_Haliaeetus_vocifer_(African_fish_eagle)_at_Oberkapfenberg_castle.jpg",
+      "attributionRequired": true
+    },
+    "duck-bill": {
+      "title": "Anas platyrhynchos - Weiherwald - Karlsruhe 05",
+      "creator": "H. Zell",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_-_Weiherwald_-_Karlsruhe_05.jpg",
+      "attributionRequired": true
+    },
+    "bee": {
+      "title": "Apis mellifera - Brassica napus - Valingu",
+      "creator": "Ivar Leidus",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_-_Brassica_napus_-_Valingu.jpg",
+      "attributionRequired": true
+    },
+    "butterfly": {
+      "title": "Autumn leaf (Doleschallia bisaltide) Bali I",
+      "creator": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autumn_leaf_(Doleschallia_bisaltide)_Bali_I.jpg",
+      "attributionRequired": true
+    },
+    "ant": {
+      "title": "2017-07-20 (150) Formica rufa (red wood ant) at Zedlacher Paradies",
+      "creator": "GT1976",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-07-20_(150)_Formica_rufa_(red_wood_ant)_at_Zedlacher_Paradies.jpg",
+      "attributionRequired": true
+    },
+    "nest": {
+      "title": "Bird's nest on a truck compressor 1",
+      "creator": "Vitaliy VK",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bird's_nest_on_a_truck_compressor_1.jpg",
+      "attributionRequired": true
+    }
+  }
+}

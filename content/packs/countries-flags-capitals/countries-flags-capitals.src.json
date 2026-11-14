@@ -1,0 +1,344 @@
+{
+  "packId": "countries-flags-capitals",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Countries, Flags and Capitals",
+  "description": "Learn about the countries of the world.",
+  "icon": "flag",
+  "ageRange": "6-8",
+  "color": "#8b5cf6",
+  "entries": [
+    {
+      "id": "uae-flag",
+      "title": "The Flag of the UAE",
+      "summary": "The UAE flag has a red stripe, a green stripe, a black stripe and a white stripe.",
+      "body": "The flag of the United Arab Emirates has four colours in a vertical band on the hoist side. The colours are red, green, white and black. The seven white stars stand for the seven emirates that joined together.",
+      "facts": [
+        "The seven stars represent the seven emirates.",
+        "The colours red, green, white and black are shared by several Arab flags.",
+        "The flag was first raised in 1971 when the UAE was formed."
+      ],
+      "imageIds": [
+        "uae-flag"
+      ],
+      "keywords": [
+        "flag",
+        "uae"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "uae-capital",
+      "title": "Abu Dhabi",
+      "summary": "Abu Dhabi is the capital of the United Arab Emirates.",
+      "body": "Abu Dhabi sits on an island in the Persian Gulf. It is the biggest of the seven emirates and has grown very quickly. Dubai is the most famous emirate, but Abu Dhabi is the capital.",
+      "facts": [
+        "Abu Dhabi means 'father of the gazelle' in Arabic.",
+        "The UAE has seven emirates: Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah.",
+        "Abu Dhabi and Dubai are both UNESCO World Heritage cities."
+      ],
+      "imageIds": [
+        "abu-dhabi"
+      ],
+      "keywords": [
+        "uae",
+        "city"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "france",
+      "title": "France",
+      "summary": "France's capital is Paris.",
+      "body": "France is famous for the Eiffel Tower, for delicious food and for its many museums. The flag of France has three vertical stripes: blue, white and red.",
+      "facts": [
+        "The Eiffel Tower can grow about 15 centimetres in hot summer days.",
+        "France is called the Hexagon because of its shape on a map.",
+        "The Louvre is the biggest art museum in the world."
+      ],
+      "imageIds": [
+        "paris"
+      ],
+      "keywords": [
+        "country",
+        "france"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "japan",
+      "title": "Japan",
+      "summary": "Japan is an island country in East Asia.",
+      "body": "Japan is made of many islands. People there are famous for their amazing food, their trains and their cherry blossom trees in spring. Tokyo is the capital and the biggest city in the world.",
+      "facts": [
+        "Japan is made of more than 6,000 islands.",
+        "The Shinkansen bullet train travels about 300 kilometres an hour.",
+        "Japan has more than 100 active volcanoes."
+      ],
+      "imageIds": [
+        "japan-torii"
+      ],
+      "keywords": [
+        "country",
+        "japan"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "egypt",
+      "title": "Egypt",
+      "summary": "Egypt is home to the pyramids and the Nile.",
+      "body": "Egypt is in north east Africa and most people live along the Nile. The pyramids were built about 4,500 years ago as tombs for kings. Cairo is the capital.",
+      "facts": [
+        "The Great Pyramid is almost 4,500 years old.",
+        "The Nile is one of the longest rivers in the world.",
+        "Egypt is one of the oldest countries in the world."
+      ],
+      "imageIds": [
+        "pyramid"
+      ],
+      "keywords": [
+        "country",
+        "egypt"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "brazil",
+      "title": "Brazil",
+      "summary": "Brazil is the biggest country in South America.",
+      "body": "Brazil is home to the Amazon rainforest, which is the biggest forest on Earth. It also has the famous carnival with drums, dancers and bright feathers. Brasilia is the capital.",
+      "facts": [
+        "About 60 percent of the Amazon forest is in Brazil.",
+        "Brazil has won the football World Cup five times.",
+        "Portuguese is the main language of Brazil."
+      ],
+      "imageIds": [
+        "brazil"
+      ],
+      "keywords": [
+        "country",
+        "brazil"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "cc-q1",
+      "type": "multiple-choice",
+      "prompt": "What is the capital of the UAE?",
+      "options": [
+        "Dubai",
+        "Abu Dhabi",
+        "Sharjah"
+      ],
+      "answerIndex": 1,
+      "explanation": "Abu Dhabi is the capital of the United Arab Emirates.",
+      "imageId": "abu-dhabi",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q2",
+      "type": "multiple-choice",
+      "prompt": "How many emirates are in the UAE?",
+      "options": [
+        "Five",
+        "Six",
+        "Seven"
+      ],
+      "answerIndex": 2,
+      "explanation": "There are seven emirates, and the flag has seven stars for them.",
+      "imageId": "uae-flag",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q3",
+      "type": "multiple-choice",
+      "prompt": "What is the capital of France?",
+      "options": [
+        "Lyon",
+        "Paris",
+        "Marseille"
+      ],
+      "answerIndex": 1,
+      "explanation": "Paris is the capital of France and home of the Eiffel Tower.",
+      "imageId": "paris",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q4",
+      "type": "true-false",
+      "prompt": "The flag of France has three vertical stripes.",
+      "answer": true,
+      "explanation": "Blue, white and red stripes from left to right.",
+      "imageId": "paris",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q5",
+      "type": "multiple-choice",
+      "prompt": "Which country is made of thousands of islands in East Asia?",
+      "options": [
+        "Japan",
+        "Brazil",
+        "Egypt"
+      ],
+      "answerIndex": 0,
+      "explanation": "Japan is made of more than 6,000 islands.",
+      "imageId": "japan-torii",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q6",
+      "type": "multiple-choice",
+      "prompt": "Which river runs through Egypt?",
+      "options": [
+        "The Amazon",
+        "The Nile",
+        "The Thames"
+      ],
+      "answerIndex": 1,
+      "explanation": "Almost everyone in Egypt lives near the Nile.",
+      "imageId": "pyramid",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q7",
+      "type": "multiple-choice",
+      "prompt": "Which is the biggest country in South America?",
+      "options": [
+        "Chile",
+        "Brazil",
+        "Argentina"
+      ],
+      "answerIndex": 1,
+      "explanation": "Brazil is the biggest country in South America.",
+      "imageId": "brazil",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q8",
+      "type": "short-answer",
+      "prompt": "What is the biggest forest on Earth called?",
+      "acceptedAnswers": [
+        "the amazon",
+        "amazon",
+        "Amazon rainforest",
+        "amazon rainforest"
+      ],
+      "explanation": "The Amazon rainforest is the biggest forest on Earth.",
+      "imageId": "brazil",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "cc-q9",
+      "type": "true-false",
+      "prompt": "Dubai is the capital of the UAE.",
+      "answer": false,
+      "explanation": "Abu Dhabi is the capital. Dubai is the most famous emirate though.",
+      "imageId": "abu-dhabi",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cc-q10",
+      "type": "multiple-choice",
+      "prompt": "Which country is known for its carnival and football?",
+      "options": [
+        "Egypt",
+        "Brazil",
+        "France"
+      ],
+      "answerIndex": 1,
+      "explanation": "Brazil is famous for carnival and for its football team.",
+      "imageId": "brazil",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "uae-flag",
+      "full": "images/uae-flag.webp",
+      "thumb": "images/uae-flag.thumb.webp"
+    },
+    {
+      "id": "abu-dhabi",
+      "full": "images/abu-dhabi.webp",
+      "thumb": "images/abu-dhabi.thumb.webp"
+    },
+    {
+      "id": "paris",
+      "full": "images/paris.webp",
+      "thumb": "images/paris.thumb.webp"
+    },
+    {
+      "id": "japan-torii",
+      "full": "images/japan-torii.webp",
+      "thumb": "images/japan-torii.thumb.webp"
+    },
+    {
+      "id": "pyramid",
+      "full": "images/pyramid.webp",
+      "thumb": "images/pyramid.thumb.webp"
+    },
+    {
+      "id": "brazil",
+      "full": "images/brazil.webp",
+      "thumb": "images/brazil.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "uae-flag": {
+      "title": "CGI United Arab Emirates Flag",
+      "creator": "Aerra Carnicom",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CGI_United_Arab_Emirates_Flag.png",
+      "attributionRequired": true
+    },
+    "abu-dhabi": {
+      "title": "Abu Dhabi - Corniche – Skyline - الكورنيش - الأفق - panoramio",
+      "creator": "giggel",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_Dhabi_-_Corniche_%E2%80%93_Skyline_-_%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_-_%D8%A7%D9%84%D8%A3%D9%81%D9%82_-_panoramio.jpg",
+      "attributionRequired": true
+    },
+    "paris": {
+      "title": "Eiffel Tower, Paris 7th 002",
+      "creator": "Moonik",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower,_Paris_7th_002.JPG",
+      "attributionRequired": true
+    },
+    "japan-torii": {
+      "title": "Chinnen - Green Rooster Perched on Torii (Shrine Gate) - 1940.980 - Cleveland Museum of Art",
+      "creator": "Chinnen",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinnen_-_Green_Rooster_Perched_on_Torii_(Shrine_Gate)_-_1940.980_-_Cleveland_Museum_of_Art.tif",
+      "attributionRequired": true
+    },
+    "pyramid": {
+      "title": "Egypt.Giza.Sphinx.01",
+      "creator": "en:User:Hajor",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egypt.Giza.Sphinx.01.jpg",
+      "attributionRequired": true
+    },
+    "brazil": {
+      "title": "Christ the Redeemer, sunset",
+      "creator": "Íris Loren",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer,_sunset.jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "packId": "geography",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Geography",
+  "description": "Rivers, mountains, deserts and our big planet.",
+  "icon": "globe",
+  "ageRange": "6-8",
+  "color": "#10b981",
+  "entries": [
+    {
+      "id": "continents",
+      "title": "The Seven Continents",
+      "summary": "The land on Earth is split into seven big continents.",
+      "body": "From biggest to smallest the continents are Asia, Africa, North America, South America, Antarctica, Europe and Australia. About 30 percent of the land is covered by deserts, forests and mountains.",
+      "facts": [
+        "Asia is home to more than half the world's people.",
+        "Antarctica is the coldest continent.",
+        "Australia is the only continent that is also one country."
+      ],
+      "imageIds": [
+        "continents"
+      ],
+      "keywords": [
+        "continent",
+        "world"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "rivers",
+      "title": "Rivers",
+      "summary": "Rivers flow downhill to the sea.",
+      "body": "A river starts high up where water springs from the ground. It joins other streams and grows wider as it travels. The longest river in the world is the Nile in Africa, and the Amazon carries more water than any other river.",
+      "facts": [
+        "The Nile is about 6,650 kilometres long.",
+        "Rivers carry soil downhill and make fertile farmland.",
+        "The Amazon rainforest is named after the Amazon river."
+      ],
+      "imageIds": [
+        "river"
+      ],
+      "keywords": [
+        "river",
+        "water"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "mountains",
+      "title": "Mountains",
+      "summary": "Mountains are huge rocky hills.",
+      "body": "Mountains form when the ground pushes up. The tallest mountain above sea level is Mount Everest in the Himalayas. Mountains are called the roof of the world and they hold most of our fresh water in snow.",
+      "facts": [
+        "Everest is nearly 9 kilometres tall.",
+        "Snow on high mountains feeds rivers far away.",
+        "The Andes are the longest mountain range on land."
+      ],
+      "imageIds": [
+        "mountain"
+      ],
+      "keywords": [
+        "mountain",
+        "peak"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "deserts",
+      "title": "Deserts",
+      "summary": "Deserts are dry places with very little rain.",
+      "body": "The biggest hot desert is the Sahara in Africa. Deserts look empty but they are full of life. Camels, snakes and spiders live there, and plants store water in their thick stems.",
+      "facts": [
+        "The Sahara can be freezing at night and scorching in the day.",
+        "Camels can drink very little water for a long time.",
+        "About one third of the land on Earth is desert."
+      ],
+      "imageIds": [
+        "desert"
+      ],
+      "keywords": [
+        "desert",
+        "sand"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "islands",
+      "title": "Islands",
+      "summary": "Islands are pieces of land surrounded by water.",
+      "body": "An island can be a mountain that pokes out of the sea, or a piece of the mainland that the sea cut off. Australia is the biggest island and the smallest continent. Greenland is the biggest island.",
+      "facts": [
+        "Islands can be tiny like a rock in the sea.",
+        "The Pacific Ocean has more islands than all the other oceans together.",
+        "Islands can be joined by a bridge or a tunnel."
+      ],
+      "imageIds": [
+        "island"
+      ],
+      "keywords": [
+        "island",
+        "sea"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "maps",
+      "title": "Maps",
+      "summary": "Maps show places on a flat surface.",
+      "body": "A map is a picture of a place drawn flat. Maps can show the whole world or just one street. Symbols and colours on a map stand for things like roads, rivers and towns.",
+      "facts": [
+        "Green usually means forests or parks on a map.",
+        "A globe is a map of the world on a ball.",
+        "Compass points help you find north, south, east and west."
+      ],
+      "imageIds": [
+        "map"
+      ],
+      "keywords": [
+        "map",
+        "direction"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "geo-q1",
+      "type": "multiple-choice",
+      "prompt": "Which is the biggest continent?",
+      "options": [
+        "Africa",
+        "Asia",
+        "Europe"
+      ],
+      "answerIndex": 1,
+      "explanation": "Asia is the biggest continent.",
+      "imageId": "continents",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q2",
+      "type": "multiple-choice",
+      "prompt": "Which is the longest river in the world?",
+      "options": [
+        "The Nile",
+        "The Amazon",
+        "The Thames"
+      ],
+      "answerIndex": 0,
+      "explanation": "The Nile in Africa is the longest river.",
+      "imageId": "river",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q3",
+      "type": "multiple-choice",
+      "prompt": "What is the tallest mountain on Earth?",
+      "options": [
+        "Mount Everest",
+        "Mount Kenya",
+        "Mount Fuji"
+      ],
+      "answerIndex": 0,
+      "explanation": "Everest in the Himalayas is nearly 9 kilometres tall.",
+      "imageId": "mountain",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q4",
+      "type": "multiple-choice",
+      "prompt": "Which is the biggest hot desert?",
+      "options": [
+        "The Gobi",
+        "The Sahara",
+        "The Atacama"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Sahara in Africa is the biggest hot desert.",
+      "imageId": "desert",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q5",
+      "type": "true-false",
+      "prompt": "Australia is both the biggest island and the smallest continent.",
+      "answer": true,
+      "explanation": "That is a fun fact that is true.",
+      "imageId": "island",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q6",
+      "type": "multiple-choice",
+      "prompt": "What do most maps use green for?",
+      "options": [
+        "Water",
+        "Forests and parks",
+        "Cities"
+      ],
+      "answerIndex": 1,
+      "explanation": "Green usually stands for parks, forests or countryside.",
+      "imageId": "map",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q7",
+      "type": "short-answer",
+      "prompt": "What do we call a large area of land on Earth?",
+      "acceptedAnswers": [
+        "a continent",
+        "continent"
+      ],
+      "explanation": "The land is split into seven continents.",
+      "imageId": "continents",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "geo-q8",
+      "type": "multiple-choice",
+      "prompt": "What colour is water usually on a map?",
+      "options": [
+        "Green",
+        "Blue",
+        "Red"
+      ],
+      "answerIndex": 1,
+      "explanation": "Water is normally shown in blue on a map.",
+      "imageId": "map",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q9",
+      "type": "multiple-choice",
+      "prompt": "What do camels store in their humps?",
+      "options": [
+        "Water",
+        "Food",
+        "Sand"
+      ],
+      "answerIndex": 1,
+      "explanation": "A camel's hump stores fat, which it uses when food is hard to find.",
+      "imageId": "desert",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "geo-q10",
+      "type": "true-false",
+      "prompt": "Antarctica is the coldest continent.",
+      "answer": true,
+      "explanation": "Antarctica is the coldest and also the windiest continent.",
+      "imageId": "continents",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "continents",
+      "full": "images/continents.webp",
+      "thumb": "images/continents.thumb.webp"
+    },
+    {
+      "id": "river",
+      "full": "images/river.webp",
+      "thumb": "images/river.thumb.webp"
+    },
+    {
+      "id": "mountain",
+      "full": "images/mountain.webp",
+      "thumb": "images/mountain.thumb.webp"
+    },
+    {
+      "id": "desert",
+      "full": "images/desert.webp",
+      "thumb": "images/desert.thumb.webp"
+    },
+    {
+      "id": "island",
+      "full": "images/island.webp",
+      "thumb": "images/island.thumb.webp"
+    },
+    {
+      "id": "map",
+      "full": "images/map.webp",
+      "thumb": "images/map.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "continents": {
+      "title": "1581 Bunting clover leaf map",
+      "creator": "Heinrich Bünting",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1581_Bunting_clover_leaf_map.jpg",
+      "attributionRequired": true
+    },
+    "river": {
+      "title": "Blue stormy clouds at sunset with water reflection and a pirogue moored to the bank, in Don Det, Laos",
+      "creator": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_stormy_clouds_at_sunset_with_water_reflection_and_a_pirogue_moored_to_the_bank,_in_Don_Det,_Laos.jpg",
+      "attributionRequired": true
+    },
+    "mountain": {
+      "title": "Barn on Mastlé mountain Gherdëina",
+      "creator": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me a  message. \n\n\n\nThis image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically exclu",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barn_on_Mastl%C3%A9_mountain_Gherd%C3%ABina.jpg",
+      "attributionRequired": true
+    },
+    "desert": {
+      "title": "00065 sand collage",
+      "creator": "Siim Sepp (Sandatlas)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:00065_sand_collage.jpg",
+      "attributionRequired": true
+    },
+    "island": {
+      "title": "Beach on the island, Tropical clouds, Gili Meno Island, Indonesia",
+      "creator": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beach_on_the_island,_Tropical_clouds,_Gili_Meno_Island,_Indonesia.jpg",
+      "attributionRequired": true
+    },
+    "map": {
+      "title": "1375 Atlas Catalan Abraham Cresques",
+      "creator": "Cresques Abraham",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1375_Atlas_Catalan_Abraham_Cresques.jpg",
+      "attributionRequired": true
+    }
+  }
+}

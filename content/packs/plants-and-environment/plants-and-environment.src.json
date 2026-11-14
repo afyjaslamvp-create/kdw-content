@@ -1,0 +1,342 @@
+{
+  "packId": "plants-and-environment",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Plants and Environment",
+  "description": "Green things, gardens and taking care of our world.",
+  "icon": "leaf",
+  "ageRange": "6-8",
+  "color": "#22c55e",
+  "entries": [
+    {
+      "id": "plant-parts",
+      "title": "Parts of a Plant",
+      "summary": "Plants have roots, stems, leaves, flowers and fruits.",
+      "body": "The roots hold the plant in the ground and drink water. The stem carries water up to the leaves. The leaves catch sunlight to make food. Flowers make seeds, and fruits hold the seeds.",
+      "facts": [
+        "Roots can be very deep, some go down many metres.",
+        "The stem carries water and food around the plant.",
+        "Flowers are often colourful and smell sweet to attract bees."
+      ],
+      "imageIds": [
+        "plant-parts"
+      ],
+      "keywords": [
+        "plants",
+        "garden"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "photosynthesis",
+      "title": "How Plants Eat",
+      "summary": "Plants make their own food using sunlight.",
+      "body": "Inside the leaves, green chlorophyll catches sunlight. The plant combines sunlight, water from the roots and carbon dioxide from the air to make sugar for energy. Oxygen is released for us to breathe.",
+      "facts": [
+        "Plants are the base of nearly every food chain.",
+        "Plants also clean the air and help to keep it cool.",
+        "Most of the oxygen we breathe comes from the ocean too."
+      ],
+      "imageIds": [
+        "leaf-photosynthesis"
+      ],
+      "keywords": [
+        "plants",
+        "science"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "trees",
+      "title": "Trees",
+      "summary": "Trees are tall plants with strong trunks.",
+      "body": "Trees give us shade, fruit, wood and clean air. Their roots hold the soil together and their leaves drink water, which stops the ground from washing away. A mature tree can drink hundreds of litres of water in a day.",
+      "facts": [
+        "Trees release oxygen and take in carbon dioxide.",
+        "Old trees are called ancient or veteran trees.",
+        "Fungi live on and around tree roots and help them."
+      ],
+      "imageIds": [
+        "trees"
+      ],
+      "keywords": [
+        "trees",
+        "environment"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "recycling",
+      "title": "Recycling",
+      "summary": "Recycling turns old things into new ones.",
+      "body": "When we throw away paper, glass or metal, it can be cleaned and made into something new. Recycling uses much less energy than making things from raw materials. It also cuts down on rubbish and saves raw materials.",
+      "facts": [
+        "A recycled aluminium can uses a tiny amount of energy.",
+        "Composting is recycling for food waste.",
+        "One tree can make about 30,000 sheets of paper."
+      ],
+      "imageIds": [
+        "recycling"
+      ],
+      "keywords": [
+        "environment",
+        "recycling"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "habitats",
+      "title": "Habitats",
+      "summary": "Every animal and plant needs a place that suits it.",
+      "body": "A habitat is the natural home of a plant or animal. Deserts, rainforests, oceans and mountains are all habitats. When a habitat is damaged, many species can lose their homes.",
+      "facts": [
+        "A wetland habitat filters water and gives birds a place to rest.",
+        "The desert is a habitat for camels and cacti.",
+        "Cutting down forests can change the habitat of many animals."
+      ],
+      "imageIds": [
+        "habitat"
+      ],
+      "keywords": [
+        "environment",
+        "habitat"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "water-cycle",
+      "title": "The Water Cycle",
+      "summary": "Water goes round and round between the sea, sky and land.",
+      "body": "The Sun lifts water into the sky as vapour. It cools and forms clouds, and then rain, snow or hail falls. The water runs into rivers and the sea, and the whole journey starts again.",
+      "facts": [
+        "The water cycle has no beginning or end.",
+        "Snow is water in the solid state.",
+        "Groundwater is water that soaks into the soil."
+      ],
+      "imageIds": [
+        "water-cycle"
+      ],
+      "keywords": [
+        "environment",
+        "water"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "pe-q1",
+      "type": "multiple-choice",
+      "prompt": "Which part of a plant drinks water from the soil?",
+      "options": [
+        "The roots",
+        "The flowers",
+        "The leaves"
+      ],
+      "answerIndex": 0,
+      "explanation": "The roots hold the plant and drink water from the soil.",
+      "imageId": "plant-parts",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q2",
+      "type": "multiple-choice",
+      "prompt": "What do leaves use to make food?",
+      "options": [
+        "Sunlight",
+        "Moonlight",
+        "Darkness"
+      ],
+      "answerIndex": 0,
+      "explanation": "Leaves catch sunlight with green chlorophyll.",
+      "imageId": "leaf-photosynthesis",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q3",
+      "type": "multiple-choice",
+      "prompt": "What is a habitat?",
+      "options": [
+        "The natural home of a plant or animal",
+        "A kind of tree",
+        "A garden tool"
+      ],
+      "answerIndex": 0,
+      "explanation": "A habitat is the place where a plant or animal lives.",
+      "imageId": "habitat",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q4",
+      "type": "multiple-choice",
+      "prompt": "Which of these can be recycled?",
+      "options": [
+        "Plastic bottles",
+        "Banana peels",
+        "Used tissue"
+      ],
+      "answerIndex": 0,
+      "explanation": "Plastic bottles, paper, glass and metal can all be recycled.",
+      "imageId": "recycling",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q5",
+      "type": "true-false",
+      "prompt": "Trees help to hold the soil together with their roots.",
+      "answer": true,
+      "explanation": "Roots keep the ground in place and stop it washing away.",
+      "imageId": "trees",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q6",
+      "type": "short-answer",
+      "prompt": "What is the gas that plants give out for us to breathe?",
+      "acceptedAnswers": [
+        "oxygen",
+        "oxygen gas"
+      ],
+      "explanation": "Plants release oxygen during photosynthesis.",
+      "imageId": "leaf-photosynthesis",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "pe-q7",
+      "type": "multiple-choice",
+      "prompt": "What happens to water vapour high in the sky?",
+      "options": [
+        "It makes clouds",
+        "It turns to stone",
+        "It disappears"
+      ],
+      "answerIndex": 0,
+      "explanation": "Vapour cools and turns into tiny drops that make clouds.",
+      "imageId": "water-cycle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q8",
+      "type": "multiple-choice",
+      "prompt": "Which plant has spines instead of leaves?",
+      "options": [
+        "The cactus",
+        "The rose",
+        "The fern"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cactus spines are changed leaves that stop water being lost.",
+      "imageId": "plant-parts",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q9",
+      "type": "true-false",
+      "prompt": "Recycling uses less energy than making new things from raw materials.",
+      "answer": true,
+      "explanation": "Recycling saves energy and raw materials.",
+      "imageId": "recycling",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "pe-q10",
+      "type": "multiple-choice",
+      "prompt": "What do we call the natural home of a polar bear?",
+      "options": [
+        "A habitat",
+        "A zoo",
+        "A barn"
+      ],
+      "answerIndex": 0,
+      "explanation": "The polar ice is the polar bear's habitat.",
+      "imageId": "habitat",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "plant-parts",
+      "full": "images/plant-parts.webp",
+      "thumb": "images/plant-parts.thumb.webp"
+    },
+    {
+      "id": "leaf-photosynthesis",
+      "full": "images/leaf-photosynthesis.webp",
+      "thumb": "images/leaf-photosynthesis.thumb.webp"
+    },
+    {
+      "id": "trees",
+      "full": "images/trees.webp",
+      "thumb": "images/trees.thumb.webp"
+    },
+    {
+      "id": "recycling",
+      "full": "images/recycling.webp",
+      "thumb": "images/recycling.thumb.webp"
+    },
+    {
+      "id": "habitat",
+      "full": "images/habitat.webp",
+      "thumb": "images/habitat.thumb.webp"
+    },
+    {
+      "id": "water-cycle",
+      "full": "images/water-cycle.webp",
+      "thumb": "images/water-cycle.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "plant-parts": {
+      "title": "Beautiful monstrosities (4)",
+      "creator": "Henry Noel Humphreys (1810–1879)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beautiful_monstrosities_(4).png",
+      "attributionRequired": true
+    },
+    "leaf-photosynthesis": {
+      "title": "A Leaf in the Late Afternoon Sun",
+      "creator": "SavidgeMichael",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Leaf_in_the_Late_Afternoon_Sun.jpg",
+      "attributionRequired": true
+    },
+    "trees": {
+      "title": "21-224-5054 NNP Synevyr RB 18",
+      "creator": "Rbrechko",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:21-224-5054_NNP_Synevyr_RB_18.jpg",
+      "attributionRequired": true
+    },
+    "recycling": {
+      "title": "\"Contaminated\" Recycling bin",
+      "creator": "Alan Stanton",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Contaminated%22_Recycling_bin.jpg",
+      "attributionRequired": true
+    },
+    "habitat": {
+      "title": "2006 Pillar Point Marsh 1",
+      "creator": "Tracy Vierra",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Pillar_Point_Marsh_1.jpg",
+      "attributionRequired": true
+    },
+    "water-cycle": {
+      "title": "Diagram of the Water Cycle",
+      "creator": "Ehud Tal",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diagram_of_the_Water_Cycle.jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "packId": "vehicles-and-transport",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Vehicles and Transport",
+  "description": "How we move around the world.",
+  "icon": "car",
+  "ageRange": "6-8",
+  "color": "#eab308",
+  "entries": [
+    {
+      "id": "car",
+      "title": "Cars",
+      "summary": "Cars have wheels, an engine and seats for people.",
+      "body": "A car needs fuel or electricity to move. The engine turns that energy into turning wheels. Inside, pedals and a steering wheel let the driver control speed and direction. Cars also need brakes, tyres, mirrors and lights to be safe.",
+      "facts": [
+        "Brakes slow a car down and stop it.",
+        "Tyres grip the road; smooth tyres are dangerous.",
+        "Seat belts keep passengers safe if the car stops suddenly."
+      ],
+      "imageIds": [
+        "car"
+      ],
+      "keywords": [
+        "transport",
+        "car"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "train",
+      "title": "Trains",
+      "summary": "Trains run on rails and are great for long journeys.",
+      "body": "A train is pulled along by an engine, and it can be very long. Because the wheels run on fixed rails, trains use much less energy per passenger than cars. Many big cities have underground trains called the metro or tube.",
+      "facts": [
+        "Trains are one of the safest ways to travel.",
+        "Some trains are powered by electricity from overhead wires.",
+        "A train can carry hundreds of people."
+      ],
+      "imageIds": [
+        "train"
+      ],
+      "keywords": [
+        "transport",
+        "train"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "boat",
+      "title": "Boats and Ships",
+      "summary": "Boats float because of the shape of their hull.",
+      "body": "A boat floats because the water pushes up under it. Big ships are made of metal but they are hollow inside, so they still float. Cargo ships carry goods between countries and ferries carry people across water.",
+      "facts": [
+        "Ships float because they are hollow inside.",
+        "Sailboats use the wind to move.",
+        "Submarines can dive under the water."
+      ],
+      "imageIds": [
+        "ship"
+      ],
+      "keywords": [
+        "transport",
+        "boat"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "plane",
+      "title": "Aeroplanes",
+      "summary": "Aeroplanes fly because of their wings.",
+      "body": "An aeroplane's wings are shaped so that air moving past them lifts the plane up. Engines push the plane forward and the wings lift it. Aeroplanes can cross oceans in a few hours.",
+      "facts": [
+        "An aeroplane's wings create lift.",
+        "Aeroplanes fly higher than mountains and above most clouds.",
+        "Pilots check many instruments during a flight."
+      ],
+      "imageIds": [
+        "aeroplane"
+      ],
+      "keywords": [
+        "transport",
+        "plane"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "bicycle",
+      "title": "Bicycles",
+      "summary": "A bicycle is a simple machine with two wheels.",
+      "body": "A bicycle uses gears, levers and wheels - all simple machines. Gears make pedalling easier on hills. A bicycle needs no fuel and gives great exercise, which is why many cities now have bike lanes.",
+      "facts": [
+        "Bicycle gears make climbing hills easier.",
+        "Bicycles are powered by the rider's legs.",
+        "Bicycles cause no pollution while you ride them."
+      ],
+      "imageIds": [
+        "bicycle"
+      ],
+      "keywords": [
+        "transport",
+        "bicycle"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "safety-travel",
+      "title": "Safe Travel",
+      "summary": "Safe travel means using the right seat and belt.",
+      "body": "In a car everyone should wear a seat belt and children should sit in the back seat. On a bus or train you hold a rail and stay seated. When you cross a road you should stop, look both ways and listen.",
+      "facts": [
+        "Stop, look and listen before crossing a road.",
+        "Children should sit in the back seat of a car.",
+        "Seat belts keep you safe if the car stops suddenly."
+      ],
+      "imageIds": [
+        "crossing"
+      ],
+      "keywords": [
+        "transport",
+        "safety"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "vt-q1",
+      "type": "multiple-choice",
+      "prompt": "What stops a car?",
+      "options": [
+        "The brakes",
+        "The lights",
+        "The horn"
+      ],
+      "answerIndex": 0,
+      "explanation": "Brakes press on the wheels to slow the car down.",
+      "imageId": "car",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q2",
+      "type": "multiple-choice",
+      "prompt": "Why are trains good for long journeys?",
+      "options": [
+        "They use less energy per person",
+        "They are faster than planes",
+        "They never stop"
+      ],
+      "answerIndex": 0,
+      "explanation": "Running on rails means trains use much less energy than cars.",
+      "imageId": "train",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q3",
+      "type": "multiple-choice",
+      "prompt": "How does a ship float?",
+      "options": [
+        "It is hollow inside",
+        "It is very light",
+        "It is very big"
+      ],
+      "answerIndex": 0,
+      "explanation": "The hollow hull pushes the water aside and buoyancy lifts it up.",
+      "imageId": "ship",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q4",
+      "type": "multiple-choice",
+      "prompt": "What part of a plane makes it lift off the ground?",
+      "options": [
+        "The wings",
+        "The tail fin",
+        "The windows"
+      ],
+      "answerIndex": 0,
+      "explanation": "The shape of the wings pushes air down and lifts the plane.",
+      "imageId": "aeroplane",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q5",
+      "type": "multiple-choice",
+      "prompt": "What helps a bicycle go uphill?",
+      "options": [
+        "The gears",
+        "The bell",
+        "The basket"
+      ],
+      "answerIndex": 0,
+      "explanation": "Gears make pedalling easier when the road goes up.",
+      "imageId": "bicycle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q6",
+      "type": "true-false",
+      "prompt": "You should stop, look and listen before crossing a road.",
+      "answer": true,
+      "explanation": "Always stop, look both ways and listen for traffic.",
+      "imageId": "crossing",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q7",
+      "type": "multiple-choice",
+      "prompt": "Where should children sit in a car?",
+      "options": [
+        "Front seat",
+        "Back seat",
+        "On the roof"
+      ],
+      "answerIndex": 1,
+      "explanation": "Children should sit in the back seat, in the proper child seat.",
+      "imageId": "car",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q8",
+      "type": "short-answer",
+      "prompt": "What do we call an underground train in a big city?",
+      "acceptedAnswers": [
+        "the metro",
+        "metro",
+        "the tube",
+        "tube",
+        "a subway",
+        "subway"
+      ],
+      "explanation": "It is called the metro, the tube or the subway.",
+      "imageId": "train",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "vt-q9",
+      "type": "multiple-choice",
+      "prompt": "What is a submarine for?",
+      "options": [
+        "Sailing on the surface",
+        "Travelling under the water",
+        "Flying"
+      ],
+      "answerIndex": 1,
+      "explanation": "A submarine can dive under the water.",
+      "imageId": "ship",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "vt-q10",
+      "type": "multiple-choice",
+      "prompt": "Which vehicle makes no pollution while you use it?",
+      "options": [
+        "A petrol car",
+        "A bicycle",
+        "A bus"
+      ],
+      "answerIndex": 1,
+      "explanation": "A bicycle needs no fuel at all, so riding one makes no pollution.",
+      "imageId": "bicycle",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "car",
+      "full": "images/car.webp",
+      "thumb": "images/car.thumb.webp"
+    },
+    {
+      "id": "train",
+      "full": "images/train.webp",
+      "thumb": "images/train.thumb.webp"
+    },
+    {
+      "id": "ship",
+      "full": "images/ship.webp",
+      "thumb": "images/ship.thumb.webp"
+    },
+    {
+      "id": "aeroplane",
+      "full": "images/aeroplane.webp",
+      "thumb": "images/aeroplane.thumb.webp"
+    },
+    {
+      "id": "bicycle",
+      "full": "images/bicycle.webp",
+      "thumb": "images/bicycle.thumb.webp"
+    },
+    {
+      "id": "crossing",
+      "full": "images/crossing.webp",
+      "thumb": "images/crossing.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "car": {
+      "title": "02.Trinidad (59)",
+      "creator": "Elemaki",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:02.Trinidad_(59).JPG",
+      "attributionRequired": true
+    },
+    "train": {
+      "title": "Abandoned Train at Janakpur station, Nepal Railways--IMG 7925",
+      "creator": "Bijay chaurasia",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abandoned_Train_at_Janakpur_station,_Nepal_Railways--IMG_7925.jpg",
+      "attributionRequired": true
+    },
+    "ship": {
+      "title": "9358060 Sea Cargo Express",
+      "creator": "Cavernia",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:9358060_Sea_Cargo_Express.jpg",
+      "attributionRequired": true
+    },
+    "aeroplane": {
+      "title": "20181208 JASDF F-15C E-2 formation flight Naha Air Show 2018-8",
+      "creator": "Balon Greyjoy",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20181208_JASDF_F-15C_E-2_formation_flight_Naha_Air_Show_2018-8.jpg",
+      "attributionRequired": true
+    },
+    "bicycle": {
+      "title": "20180924 UCI Road World Championships Innsbruck Men U23 ITT Callum Scotson 850 8281",
+      "creator": "Granada",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20180924_UCI_Road_World_Championships_Innsbruck_Men_U23_ITT_Callum_Scotson_850_8281.jpg",
+      "attributionRequired": true
+    },
+    "crossing": {
+      "title": "20220907 zebra crossing in the NL",
+      "creator": "Ziko van Dijk",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20220907_zebra_crossing_in_the_NL.jpg",
+      "attributionRequired": true
+    }
+  }
+}

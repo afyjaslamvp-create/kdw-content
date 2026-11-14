@@ -1,0 +1,343 @@
+{
+  "packId": "cultures-and-festivals",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Cultures and Festivals",
+  "description": "Celebrations and traditions around the world.",
+  "icon": "mask",
+  "ageRange": "6-8",
+  "color": "#db2777",
+  "entries": [
+    {
+      "id": "eid",
+      "title": "Eid",
+      "summary": "Eid is a happy time for Muslims around the world.",
+      "body": "Eid al-Fitr marks the end of the month of Ramadan, when people fast from dawn to sunset. Families come together, new clothes are worn, and food is shared. Eid al-Adha is the Festival of Sacrifice.",
+      "facts": [
+        "Eid al-Fitr comes after Ramadan.",
+        "Families visit each other and give gifts.",
+        "Eid al-Adha is also called the Festival of Sacrifice."
+      ],
+      "imageIds": [
+        "eid-celebration"
+      ],
+      "keywords": [
+        "culture",
+        "festivals"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "christmas",
+      "title": "Christmas",
+      "summary": "Christmas is celebrated on 25 December.",
+      "body": "Many families in Christian countries celebrate Christmas with a decorated tree, gifts and a special meal. For Christians, Christmas celebrates the birth of Jesus. In some countries Santa Claus brings the presents.",
+      "facts": [
+        "Christmas Day is the 25th of December.",
+        "The Christmas tree is a tradition from Germany.",
+        "Christmas is a religious and also a family celebration."
+      ],
+      "imageIds": [
+        "christmas"
+      ],
+      "keywords": [
+        "culture",
+        "festivals"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "diwali",
+      "title": "Diwali",
+      "summary": "Diwali is the festival of lights in India.",
+      "body": "Diwali is celebrated by Hindus around the world. Houses are cleaned and decorated with lamps, and fireworks are lit. The festival celebrates good winning over evil, and light winning over darkness.",
+      "facts": [
+        "Diwali means a row of lamps.",
+        "It is celebrated in the autumn, often in October or November.",
+        "People wear new clothes and share sweets."
+      ],
+      "imageIds": [
+        "diwali-lamps"
+      ],
+      "keywords": [
+        "culture",
+        "festivals"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "new-year",
+      "title": "New Year",
+      "summary": "Many countries welcome the new year with a count down.",
+      "body": "When the clock strikes midnight on the last night of the year, people often shout 'Happy New Year'. In Japan people clean their houses and visit the temple at the start of the year. In many places fireworks are set off.",
+      "facts": [
+        "The count down happens at midnight on 31 December.",
+        "In Japan, people visit a temple at the start of the year.",
+        "Fireworks are a traditional part of New Year celebrations."
+      ],
+      "imageIds": [
+        "fireworks"
+      ],
+      "keywords": [
+        "culture",
+        "festivals"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "uae-national-day",
+      "title": "UAE National Day",
+      "summary": "The UAE celebrates its national day on 2 December.",
+      "body": "On 2 December the UAE remembers the day the seven emirates joined together in 1971. People decorate their cars and homes with flags, and there are parades, music and food.",
+      "facts": [
+        "National Day is on the 2nd of December.",
+        "It marks the union of the seven emirates in 1971.",
+        "Cars and homes are decorated with flags."
+      ],
+      "imageIds": [
+        "uae-flag"
+      ],
+      "keywords": [
+        "culture",
+        "uae"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "traditions",
+      "title": "Traditions",
+      "summary": "Traditions are customs that are passed down.",
+      "body": "A tradition is something a family or community does again and again, like welcoming guests with tea or dressing up for a festival. Traditions change a little over time, and they can be different in every country.",
+      "facts": [
+        "Traditions are customs passed down through generations.",
+        "Food, clothes and greetings are all part of traditions.",
+        "Every country and family has its own traditions."
+      ],
+      "imageIds": [
+        "traditional-market"
+      ],
+      "keywords": [
+        "culture",
+        "traditions"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "cf-q1",
+      "type": "multiple-choice",
+      "prompt": "When is UAE National Day?",
+      "options": [
+        "2 December",
+        "1 January",
+        "25 December"
+      ],
+      "answerIndex": 0,
+      "explanation": "UAE National Day is on 2 December.",
+      "imageId": "uae-flag",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q2",
+      "type": "multiple-choice",
+      "prompt": "Which festival is known as the festival of lights?",
+      "options": [
+        "Diwali",
+        "Eid",
+        "Christmas"
+      ],
+      "answerIndex": 0,
+      "explanation": "Diwali is celebrated with lamps and lights.",
+      "imageId": "diwali-lamps",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q3",
+      "type": "true-false",
+      "prompt": "Eid al-Fitr comes after the month of Ramadan.",
+      "answer": true,
+      "explanation": "It marks the end of Ramadan, the month of fasting.",
+      "imageId": "eid-celebration",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q4",
+      "type": "multiple-choice",
+      "prompt": "On what date is Christmas Day?",
+      "options": [
+        "25 December",
+        "2 December",
+        "1 January"
+      ],
+      "answerIndex": 0,
+      "explanation": "Christmas is celebrated on the 25th of December.",
+      "imageId": "christmas",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q5",
+      "type": "multiple-choice",
+      "prompt": "What do people in Japan do at the start of the year?",
+      "options": [
+        "Clean their house and visit a temple",
+        "Go to the beach",
+        "Stay in bed"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cleaning and temple visits are New Year traditions in Japan.",
+      "imageId": "fireworks",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q6",
+      "type": "short-answer",
+      "prompt": "What is a tradition?",
+      "acceptedAnswers": [
+        "a custom passed down",
+        "custom",
+        "tradition"
+      ],
+      "explanation": "A tradition is a custom that is passed down through generations.",
+      "imageId": "traditional-market",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "cf-q7",
+      "type": "multiple-choice",
+      "prompt": "When does the count down to the new year happen?",
+      "options": [
+        "At midnight on 31 December",
+        "At sunrise",
+        "At lunch time"
+      ],
+      "answerIndex": 0,
+      "explanation": "The count down happens at midnight on New Year's Eve.",
+      "imageId": "fireworks",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q8",
+      "type": "multiple-choice",
+      "prompt": "What does the UAE National Day remember?",
+      "options": [
+        "The union of the seven emirates in 1971",
+        "The first oil well",
+        "The first school"
+      ],
+      "answerIndex": 0,
+      "explanation": "It marks the day the seven emirates joined together.",
+      "imageId": "uae-flag",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q9",
+      "type": "true-false",
+      "prompt": "Traditions can be different in every country.",
+      "answer": true,
+      "explanation": "Food, clothes and greetings differ from place to place.",
+      "imageId": "traditional-market",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "cf-q10",
+      "type": "multiple-choice",
+      "prompt": "What is shared at Eid celebrations?",
+      "options": [
+        "Food with family",
+        "Sports kits",
+        "Books"
+      ],
+      "answerIndex": 0,
+      "explanation": "Families come together and share food and gifts.",
+      "imageId": "eid-celebration",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "eid-celebration",
+      "full": "images/eid-celebration.webp",
+      "thumb": "images/eid-celebration.thumb.webp"
+    },
+    {
+      "id": "christmas",
+      "full": "images/christmas.webp",
+      "thumb": "images/christmas.thumb.webp"
+    },
+    {
+      "id": "diwali-lamps",
+      "full": "images/diwali-lamps.webp",
+      "thumb": "images/diwali-lamps.thumb.webp"
+    },
+    {
+      "id": "fireworks",
+      "full": "images/fireworks.webp",
+      "thumb": "images/fireworks.thumb.webp"
+    },
+    {
+      "id": "uae-flag",
+      "full": "images/uae-flag.webp",
+      "thumb": "images/uae-flag.thumb.webp"
+    },
+    {
+      "id": "traditional-market",
+      "full": "images/traditional-market.webp",
+      "thumb": "images/traditional-market.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "eid-celebration": {
+      "title": "Djibouti-Eid-Celebration",
+      "creator": "Nikolai Sverchkov and, possibly, Nikolai Gumilev",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Djibouti-Eid-Celebration.jpg",
+      "attributionRequired": true
+    },
+    "christmas": {
+      "title": "Christmas Tree and Presents",
+      "creator": "Alhill42",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christmas_Tree_and_Presents.jpg",
+      "attributionRequired": true
+    },
+    "diwali-lamps": {
+      "title": "Decoration in Diwali Festival",
+      "creator": "Drpbhaga2023",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Decoration_in_Diwali_Festival.jpg",
+      "attributionRequired": true
+    },
+    "fireworks": {
+      "title": "Anjuna Beach, Goa, India, New Year's Eve, Fireworks in the sky, Beach party",
+      "creator": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anjuna_Beach,_Goa,_India,_New_Year's_Eve,_Fireworks_in_the_sky,_Beach_party.jpg",
+      "attributionRequired": true
+    },
+    "uae-flag": {
+      "title": "CGI United Arab Emirates Flag",
+      "creator": "Aerra Carnicom",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CGI_United_Arab_Emirates_Flag.png",
+      "attributionRequired": true
+    },
+    "traditional-market": {
+      "title": "Abkhazian Market (228825695)",
+      "creator": "Aleksei Ivanov",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abkhazian_Market_(228825695).jpeg",
+      "attributionRequired": true
+    }
+  }
+}

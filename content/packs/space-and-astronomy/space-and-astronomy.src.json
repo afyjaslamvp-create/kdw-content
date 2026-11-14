@@ -1,0 +1,341 @@
+{
+  "packId": "space-and-astronomy",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Space and Astronomy",
+  "description": "Look up at the stars and travel far.",
+  "icon": "rocket",
+  "ageRange": "6-8",
+  "color": "#6366f1",
+  "entries": [
+    {
+      "id": "solar-system",
+      "title": "The Solar System",
+      "summary": "Our Sun has eight planets going around it.",
+      "body": "The Sun is at the centre and eight planets travel around it. From closest to farthest they are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Between them are lots of moons, asteroids and comets.",
+      "facts": [
+        "The Sun is 109 times wider than the Earth.",
+        "Jupiter is the biggest planet.",
+        "It takes Earth 365 days to go around the Sun."
+      ],
+      "imageIds": [
+        "solar-system"
+      ],
+      "keywords": [
+        "space",
+        "planet"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "moon",
+      "title": "The Moon",
+      "summary": "The Moon is Earth's neighbour in space.",
+      "body": "The Moon goes around the Earth about once a month. The Moon has no air and no water, and its surface is covered in craters made by ancient impacts. People have walked on the Moon and left footprints there.",
+      "facts": [
+        "The Moon has no atmosphere, so there is no wind.",
+        "Apollo 11 landed on the Moon in 1969.",
+        "The Moon is about a quarter the width of the Earth."
+      ],
+      "imageIds": [
+        "moon-surface"
+      ],
+      "keywords": [
+        "moon",
+        "space"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "planets",
+      "title": "The Planets",
+      "summary": "Every planet is different.",
+      "body": "Mercury is the smallest planet and the closest to the Sun. Jupiter is the biggest and has a giant storm called the Great Red Spot. Saturn has beautiful rings made of ice and rock. Neptune is the coldest and windiest planet.",
+      "facts": [
+        "Four planets are called rocky planets.",
+        "Venus is the hottest planet because its thick blanket of gas holds heat.",
+        "Uranus spins on its side."
+      ],
+      "imageIds": [
+        "saturn"
+      ],
+      "keywords": [
+        "planet",
+        "space"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "astronaut",
+      "title": "Astronauts",
+      "summary": "Astronauts are people who go into space.",
+      "body": "Astronauts wear a spacesuit that gives them air and keeps them safe. Inside a spacecraft they can float because there is no pull towards the floor. Astronauts on the International Space Station do science and look down at the Earth.",
+      "facts": [
+        "The Space Station goes around the Earth about every 90 minutes.",
+        "Astronauts grow a little taller in space.",
+        "There have been more than 300 people from about 20 countries."
+      ],
+      "imageIds": [
+        "astronaut"
+      ],
+      "keywords": [
+        "astronaut",
+        "space"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "stars",
+      "title": "Stars",
+      "summary": "Stars are huge balls of hot gas that make their own light.",
+      "body": "The Sun is the closest star to us. Stars look tiny because they are very far away, but many of them are much bigger than the Sun. A group of stars that looks like a shape in the sky is called a constellation.",
+      "facts": [
+        "The Sun is about 93 million miles away.",
+        "Red stars are cooler than blue stars.",
+        "Shooting stars are really meteors - bits of space rock burning up."
+      ],
+      "imageIds": [
+        "night-stars"
+      ],
+      "keywords": [
+        "star",
+        "space"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "first-moon-landing",
+      "title": "The First Moon Landing",
+      "summary": "People walked on the Moon in 1969.",
+      "body": "On 20 July 1969 the Apollo 11 spacecraft landed on the Moon. Neil Armstrong and Buzz Aldrin stepped out and left footprints that are still there today, because there is no wind to blow them away.",
+      "facts": [
+        "The footprints will stay on the Moon for millions of years.",
+        "Six people have walked on the Moon.",
+        "The mission took about eight days to reach the Moon."
+      ],
+      "imageIds": [
+        "moon-landing"
+      ],
+      "keywords": [
+        "moon",
+        "history"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "sa-q1",
+      "type": "multiple-choice",
+      "prompt": "How many planets go around our Sun?",
+      "options": [
+        "Seven",
+        "Eight",
+        "Nine"
+      ],
+      "answerIndex": 1,
+      "explanation": "There are eight planets in our solar system.",
+      "imageId": "solar-system",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q2",
+      "type": "multiple-choice",
+      "prompt": "Which is the biggest planet?",
+      "options": [
+        "Earth",
+        "Jupiter",
+        "Mars"
+      ],
+      "answerIndex": 1,
+      "explanation": "Jupiter is the biggest planet and has a giant storm on it.",
+      "imageId": "saturn",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q3",
+      "type": "multiple-choice",
+      "prompt": "Which planet has beautiful rings?",
+      "options": [
+        "Mars",
+        "Neptune",
+        "Saturn"
+      ],
+      "answerIndex": 2,
+      "explanation": "Saturn's rings are made of ice and rock.",
+      "imageId": "saturn",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q4",
+      "type": "true-false",
+      "prompt": "The Moon has air and wind like Earth.",
+      "answer": false,
+      "explanation": "The Moon has no air, so there is no wind or weather at all.",
+      "imageId": "moon-surface",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q5",
+      "type": "multiple-choice",
+      "prompt": "What is a group of stars in the sky called?",
+      "options": [
+        "A galaxy",
+        "A constellation",
+        "A planet"
+      ],
+      "answerIndex": 1,
+      "explanation": "A constellation is a pattern of stars, like the Big Dipper.",
+      "imageId": "night-stars",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q6",
+      "type": "short-answer",
+      "prompt": "In what year did people first walk on the Moon?",
+      "acceptedAnswers": [
+        "1969",
+        "in 1969"
+      ],
+      "explanation": "Apollo 11 landed on the Moon on 20 July 1969.",
+      "imageId": "moon-landing",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "sa-q7",
+      "type": "multiple-choice",
+      "prompt": "Why do astronauts float inside a spacecraft?",
+      "options": [
+        "There is no pull towards the floor",
+        "They are swimming",
+        "The room is full of air"
+      ],
+      "answerIndex": 0,
+      "explanation": "In orbit everything is in free fall, so they float.",
+      "imageId": "astronaut",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q8",
+      "type": "multiple-choice",
+      "prompt": "Which planet is closest to the Sun?",
+      "options": [
+        "Venus",
+        "Mercury",
+        "Earth"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mercury is the closest planet to the Sun.",
+      "imageId": "solar-system",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q9",
+      "type": "true-false",
+      "prompt": "The footprints on the Moon have been blown away by wind.",
+      "answer": false,
+      "explanation": "There is no wind on the Moon, so the footprints are still there.",
+      "imageId": "moon-landing",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "sa-q10",
+      "type": "short-answer",
+      "prompt": "What is the closest star to Earth?",
+      "acceptedAnswers": [
+        "the sun",
+        "sun",
+        "the Sun"
+      ],
+      "explanation": "The Sun is our nearest star.",
+      "imageId": "night-stars",
+      "difficulty": 2,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "solar-system",
+      "full": "images/solar-system.webp",
+      "thumb": "images/solar-system.thumb.webp"
+    },
+    {
+      "id": "moon-surface",
+      "full": "images/moon-surface.webp",
+      "thumb": "images/moon-surface.thumb.webp"
+    },
+    {
+      "id": "saturn",
+      "full": "images/saturn.webp",
+      "thumb": "images/saturn.thumb.webp"
+    },
+    {
+      "id": "astronaut",
+      "full": "images/astronaut.webp",
+      "thumb": "images/astronaut.thumb.webp"
+    },
+    {
+      "id": "night-stars",
+      "full": "images/night-stars.webp",
+      "thumb": "images/night-stars.thumb.webp"
+    },
+    {
+      "id": "moon-landing",
+      "full": "images/moon-landing.webp",
+      "thumb": "images/moon-landing.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "solar-system": {
+      "title": "Diagram of the Earths Solar System",
+      "creator": "D A R C 12345",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diagram_of_the_Earths_Solar_System.png",
+      "attributionRequired": true
+    },
+    "moon-surface": {
+      "title": "Closer shot of the craters of the Moon",
+      "creator": "Mrzundapp",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Closer_shot_of_the_craters_of_the_Moon.jpg",
+      "attributionRequired": true
+    },
+    "saturn": {
+      "title": "Edge-On View of Saturn's Rings (1996-16-415)",
+      "creator": "Credit: Erich Karkoschka (University of Arizona Lunar &amp; Planetary Lab) and NASA",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edge-On_View_of_Saturn's_Rings_(1996-16-415).jpg",
+      "attributionRequired": true
+    },
+    "astronaut": {
+      "title": "Bruce McCandless II during EVA in 1984",
+      "creator": "NASA",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruce_McCandless_II_during_EVA_in_1984.jpg",
+      "attributionRequired": true
+    },
+    "night-stars": {
+      "title": "035 Vertical panorama of the Milky Way during Perseids seen from Oeschinensee Photo by Giles Laurent",
+      "creator": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:035_Vertical_panorama_of_the_Milky_Way_during_Perseids_seen_from_Oeschinensee_Photo_by_Giles_Laurent.jpg",
+      "attributionRequired": true
+    },
+    "moon-landing": {
+      "title": "AS11-40-5874 - Apollo 11 - Apollo 11 Mission image - Astronaut Edwin Aldrin poses beside the U.S. flag that has been placed on the moon - NARA - 16685049",
+      "creator": "Unknown authorUnknown author or not provided",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:AS11-40-5874_-_Apollo_11_-_Apollo_11_Mission_image_-_Astronaut_Edwin_Aldrin_poses_beside_the_U.S._flag_that_has_been_placed_on_the_moon_-_NARA_-_16685049.jpg",
+      "attributionRequired": true
+    }
+  }
+}

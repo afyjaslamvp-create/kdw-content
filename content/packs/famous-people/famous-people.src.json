@@ -1,0 +1,344 @@
+{
+  "packId": "famous-people",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Famous People",
+  "description": "Great people who changed the world.",
+  "icon": "person",
+  "ageRange": "6-8",
+  "color": "#0ea5e9",
+  "entries": [
+    {
+      "id": "marisa",
+      "title": "Marie Curie",
+      "summary": "Marie Curie discovered radium and won two Nobel Prizes.",
+      "body": "Marie Curie was born in Poland and moved to France to study. She was the first woman to win a Nobel Prize and the only person to win one in two different sciences. She discovered radium and polonium.",
+      "facts": [
+        "She was the first woman to win a Nobel Prize.",
+        "She won Nobel Prizes in physics and in chemistry.",
+        "Her research helped doctors treat some illnesses."
+      ],
+      "imageIds": [
+        "laboratory"
+      ],
+      "keywords": [
+        "people",
+        "science"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "ibn-sina",
+      "title": "Ibn Sina",
+      "summary": "Ibn Sina was a great doctor and writer from Persia.",
+      "body": "Ibn Sina, also known as Avicenna, was born near Persia and wrote about medicine and philosophy. His book 'The Canon of Medicine' was used by doctors in Europe for hundreds of years.",
+      "facts": [
+        "His Canon of Medicine was taught in European universities.",
+        "He wrote more than 450 books and treatises.",
+        "He is often called the Prince of Physicians."
+      ],
+      "imageIds": [
+        "library"
+      ],
+      "keywords": [
+        "people",
+        "books"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "wright-brothers",
+      "title": "The Wright Brothers",
+      "summary": "The Wright brothers made the first powered flight.",
+      "body": "Orville and Wilbur Wright were bicycle makers from Ohio. They built their own wings and tested them over the sand dunes at Kitty Hawk. In 1903 their plane stayed in the air for 12 seconds.",
+      "facts": [
+        "They were bicycle makers before they were pilots.",
+        "Their first powered flight lasted 12 seconds.",
+        "They tested gliders before building a powered plane."
+      ],
+      "imageIds": [
+        "aeroplane"
+      ],
+      "keywords": [
+        "people",
+        "flight"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "al-khwarizmi",
+      "title": "Al-Khwarizmi",
+      "summary": "Al-Khwarizmi is called the father of algebra.",
+      "body": "Al-Khwarizmi lived in Baghdad and wrote a book that explained how to solve equations. His name became the word 'algorithm', which is a set of steps to follow, like in a computer recipe.",
+      "facts": [
+        "His name is the origin of the word algorithm.",
+        "He worked in the House of Wisdom in Baghdad.",
+        "He wrote about solving equations with letters."
+      ],
+      "imageIds": [
+        "math-manuscript"
+      ],
+      "keywords": [
+        "people",
+        "maths"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "malala",
+      "title": "Malala Yousafzai",
+      "summary": "Malala fights for every girl to go to school.",
+      "body": "Malala is from Pakistan. When she was a teenager she was shot for wanting girls to be allowed to go to school, and she survived. She became the youngest ever winner of the Nobel Peace Prize.",
+      "facts": [
+        "She won the Nobel Peace Prize when she was 17.",
+        "She campaigns for girls' education around the world.",
+        "There is a Malala Fund that helps girls go to school."
+      ],
+      "imageIds": [
+        "school-girl"
+      ],
+      "keywords": [
+        "people",
+        "education"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "hippocrates",
+      "title": "Hippocrates",
+      "summary": "Hippocrates is called the father of medicine.",
+      "body": "Hippocrates was a doctor on the Greek island of Kos about 2,400 years ago. He wrote that illness should be treated by studying the whole person, not just the body. Doctors still take an oath named after him.",
+      "facts": [
+        "The Hippocratic oath is still used by doctors today.",
+        "He taught that doctors should study the whole patient.",
+        "He wrote one of the first medical books."
+      ],
+      "imageIds": [
+        "medical-text"
+      ],
+      "keywords": [
+        "people",
+        "medicine"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "fp-q1",
+      "type": "multiple-choice",
+      "prompt": "Who was the first woman to win a Nobel Prize?",
+      "options": [
+        "Marie Curie",
+        "Marie Curie",
+        "Ada Lovelace"
+      ],
+      "answerIndex": 0,
+      "explanation": "Marie Curie won Nobel Prizes in physics and chemistry.",
+      "imageId": "laboratory",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q2",
+      "type": "multiple-choice",
+      "prompt": "Which word comes from the name Al-Khwarizmi?",
+      "options": [
+        "Algebra",
+        "Algorithm",
+        "Almanac"
+      ],
+      "answerIndex": 1,
+      "explanation": "The word 'algorithm' comes from his name.",
+      "imageId": "math-manuscript",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q3",
+      "type": "multiple-choice",
+      "prompt": "Who made the first powered flight?",
+      "options": [
+        "The Wright brothers",
+        "Leonardo da Vinci",
+        "The Romans"
+      ],
+      "answerIndex": 0,
+      "explanation": "Orville and Wilbur Wright flew their powered plane in 1903.",
+      "imageId": "aeroplane",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q4",
+      "type": "short-answer",
+      "prompt": "What was Malala Yousafzai famous for?",
+      "acceptedAnswers": [
+        "girl's education",
+        "girls education",
+        "education for girls",
+        "the right to education for girls"
+      ],
+      "explanation": "Malala campaigned for every girl to be allowed to go to school.",
+      "imageId": "school-girl",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "fp-q5",
+      "type": "true-false",
+      "prompt": "Ibn Sina's book on medicine was used in Europe for hundreds of years.",
+      "answer": true,
+      "explanation": "The Canon of Medicine was taught in European universities for centuries.",
+      "imageId": "library",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q6",
+      "type": "multiple-choice",
+      "prompt": "Who is called the father of medicine?",
+      "options": [
+        "Hippocrates",
+        "Galen",
+        "Marie Curie"
+      ],
+      "answerIndex": 0,
+      "explanation": "Hippocrates is called the father of medicine.",
+      "imageId": "medical-text",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q7",
+      "type": "multiple-choice",
+      "prompt": "How many Nobel Prizes did Marie Curie win?",
+      "options": [
+        "One",
+        "Two",
+        "Four"
+      ],
+      "answerIndex": 1,
+      "explanation": "She won two Nobel Prizes in two different sciences.",
+      "imageId": "laboratory",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q8",
+      "type": "multiple-choice",
+      "prompt": "What job did the Wright brothers have before flying?",
+      "options": [
+        "Bicycle makers",
+        "Sailors",
+        "Farmers"
+      ],
+      "answerIndex": 0,
+      "explanation": "They made and sold bicycles, which taught them about wheels and wings.",
+      "imageId": "aeroplane",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q9",
+      "type": "multiple-choice",
+      "prompt": "Where did Al-Khwarizmi live?",
+      "options": [
+        "Baghdad",
+        "Paris",
+        "Cairo"
+      ],
+      "answerIndex": 0,
+      "explanation": "He worked in Baghdad in the House of Wisdom.",
+      "imageId": "math-manuscript",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "fp-q10",
+      "type": "true-false",
+      "prompt": "Marie Curie was the first person to win a Nobel Prize.",
+      "answer": false,
+      "explanation": "She was the first woman to win one, and the only person to win in two different sciences.",
+      "imageId": "laboratory",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "laboratory",
+      "full": "images/laboratory.webp",
+      "thumb": "images/laboratory.thumb.webp"
+    },
+    {
+      "id": "library",
+      "full": "images/library.webp",
+      "thumb": "images/library.thumb.webp"
+    },
+    {
+      "id": "aeroplane",
+      "full": "images/aeroplane.webp",
+      "thumb": "images/aeroplane.thumb.webp"
+    },
+    {
+      "id": "math-manuscript",
+      "full": "images/math-manuscript.webp",
+      "thumb": "images/math-manuscript.thumb.webp"
+    },
+    {
+      "id": "school-girl",
+      "full": "images/school-girl.webp",
+      "thumb": "images/school-girl.thumb.webp"
+    },
+    {
+      "id": "medical-text",
+      "full": "images/medical-text.webp",
+      "thumb": "images/medical-text.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "laboratory": {
+      "title": "Berzelius gasometer",
+      "creator": "A. Gallenkamp &amp; Сo., Ltd.",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berzelius_gasometer.png",
+      "attributionRequired": true
+    },
+    "library": {
+      "title": "Andrew Carnegie, 1835-1919, half length, seated behind desk, looking down at book, facing right; shelves filled with books in background LCCN2005693059",
+      "creator": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Carnegie,_1835-1919,_half_length,_seated_behind_desk,_looking_down_at_book,_facing_right%3B_shelves_filled_with_books_in_background_LCCN2005693059.jpg",
+      "attributionRequired": true
+    },
+    "aeroplane": {
+      "title": "20181208 JASDF F-15C E-2 formation flight Naha Air Show 2018-8",
+      "creator": "Balon Greyjoy",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20181208_JASDF_F-15C_E-2_formation_flight_Naha_Air_Show_2018-8.jpg",
+      "attributionRequired": true
+    },
+    "math-manuscript": {
+      "title": "16th century arabic magic square",
+      "creator": "Islamic Science:An Illustrated Study, Seyyed Hossein Nasr, World of Islam Festival Publishing Ltd., 1976, ISBN 9780905035024",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:16th_century_arabic_magic_square.jpg",
+      "attributionRequired": true
+    },
+    "school-girl": {
+      "title": "A Modern Village School- Education in Cambridgeshire, England, UK, 1944 D23615",
+      "creator": "Ministry of Information Photo Division Photographer",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Modern_Village_School-_Education_in_Cambridgeshire,_England,_UK,_1944_D23615.jpg",
+      "attributionRequired": true
+    },
+    "medical-text": {
+      "title": "'Memoranda concerning the collection of information...' 1927 Wellcome L0075267",
+      "creator": "https://wellcomeimages.org/indexplus/obf_images/b9/8c/379ea7f079c55afa4360eb7ad983.jpg\n\nGallery: https://wellcomeimages.org/indexplus/image/L0075267.html",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:'Memoranda_concerning_the_collection_of_information...'_1927_Wellcome_L0075267.jpg",
+      "attributionRequired": true
+    }
+  }
+}

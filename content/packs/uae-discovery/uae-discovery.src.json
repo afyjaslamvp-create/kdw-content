@@ -1,0 +1,355 @@
+{
+  "packId": "uae-discovery",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "UAE Discovery",
+  "description": "Desert, mountains, sea and seven emirates.",
+  "icon": "moon",
+  "ageRange": "6-8",
+  "color": "#14b8a6",
+  "entries": [
+    {
+      "id": "seven-emirates",
+      "title": "The Seven Emirates",
+      "summary": "The UAE is made of seven emirates.",
+      "body": "The United Arab Emirates is a country on the Arabian Peninsula. It is made of seven emirates, each with its own ruler and its own character. Abu Dhabi is the largest and Dubai is the busiest.",
+      "facts": [
+        "The seven emirates are Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah.",
+        "The UAE has a coastline along the Persian Gulf and the Gulf of Oman.",
+        "The country joined the United Nations in 1971."
+      ],
+      "imageIds": [
+        "uae-flag"
+      ],
+      "keywords": [
+        "uae",
+        "emirates"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "rub-al-khaimah",
+      "title": "Ras Al Khaimah",
+      "summary": "Ras Al Khaimah has mountains and a long beach.",
+      "body": "Ras Al Khaimah is the northernmost emirate. It has dramatic mountains that run close to the sea, and beautiful sandy beaches. Red and white fort buildings stand on the hillsides.",
+      "facts": [
+        "The name means 'the top of the head'.",
+        "Jais Mountain in Ras Al Khaimah is the highest mountain in the UAE.",
+        "It is the only emirate with a coastline on both the Gulf and the Sea of Oman."
+      ],
+      "imageIds": [
+        "rak-mountain"
+      ],
+      "keywords": [
+        "uae",
+        "mountain"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "dubai",
+      "title": "Dubai",
+      "summary": "Dubai is a very busy city with the tallest building in the world.",
+      "body": "Dubai has grown from a small fishing village into one of the world's busiest cities. The Burj Khalifa is the tallest building on Earth. Dubai is also famous for its souks, its beaches and its desert trips.",
+      "facts": [
+        "The Burj Khalifa is more than 800 metres tall.",
+        "Dubai has a desert right next to the city.",
+        "The Burj Al Arab is shaped like a sailing boat."
+      ],
+      "imageIds": [
+        "burj-khalifa"
+      ],
+      "keywords": [
+        "uae",
+        "dubai"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "desert",
+      "title": "The Rub' al Khali",
+      "summary": "The Empty Quarter is the biggest desert in the Arab peninsula.",
+      "body": "The Rub' al Khali means 'the empty quarter'. It is a huge sea of sand that covers the south of the Arabian Peninsula. Bedouin families have lived there for hundreds of years, travelling with their camels.",
+      "facts": [
+        "The dunes here can be more than 100 metres tall.",
+        "The dunes shift a little every year with the wind.",
+        "Camels are still the best way to travel across it."
+      ],
+      "imageIds": [
+        "rub-al-khali"
+      ],
+      "keywords": [
+        "uae",
+        "desert"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "date-palm",
+      "title": "The Date Palm",
+      "summary": "The date palm is a national treasure of the UAE.",
+      "body": "Date palms grow in the oases where water comes up from under the ground. Dates have been eaten in this region for thousands of years and they are still an important crop today. A single palm can produce hundreds of kilos of dates.",
+      "facts": [
+        "A date palm can live for more than 100 years.",
+        "Oases are green spots in the middle of the desert.",
+        "Dates are a great source of energy for people and animals."
+      ],
+      "imageIds": [
+        "date-palm"
+      ],
+      "keywords": [
+        "uae",
+        "plants"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "falconry",
+      "title": "Falcons",
+      "summary": "Falcons have been part of life in the UAE for thousands of years.",
+      "body": "Falcons are fast hunting birds. People in the region have trained them to hunt for thousands of years, and falconry is part of the country's heritage. Falconry was also listed by UNESCO as part of the UAE's world heritage.",
+      "facts": [
+        "Falcons can dive at more than 300 kilometres an hour.",
+        "Their sharp eyesight helps them spot prey from high up.",
+        "The UAE's national bird is the falcon."
+      ],
+      "imageIds": [
+        "falcon"
+      ],
+      "keywords": [
+        "uae",
+        "birds"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "ua-q1",
+      "type": "multiple-choice",
+      "prompt": "How many emirates make up the UAE?",
+      "options": [
+        "Five",
+        "Seven",
+        "Nine"
+      ],
+      "answerIndex": 1,
+      "explanation": "There are seven emirates in the UAE.",
+      "imageId": "uae-flag",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q2",
+      "type": "multiple-choice",
+      "prompt": "Which emirate is the capital?",
+      "options": [
+        "Dubai",
+        "Abu Dhabi",
+        "Fujairah"
+      ],
+      "answerIndex": 1,
+      "explanation": "Abu Dhabi is the capital and the biggest emirate.",
+      "imageId": "abu-dhabi",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q3",
+      "type": "multiple-choice",
+      "prompt": "What is the tallest building in the world?",
+      "options": [
+        "The Burj Khalifa",
+        "The Eiffel Tower",
+        "The Space Needle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The Burj Khalifa in Dubai is more than 800 metres tall.",
+      "imageId": "burj-khalifa",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q4",
+      "type": "true-false",
+      "prompt": "Ras Al Khaimah has both mountains and beaches.",
+      "answer": true,
+      "explanation": "It has the highest mountain in the UAE and long sandy beaches.",
+      "imageId": "rak-mountain",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q5",
+      "type": "multiple-choice",
+      "prompt": "What does 'Rub al Khali' mean?",
+      "options": [
+        "The empty quarter",
+        "The green valley",
+        "The tall mountain"
+      ],
+      "answerIndex": 0,
+      "explanation": "It is the name of the big empty desert in the south.",
+      "imageId": "rub-al-khali",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q6",
+      "type": "multiple-choice",
+      "prompt": "Which tree is a national treasure of the UAE?",
+      "options": [
+        "The olive tree",
+        "The date palm",
+        "The pine tree"
+      ],
+      "answerIndex": 1,
+      "explanation": "The date palm is grown in oases all over the region.",
+      "imageId": "date-palm",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q7",
+      "type": "short-answer",
+      "prompt": "Which bird is the national bird of the UAE?",
+      "acceptedAnswers": [
+        "the falcon",
+        "falcon",
+        "a falcon"
+      ],
+      "explanation": "The falcon is the national bird and has a long hunting tradition.",
+      "imageId": "falcon",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "ua-q8",
+      "type": "multiple-choice",
+      "prompt": "How fast can a falcon dive?",
+      "options": [
+        "About 30 km/h",
+        "About 300 km/h",
+        "About 3 km/h"
+      ],
+      "answerIndex": 1,
+      "explanation": "A falcon can dive at over 300 kilometres an hour.",
+      "imageId": "falcon",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q9",
+      "type": "true-false",
+      "prompt": "Dubai used to be a small fishing village.",
+      "answer": true,
+      "explanation": "Dubai has grown into one of the world's busiest cities.",
+      "imageId": "burj-khalifa",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ua-q10",
+      "type": "multiple-choice",
+      "prompt": "Where do date palms grow in the desert?",
+      "options": [
+        "In oases",
+        "On the beach",
+        "On mountain tops"
+      ],
+      "answerIndex": 0,
+      "explanation": "Oasis are green spots where water reaches the surface.",
+      "imageId": "date-palm",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "uae-flag",
+      "full": "images/uae-flag.webp",
+      "thumb": "images/uae-flag.thumb.webp"
+    },
+    {
+      "id": "rak-mountain",
+      "full": "images/rak-mountain.webp",
+      "thumb": "images/rak-mountain.thumb.webp"
+    },
+    {
+      "id": "burj-khalifa",
+      "full": "images/burj-khalifa.webp",
+      "thumb": "images/burj-khalifa.thumb.webp"
+    },
+    {
+      "id": "rub-al-khali",
+      "full": "images/rub-al-khali.webp",
+      "thumb": "images/rub-al-khali.thumb.webp"
+    },
+    {
+      "id": "date-palm",
+      "full": "images/date-palm.webp",
+      "thumb": "images/date-palm.thumb.webp"
+    },
+    {
+      "id": "falcon",
+      "full": "images/falcon.webp",
+      "thumb": "images/falcon.thumb.webp"
+    },
+    {
+      "id": "abu-dhabi",
+      "full": "images/abu-dhabi.webp",
+      "thumb": "images/abu-dhabi.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "uae-flag": {
+      "title": "CGI United Arab Emirates Flag",
+      "creator": "Aerra Carnicom",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CGI_United_Arab_Emirates_Flag.png",
+      "attributionRequired": true
+    },
+    "rak-mountain": {
+      "title": "A leafless birch tree against Jebel Jais mountains in Ras Al Khaimah, UAE",
+      "creator": "Ipsographia",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_leafless_birch_tree_against_Jebel_Jais_mountains_in_Ras_Al_Khaimah,_UAE.jpg",
+      "attributionRequired": true
+    },
+    "burj-khalifa": {
+      "title": "124th floor @ At the Top SKY @ Burj Khalifa @ Dubai (15697909208)",
+      "creator": "Guilhem Vellut from Annecy, France",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:124th_floor_%40_At_the_Top_SKY_%40_Burj_Khalifa_%40_Dubai_(15697909208).jpg",
+      "attributionRequired": true
+    },
+    "rub-al-khali": {
+      "title": "Ar-Rub' Al-Khali (Oman) kz01",
+      "creator": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ar-Rub'_Al-Khali_(Oman)_kz01.jpg",
+      "attributionRequired": true
+    },
+    "date-palm": {
+      "title": "49 Palms Oasis (53456831772)",
+      "creator": "Joshua Tree National Park",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:49_Palms_Oasis_(53456831772).jpg",
+      "attributionRequired": true
+    },
+    "falcon": {
+      "title": "FalcoCherrugIUCN2019 2",
+      "creator": "SanoAK: Alexander Kürthy",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:FalcoCherrugIUCN2019_2.png",
+      "attributionRequired": true
+    },
+    "abu-dhabi": {
+      "title": "Abu Dhabi - Corniche – Skyline - الكورنيش - الأفق - panoramio",
+      "creator": "giggel",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abu_Dhabi_-_Corniche_%E2%80%93_Skyline_-_%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_-_%D8%A7%D9%84%D8%A3%D9%81%D9%82_-_panoramio.jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "packId": "art-and-music",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Art and Music",
+  "description": "Colours, sounds, songs and making things.",
+  "icon": "art",
+  "ageRange": "6-8",
+  "color": "#ec4899",
+  "entries": [
+    {
+      "id": "colour",
+      "title": "Colour",
+      "summary": "Colours can be mixed to make new colours.",
+      "body": "Red, yellow and blue are the main colours. Mixing two of them makes a new one: red and yellow make orange, blue and yellow make green. Light and paint behave a little differently when they mix.",
+      "facts": [
+        "Red and yellow make orange.",
+        "Blue and yellow make green.",
+        "A rainbow is the spectrum of light split into colours."
+      ],
+      "imageIds": [
+        "colour-wheel"
+      ],
+      "keywords": [
+        "art",
+        "colour"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "shapes-art",
+      "title": "Drawing Shapes",
+      "summary": "Every picture is built from shapes.",
+      "body": "Artists draw with lines, squares, circles and triangles. Large simple shapes first, then smaller details on top, is a good way to build a picture. Looking carefully at the real thing helps you draw it well.",
+      "facts": [
+        "Every picture can be broken down into simple shapes.",
+        "Drawing big shapes first makes the drawing easier.",
+        "Artists look carefully before they draw."
+      ],
+      "imageIds": [
+        "sketchbook"
+      ],
+      "keywords": [
+        "art",
+        "drawing"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "famous-artists",
+      "title": "Famous Artists",
+      "summary": "Some artists became very well known.",
+      "body": "Leonardo da Vinci painted the Mona Lisa and designed flying machines. Vincent van Gogh painted thick bright strokes of sunflowers. Frida Kahlo painted many pictures of herself and her family.",
+      "facts": [
+        "Leonardo da Vinci was also an inventor and scientist.",
+        "Van Gogh painted more than 2,000 works in about ten years.",
+        "Frida Kahlo's pictures often show her in Mexican dress."
+      ],
+      "imageIds": [
+        "painting"
+      ],
+      "keywords": [
+        "art",
+        "artists"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "music",
+      "title": "Music",
+      "summary": "Music is made of sounds that follow a pattern.",
+      "body": "Music has a beat, a melody and a rhythm. Songs from long ago are still sung today, and different countries have their own instruments and tunes. Some people play by ear without reading music.",
+      "facts": [
+        "Music has a beat, a melody and a rhythm.",
+        "Every culture has its own instruments and songs.",
+        "Playing an instrument needs practice and patience."
+      ],
+      "imageIds": [
+        "music-notes"
+      ],
+      "keywords": [
+        "music",
+        "music"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "instruments",
+      "title": "Instruments",
+      "summary": "Instruments make sound in different ways.",
+      "body": "Strings, woodwind, brass and drums are the big families of instruments. A violin makes sound with strings, a flute with air, and a drum when you hit it. Many instruments are made from wood, metal or skin.",
+      "facts": [
+        "A violin makes sound with vibrating strings.",
+        "A flute makes sound with air.",
+        "Instruments are usually made from wood, metal or skin."
+      ],
+      "imageIds": [
+        "violin"
+      ],
+      "keywords": [
+        "music",
+        "instruments"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "rhythm",
+      "title": "Beat and Rhythm",
+      "summary": "Music is made of patterns of sounds.",
+      "body": "Your heartbeat is a steady beat. Music is built from beats that are long and short - that is rhythm. Clapping along to a song helps you feel the beat and makes the music easier to remember.",
+      "facts": [
+        "Clapping helps you feel the beat of a song.",
+        "A pattern of long and short sounds is a rhythm.",
+        "Your heartbeat is a steady beat."
+      ],
+      "imageIds": [
+        "drums"
+      ],
+      "keywords": [
+        "music",
+        "rhythm"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "am-q1",
+      "type": "multiple-choice",
+      "prompt": "What do red and yellow make?",
+      "options": [
+        "Green",
+        "Orange",
+        "Purple"
+      ],
+      "answerIndex": 1,
+      "explanation": "Red and yellow make orange.",
+      "imageId": "colour-wheel",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q2",
+      "type": "multiple-choice",
+      "prompt": "What do blue and yellow make?",
+      "options": [
+        "Green",
+        "Pink",
+        "Brown"
+      ],
+      "answerIndex": 0,
+      "explanation": "Blue and yellow make green.",
+      "imageId": "colour-wheel",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q3",
+      "type": "multiple-choice",
+      "prompt": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Leonardo da Vinci",
+        "Frida Kahlo"
+      ],
+      "answerIndex": 1,
+      "explanation": "Leonardo da Vinci painted the Mona Lisa.",
+      "imageId": "painting",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q4",
+      "type": "multiple-choice",
+      "prompt": "How does a violin make sound?",
+      "options": [
+        "With vibrating strings",
+        "With blown air",
+        "By being struck"
+      ],
+      "answerIndex": 0,
+      "explanation": "A violin makes sound when its strings vibrate.",
+      "imageId": "violin",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q5",
+      "type": "multiple-choice",
+      "prompt": "What is a rhythm?",
+      "options": [
+        "A pattern of long and short sounds",
+        "A fast car",
+        "A song title"
+      ],
+      "answerIndex": 0,
+      "explanation": "Rhythm is the pattern of long and short beats.",
+      "imageId": "drums",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q6",
+      "type": "true-false",
+      "prompt": "Clapping along helps you feel the beat of a song.",
+      "answer": true,
+      "explanation": "Clapping in time with the music shows the beat.",
+      "imageId": "drums",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q7",
+      "type": "multiple-choice",
+      "prompt": "What is a good way to draw a picture?",
+      "options": [
+        "Big shapes first, then details",
+        "Only tiny details",
+        "Lines only"
+      ],
+      "answerIndex": 0,
+      "explanation": "Start with big simple shapes and add smaller details on top.",
+      "imageId": "sketchbook",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q8",
+      "type": "multiple-choice",
+      "prompt": "Which of these is a music family?",
+      "options": [
+        "Strings",
+        "Plastics",
+        "Metals only"
+      ],
+      "answerIndex": 0,
+      "explanation": "Strings, woodwind, brass and drums are the big families.",
+      "imageId": "violin",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "am-q9",
+      "type": "short-answer",
+      "prompt": "What do we call the pattern of beats in a song?",
+      "acceptedAnswers": [
+        "rhythm",
+        "the rhythm"
+      ],
+      "explanation": "It is called the rhythm.",
+      "imageId": "drums",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "am-q10",
+      "type": "multiple-choice",
+      "prompt": "What is a rainbow?",
+      "options": [
+        "Light split into colours",
+        "A kind of bird",
+        "A cloud shape"
+      ],
+      "answerIndex": 0,
+      "explanation": "A rainbow is the spectrum of light split into its colours.",
+      "imageId": "colour-wheel",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "colour-wheel",
+      "full": "images/colour-wheel.webp",
+      "thumb": "images/colour-wheel.thumb.webp"
+    },
+    {
+      "id": "sketchbook",
+      "full": "images/sketchbook.webp",
+      "thumb": "images/sketchbook.thumb.webp"
+    },
+    {
+      "id": "painting",
+      "full": "images/painting.webp",
+      "thumb": "images/painting.thumb.webp"
+    },
+    {
+      "id": "music-notes",
+      "full": "images/music-notes.webp",
+      "thumb": "images/music-notes.thumb.webp"
+    },
+    {
+      "id": "violin",
+      "full": "images/violin.webp",
+      "thumb": "images/violin.thumb.webp"
+    },
+    {
+      "id": "drums",
+      "full": "images/drums.webp",
+      "thumb": "images/drums.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "colour-wheel": {
+      "title": "1966 Holden HR Panel Van - Flickr - Sicnag",
+      "creator": "Sicnag",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1966_Holden_HR_Panel_Van_-_Flickr_-_Sicnag.jpg",
+      "attributionRequired": true
+    },
+    "sketchbook": {
+      "title": "Lines family sketchbook - 11 - Snead's Green",
+      "creator": "Members of the Lines family tbc",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lines_family_sketchbook_-_11_-_Snead's_Green.jpg",
+      "attributionRequired": true
+    },
+    "painting": {
+      "title": "Dance of Death (replica of 15th century fresco; National Gallery of Slovenia)",
+      "creator": "John of Kastav",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dance_of_Death_(replica_of_15th_century_fresco%3B_National_Gallery_of_Slovenia).jpg",
+      "attributionRequired": true
+    },
+    "music-notes": {
+      "title": "\"Chicago Tribune March\" by William Paris Chambers",
+      "creator": "W. Paris Chambers",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Chicago_Tribune_March%22_by_William_Paris_Chambers.jpg",
+      "attributionRequired": true
+    },
+    "violin": {
+      "title": "A musician playing violin",
+      "creator": "Lukasz Kobus, European Commission",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_musician_playing_violin.jpg",
+      "attributionRequired": true
+    },
+    "drums": {
+      "title": "A drum kit made by Mapex Drums - Cacon Photos- Copyleft - Creative Commons 01",
+      "creator": "Mostafameraji",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_drum_kit_made_by_Mapex_Drums_-_Cacon_Photos-_Copyleft_-_Creative_Commons_01.jpg",
+      "attributionRequired": true
+    }
+  }
+}

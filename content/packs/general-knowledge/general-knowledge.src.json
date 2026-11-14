@@ -1,0 +1,354 @@
+{
+  "packId": "general-knowledge",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "General Knowledge",
+  "description": "Big questions about the world we live in.",
+  "icon": "star",
+  "ageRange": "6-8",
+  "color": "#f59e0b",
+  "entries": [
+    {
+      "id": "day-and-night",
+      "title": "Day and Night",
+      "summary": "The Sun gives us day, and the Moon helps us see at night.",
+      "body": "The Sun is a big glowing star. When our side of the Earth turns towards it, it is day. When we turn away, it is night. The Moon goes around the Earth and shows us its light at night.",
+      "facts": [
+        "The Sun is about 8 light minutes away - its light takes 8 minutes to reach us.",
+        "The Moon does not make its own light, it reflects the Sun's light.",
+        "The Earth spins once every 24 hours."
+      ],
+      "imageIds": [
+        "sun"
+      ],
+      "keywords": [
+        "sun",
+        "moon",
+        "day"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "seasons",
+      "title": "Why Do We Have Seasons?",
+      "summary": "Seasons happen because the Earth is tilted as it goes around the Sun.",
+      "body": "The Earth leans a little to one side while it travels around the Sun. That tilt makes some places get more sunlight in summer and less in winter. Australia has summer when we have winter.",
+      "facts": [
+        "The Earth takes one whole year to go around the Sun.",
+        "Summer is warm and winter is cool because of the tilt.",
+        "Places near the equator feel warm all year."
+      ],
+      "imageIds": [
+        "earth-seasons"
+      ],
+      "keywords": [
+        "seasons",
+        "weather"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "rain",
+      "title": "Where Does Rain Come From?",
+      "summary": "Rain is water that goes up into the sky and comes back down.",
+      "body": "The Sun warms water in rivers, lakes and the sea. The water becomes vapour and floats up into the sky. When the vapour cools high up, it turns back into tiny drops. Those drops fall as rain.",
+      "facts": [
+        "Water never disappears, it just changes shape.",
+        "Clouds are made of tiny drops of water.",
+        "Rain helps plants grow and fills up rivers."
+      ],
+      "imageIds": [
+        "rain-cloud"
+      ],
+      "keywords": [
+        "rain",
+        "water"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "shadows",
+      "title": "Shadows",
+      "summary": "A shadow appears when something blocks light.",
+      "body": "Light travels in straight lines. When a tree or a person stands in front of the Sun, the light cannot pass through, so behind them it is dark. That dark shape is a shadow.",
+      "facts": [
+        "Shadows can be sharp on a sunny day and blurry on a cloudy day.",
+        "At noon the shadow of a stick is short.",
+        "Shadows change direction as the Sun moves."
+      ],
+      "imageIds": [
+        "shadow"
+      ],
+      "keywords": [
+        "light",
+        "shadow"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "clouds",
+      "title": "Clouds",
+      "summary": "Clouds are water drops floating in the sky.",
+      "body": "When water vapour rises high into the cold sky it turns into tiny drops or ice crystals. Lots of drops together make a cloud. When the drops join and become heavy enough they fall as rain.",
+      "facts": [
+        "Clouds can look like animals or shapes.",
+        "Cirrus clouds are thin and high up.",
+        "Every cloud is made of water."
+      ],
+      "imageIds": [
+        "clouds"
+      ],
+      "keywords": [
+        "clouds",
+        "sky"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "senses",
+      "title": "Our Five Senses",
+      "summary": "We have five ways to learn about the world.",
+      "body": "Our eyes help us see, our ears help us hear, our nose helps us smell, our tongue helps us taste and our skin helps us feel. Every part of the body has a job.",
+      "facts": [
+        "Some people cannot see well and use their other senses more.",
+        "Your sense of smell helps you find food and danger.",
+        "Fingers are very sensitive - they can feel a tiny rain drop."
+      ],
+      "imageIds": [
+        "five-senses"
+      ],
+      "keywords": [
+        "senses",
+        "body"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "gk-q1",
+      "type": "multiple-choice",
+      "prompt": "What gives us light during the day?",
+      "options": [
+        "The Moon",
+        "The Sun",
+        "The clouds"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Sun is a star that gives us light and warmth.",
+      "imageId": "sun",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q2",
+      "type": "multiple-choice",
+      "prompt": "What causes day and night?",
+      "options": [
+        "The Earth spinning on itself",
+        "The Sun switching off",
+        "The clouds moving"
+      ],
+      "answerIndex": 0,
+      "explanation": "The Earth spins once a day. The side facing the Sun has day.",
+      "imageId": "sun",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q3",
+      "type": "true-false",
+      "prompt": "The Moon makes its own light.",
+      "answer": false,
+      "explanation": "The Moon reflects light from the Sun. It does not make light of its own.",
+      "imageId": "moon",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q4",
+      "type": "multiple-choice",
+      "prompt": "What happens to water when the Sun heats it?",
+      "options": [
+        "It freezes",
+        "It turns into vapour and goes up",
+        "It disappears"
+      ],
+      "answerIndex": 1,
+      "explanation": "Water turns into vapour and floats up into the sky.",
+      "imageId": "rain-cloud",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q5",
+      "type": "multiple-choice",
+      "prompt": "How is a shadow made?",
+      "options": [
+        "When something blocks the light",
+        "When it is dark outside",
+        "When the Moon is full"
+      ],
+      "answerIndex": 0,
+      "explanation": "Light cannot pass through the object, so a dark shape appears behind it.",
+      "imageId": "shadow",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q6",
+      "type": "short-answer",
+      "prompt": "Which star gives us light and warmth?",
+      "acceptedAnswers": [
+        "the sun",
+        "sun"
+      ],
+      "explanation": "The Sun is our closest star.",
+      "imageId": "sun",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "gk-q7",
+      "type": "multiple-choice",
+      "prompt": "How many senses do people have?",
+      "options": [
+        "Three",
+        "Five",
+        "Ten"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sight, hearing, smell, taste and touch - five senses.",
+      "imageId": "five-senses",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q8",
+      "type": "true-false",
+      "prompt": "Clouds are made of tiny drops of water.",
+      "answer": true,
+      "explanation": "Clouds are water drops or ice crystals floating in the sky.",
+      "imageId": "clouds",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q9",
+      "type": "multiple-choice",
+      "prompt": "Why do we have seasons?",
+      "options": [
+        "Because the Earth is tilted",
+        "Because the Sun gets tired",
+        "Because the Moon pulls"
+      ],
+      "answerIndex": 0,
+      "explanation": "The tilt of the Earth changes how much sunlight each place gets.",
+      "imageId": "earth-seasons",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q10",
+      "type": "short-answer",
+      "prompt": "What do we call the water that floats up into the sky?",
+      "acceptedAnswers": [
+        "vapour",
+        "vapor",
+        "steam"
+      ],
+      "explanation": "It is called water vapour.",
+      "imageId": "rain-cloud",
+      "difficulty": 2,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "sun",
+      "full": "images/sun.webp",
+      "thumb": "images/sun.thumb.webp"
+    },
+    {
+      "id": "earth-seasons",
+      "full": "images/earth-seasons.webp",
+      "thumb": "images/earth-seasons.thumb.webp"
+    },
+    {
+      "id": "rain-cloud",
+      "full": "images/rain-cloud.webp",
+      "thumb": "images/rain-cloud.thumb.webp"
+    },
+    {
+      "id": "shadow",
+      "full": "images/shadow.webp",
+      "thumb": "images/shadow.thumb.webp"
+    },
+    {
+      "id": "clouds",
+      "full": "images/clouds.webp",
+      "thumb": "images/clouds.thumb.webp"
+    },
+    {
+      "id": "five-senses",
+      "full": "images/five-senses.webp",
+      "thumb": "images/five-senses.thumb.webp"
+    },
+    {
+      "id": "moon",
+      "full": "images/moon.webp",
+      "thumb": "images/moon.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "sun": {
+      "title": "Asteroid Belt around Earth",
+      "creator": "Joshua Doubek",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asteroid_Belt_around_Earth.jpg",
+      "attributionRequired": true
+    },
+    "earth-seasons": {
+      "title": "A compleat system of general geography- explaining the nature and properties of the earth; Viz Fleuron T113838-22",
+      "creator": "Varenius, Bernhardus",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_compleat_system_of_general_geography-_explaining_the_nature_and_properties_of_the_earth%3B_Viz_Fleuron_T113838-22.png",
+      "attributionRequired": true
+    },
+    "rain-cloud": {
+      "title": "\"In the Land of Little Rain\" Sign (52353499696)",
+      "creator": "Joshua Tree National Park",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22In_the_Land_of_Little_Rain%22_Sign_(52353499696).jpg",
+      "attributionRequired": true
+    },
+    "shadow": {
+      "title": "Amsterdam photo 2018 of modern architecture, free download; interior of the concert hall Muziekgebouw aan 't IJ - ground floor with high staircases and access to the great hall (left). Fons Heijnsbroek, free image in high resolution",
+      "creator": "Fons Heijnsbroek",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_photo_2018_of_modern_architecture,_free_download%3B_interior_of_the_concert_hall_Muziekgebouw_aan_'t_IJ_-_ground_floor_with_high_staircases_and_access_to_the_great_hall_(left)._Fons_Heijnsbroek,_free_image_in_high_resolution.tif",
+      "attributionRequired": true
+    },
+    "clouds": {
+      "title": "Altocumulus and cumulus over Gåseberg",
+      "creator": "W.carter",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Altocumulus_and_cumulus_over_G%C3%A5seberg.jpg",
+      "attributionRequired": true
+    },
+    "five-senses": {
+      "title": "A Boy Playing the Lute ( Hearing , One of a Series of the Five Senses) (Hendrick Terbrugghen) - Nationalmuseum - 18490",
+      "creator": "Hendrick ter Brugghen",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Boy_Playing_the_Lute_(_Hearing_,_One_of_a_Series_of_the_Five_Senses)_(Hendrick_Terbrugghen)_-_Nationalmuseum_-_18490.tif",
+      "attributionRequired": true
+    },
+    "moon": {
+      "title": "042 Full Moon rising behind Chasseral during sunset Photo by Giles Laurent",
+      "creator": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:042_Full_Moon_rising_behind_Chasseral_during_sunset_Photo_by_Giles_Laurent.jpg",
+      "attributionRequired": true
+    }
+  }
+}

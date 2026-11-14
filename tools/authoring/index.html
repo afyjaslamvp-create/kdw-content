@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kids Discovery World - Content Editor</title>
+    <style>
+      :root {
+        --ink: #1f2933;
+        --soft: #5b6b7c;
+        --line: #d7e0ec;
+        --brand: #2f6fed;
+        --bg: #f4f7fb;
+        --bad: #b42318;
+        --good: #14804a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.5;
+      }
+      header {
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        padding: 14px 20px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      header h1 { font-size: 1.1rem; margin: 0; }
+      header .note { color: var(--soft); font-size: 0.85rem; flex: 1 1 320px; }
+      main { max-width: 1200px; margin: 0 auto; padding: 20px; }
+      section {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 18px;
+        margin-bottom: 18px;
+      }
+      h2 { margin-top: 0; font-size: 1.15rem; }
+      label { display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; }
+      input, textarea, select {
+        width: 100%;
+        padding: 9px 11px;
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        font: inherit;
+        margin-bottom: 10px;
+      }
+      textarea { min-height: 90px; resize: vertical; }
+      button {
+        font: inherit;
+        font-weight: 700;
+        padding: 9px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: #fff;
+        cursor: pointer;
+      }
+      button.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+      button.danger { color: var(--bad); }
+      .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+      li.item {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        background: #fbfcfe;
+      }
+      li.item.active { border-color: var(--brand); background: #eef4ff; }
+      .muted { color: var(--soft); font-size: 0.88rem; }
+      .pill { font-size: 0.78rem; padding: 2px 9px; border-radius: 999px; background: #eef2f8; }
+      #status {
+        position: sticky;
+        bottom: 0;
+        background: #10233d;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      .err { color: var(--bad); }
+      .ok { color: #b7f0d0; }
+      pre { background: #0f1b2d; color: #d8e6ff; padding: 12px; border-radius: 10px; overflow: auto; max-height: 320px; }
+      .pill-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+      .pill-row button { padding: 5px 12px; font-size: 0.85rem; }
+      .pill-row button.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+      h3 { font-size: 0.95rem; margin: 14px 0 6px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kids Discovery World - Content Editor</h1>
+      <span class="note">
+        Runs entirely in this browser. Nothing is uploaded anywhere. Open a pack, edit it, then
+        export the JSON and the pictures and put them in
+        <code>content/packs/&lt;pack-id&gt;/</code> and <code>content/images/</code> of the content
+        repository.
+      </span>
+      <button id="openBtn">Open a pack file</button>
+      <input id="fileInput" type="file" accept="application/json,.json" hidden />
+      <button id="exportBtn" class="primary" disabled>Export pack JSON</button>
+      <button id="validateBtn" disabled>Validate</button>
+    </header>
+
+    <main>
+      <section id="emptyState">
+        <h2>Nothing open yet</h2>
+        <p class="muted">
+          Choose a pack file (<code>content/packs/&lt;pack-id&gt;/&lt;pack-id&gt;.src.json</code>) to
+          start editing. You can also create a new pack from scratch below.
+        </p>
+        <div class="row">
+          <div>
+            <label for="newId">New pack id</label>
+            <input id="newId" placeholder="space-and-astronomy" />
+          </div>
+          <div>
+            <label for="newTitle">New pack title</label>
+            <input id="newTitle" placeholder="Space and Astronomy" />
+          </div>
+        </div>
+        <button id="createBtn">Create empty pack</button>
+      </section>
+
+      <section id="editor" hidden>
+        <div class="row">
+          <div>
+            <label for="packId">Pack id</label>
+            <input id="packId" />
+          </div>
+          <div>
+            <label for="packVersion">Version</label>
+            <input id="packVersion" />
+          </div>
+          <div>
+            <label for="packTitle">Title</label>
+            <input id="packTitle" />
+          </div>
+          <div>
+            <label for="packIcon">Icon name</label>
+            <input id="packIcon" />
+          </div>
+          <div>
+            <label for="packColor">Colour</label>
+            <input id="packColor" type="color" />
+          </div>
+        </div>
+        <label for="packDescription">Description</label>
+        <input id="packDescription" />
+
+        <div class="grid-2">
+          <div>
+            <h3>Topics</h3>
+            <ul id="entryList"></ul>
+            <button id="addEntry">+ Add topic</button>
+          </div>
+          <div>
+            <h3>Questions</h3>
+            <ul id="questionList"></ul>
+            <button id="addQuestion">+ Add question</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="detail" hidden>
+        <h2 id="detailTitle">Detail</h2>
+        <div id="detailBody"></div>
+      </section>
+
+      <section id="report" hidden>
+        <h2>Validation report</h2>
+        <pre id="reportBody"></pre>
+      </section>
+    </main>
+
+    <div id="status">Ready.</div>
+
+    <script>
+      // ---------------------------------------------------------------- state
+      const state = { pack: null, selection: null, kind: null };
+
+      const $ = (id) => document.getElementById(id);
+      const say = (message, good) => {
+        $('status').textContent = message;
+        $('status').className = good ? 'ok' : '';
+      };
+
+      const isId = (v) => typeof v === 'string' && /^[a-z0-9][a-z0-9._-]*$/i.test(v);
+      const text = (v, max = 20000) => typeof v === 'string' && v.length <= max;
+
+      // ------------------------------------------------------------ validation
+      function validate(pack) {
+        const problems = [];
+        const push = (m) => problems.push(m);
+
+        if (!pack || typeof pack !== 'object') return ['The pack must be a JSON object.'];
+        if (!isId(pack.packId)) push('packId must contain only letters, digits, dot, dash and underscore.');
+        if (!/^\d+\.\d+\.\d+$/.test(pack.packVersion || '')) push('packVersion must look like 1.0.0.');
+        if (!text(pack.title, 120)) push('title is required.');
+
+        const entryIds = new Set();
+        (pack.entries || []).forEach((entry, i) => {
+          if (!isId(entry.id)) push(`Topic ${i + 1}: id is missing or invalid.`);
+          if (entryIds.has(entry.id)) push(`Topic ${i + 1}: duplicate id "${entry.id}".`);
+          entryIds.add(entry.id);
+          if (!text(entry.title, 200)) push(`Topic ${i + 1}: title is required.`);
+          if (!text(entry.summary, 1200)) push(`Topic ${i + 1}: summary is required.`);
+          (entry.imageIds || []).forEach((imageId) => {
+            if (!(pack.assets || []).some((a) => a.id === imageId))
+              push(`Topic ${i + 1}: image "${imageId}" is not in the asset list.`);
+            if (!(pack.attributions || {})[imageId])
+              push(`Topic ${i + 1}: image "${imageId}" has no attribution.`);
+          });
+        });
+
+        const questionIds = new Set();
+        (pack.questions || []).forEach((q, i) => {
+          if (!isId(q.id)) push(`Question ${i + 1}: id is missing or invalid.`);
+          if (questionIds.has(q.id)) push(`Question ${i + 1}: duplicate id "${q.id}".`);
+          questionIds.add(q.id);
+          if (!text(q.prompt, 2000)) push(`Question ${i + 1}: prompt is required.`);
+          if (q.type === 'multiple-choice') {
+            if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 6)
+              push(`Question ${i + 1}: needs 2 to 6 options.`);
+            else if (typeof q.answerIndex !== 'number' || q.answerIndex < 0 || q.answerIndex >= q.options.length)
+              push(`Question ${i + 1}: answerIndex must point at one of the options.`);
+          } else if (q.type === 'true-false') {
+            if (typeof q.answer !== 'boolean') push(`Question ${i + 1}: answer must be true or false.`);
+          } else if (q.type === 'short-answer') {
+            if (!Array.isArray(q.acceptedAnswers) || !q.acceptedAnswers.length)
+              push(`Question ${i + 1}: acceptedAnswers needs at least one answer.`);
+          } else {
+            push(`Question ${i + 1}: type must be multiple-choice, true-false or short-answer.`);
+          }
+        });
+
+        const assetIds = new Set();
+        (pack.assets || []).forEach((asset, i) => {
+          if (!isId(asset.id)) push(`Image ${i + 1}: id is missing or invalid.`);
+          if (assetIds.has(asset.id)) push(`Image ${i + 1}: duplicate id "${asset.id}".`);
+          assetIds.add(asset.id);
+          if (!text(asset.full, 400) || !text(asset.thumb, 400))
+            push(`Image ${i + 1}: full and thumb paths are required.`);
+        });
+
+        return problems;
+      }
+
+      // --------------------------------------------------------------- helpers
+      function download(name, content, type) {
+        const blob = new Blob([content], { type });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = name;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 2000);
+      }
+
+      function el(tag, attrs = {}, children = []) {
+        const node = document.createElement(tag);
+        Object.entries(attrs).forEach(([key, value]) => {
+          if (key === 'class') node.className = value;
+          else if (key.startsWith('on')) node.addEventListener(key.slice(2), value);
+          else if (key === 'value') node.value = value;
+          else if (key === 'checked') node.checked = !!value;
+          else node.setAttribute(key, value);
+        });
+        (Array.isArray(children) ? children : [children]).forEach((child) => {
+          if (child == null) return;
+          node.appendChild(typeof child === 'string' ? document.createTextNode(child) : child);
+        });
+        return node;
+      }
+
+      function field(label, value, onChange, type = 'text') {
+        const input = el('input', { type, value: value ?? '' });
+        input.addEventListener('input', () => onChange(input.value));
+        return el('div', {}, [el('label', {}, label), input]);
+      }
+
+      function area(label, value, onChange) {
+        const input = el('textarea', {}, value ?? '');
+        input.addEventListener('input', () => onChange(input.value));
+        return el('div', {}, [el('label', {}, label), input]);
+      }
+
+      function select(label, options, value, onChange) {
+        const node = el('select', {}, options.map((o) => el('option', { value: o.value }, o.label)));
+        node.value = value;
+        node.addEventListener('change', () => onChange(node.value));
+        return el('div', {}, [el('label', {}, label), node]);
+      }
+
+      // ---------------------------------------------------------------- render
+      function render() {
+        const hasPack = Boolean(state.pack);
+        $('emptyState').hidden = hasPack;
+        $('editor').hidden = !hasPack;
+        $('exportBtn').disabled = !hasPack;
+        $('validateBtn').disabled = !hasPack;
+        if (!hasPack) {
+          $('detail').hidden = true;
+          $('report').hidden = true;
+          return;
+        }
+
+        const pack = state.pack;
+        $('packId').value = pack.packId;
+        $('packVersion').value = pack.packVersion;
+        $('packTitle').value = pack.title;
+        $('packIcon').value = pack.icon || 'star';
+        $('packColor').value = pack.color || '#3b82f6';
+        $('packDescription').value = pack.description || '';
+
+        const entryList = $('entryList');
+        entryList.innerHTML = '';
+        (pack.entries || []).forEach((entry, index) => {
+          const item = el(
+            'li',
+            {
+              class:
+                'item' + (state.kind === 'entry' && state.selection === index ? ' active' : ''),
+              onclick: () => {
+                state.kind = 'entry';
+                state.selection = index;
+                render();
+              },
+            },
+            [
+              el('span', {}, entry.title || '(no title)'),
+              el('span', { class: 'pill' }, `${(entry.facts || []).length} facts`),
+            ],
+          );
+          entryList.appendChild(item);
+        });
+
+        const questionList = $('questionList');
+        questionList.innerHTML = '';
+        (pack.questions || []).forEach((question, index) => {
+          const item = el(
+            'li',
+            {
+              class:
+                'item' + (state.kind === 'question' && state.selection === index ? ' active' : ''),
+              onclick: () => {
+                state.kind = 'question';
+                state.selection = index;
+                render();
+              },
+            },
+            [
+              el('span', {}, (question.prompt || '(no question)').slice(0, 60)),
+              el('span', { class: 'pill' }, question.type),
+            ],
+          );
+          questionList.appendChild(item);
+        });
+
+        renderDetail();
+      }
+
+      function renderDetail() {
+        const body = $('detailBody');
+        body.innerHTML = '';
+        if (!state.pack || state.selection === null) {
+          $('detail').hidden = true;
+          return;
+        }
+        $('detail').hidden = false;
+
+        if (state.kind === 'entry') {
+          const entry = state.pack.entries[state.selection];
+          $('detailTitle').textContent = 'Edit topic';
+          body.appendChild(el('div', { class: 'row' }, [
+            field('Id', entry.id, (v) => (entry.id = v)),
+            field('Title', entry.title, (v) => (entry.title = v)),
+          ]));
+          body.appendChild(area('Summary', entry.summary, (v) => (entry.summary = v)));
+          body.appendChild(area('Body', entry.body, (v) => (entry.body = v)));
+          body.appendChild(
+            area('Facts (one per line)', (entry.facts || []).join('\n'), (v) => {
+              entry.facts = v.split('\n').filter((line) => line.trim());
+            }),
+          );
+          body.appendChild(
+            area('Image ids (one per line)', (entry.imageIds || []).join('\n'), (v) => {
+              entry.imageIds = v.split('\n').filter((line) => line.trim());
+            }),
+          );
+          body.appendChild(
+            area('Keywords (one per line)', (entry.keywords || []).join('\n'), (v) => {
+              entry.keywords = v.split('\n').filter((line) => line.trim());
+            }),
+          );
+          body.appendChild(
+            el('button', {
+              class: 'danger',
+              onclick: () => {
+                state.pack.entries.splice(state.selection, 1);
+                state.selection = null;
+                render();
+                say('Topic removed.');
+              },
+            }, 'Remove this topic'),
+          );
+        } else {
+          const question = state.pack.questions[state.selection];
+          $('detailTitle').textContent = 'Edit question';
+          body.appendChild(el('div', { class: 'row' }, [
+            field('Id', question.id, (v) => (question.id = v)),
+            select(
+              'Type',
+              [
+                { value: 'multiple-choice', label: 'Multiple choice' },
+                { value: 'true-false', label: 'True or false' },
+                { value: 'short-answer', label: 'Short answer' },
+              ],
+              question.type,
+              (v) => {
+                question.type = v;
+                if (v === 'multiple-choice') {
+                  question.options = question.options || ['First answer', 'Second answer'];
+                  question.answerIndex = question.answerIndex ?? 0;
+                  delete question.answer;
+                  delete question.acceptedAnswers;
+                } else if (v === 'true-false') {
+                  question.answer = typeof question.answer === 'boolean' ? question.answer : true;
+                  delete question.options;
+                  delete question.answerIndex;
+                  delete question.acceptedAnswers;
+                } else {
+                  question.acceptedAnswers = question.acceptedAnswers || [''];
+                  delete question.options;
+                  delete question.answerIndex;
+                  delete question.answer;
+                }
+                render();
+              },
+            ),
+          ]));
+          body.appendChild(area('Prompt', question.prompt, (v) => (question.prompt = v)));
+          body.appendChild(area('Explanation', question.explanation, (v) => (question.explanation = v)));
+
+          if (question.type === 'multiple-choice') {
+            body.appendChild(
+              area('Options (one per line)', (question.options || []).join('\n'), (v) => {
+                question.options = v.split('\n').filter((line) => line.trim());
+              }),
+            );
+            body.appendChild(
+              field('Correct answer (0 is the first option)', question.answerIndex ?? 0, (v) => {
+                question.answerIndex = Number(v);
+              }, 'number'),
+            );
+          } else if (question.type === 'true-false') {
+            body.appendChild(
+              select(
+                'Correct answer',
+                [
+                  { value: 'true', label: 'True' },
+                  { value: 'false', label: 'False' },
+                ],
+                String(question.answer),
+                (v) => (question.answer = v === 'true'),
+              ),
+            );
+          } else {
+            body.appendChild(
+              area('Accepted answers (one per line)', (question.acceptedAnswers || []).join('\n'), (v) => {
+                question.acceptedAnswers = v.split('\n').filter((line) => line.trim());
+              }),
+            );
+          }
+
+          body.appendChild(
+            el('button', {
+              class: 'danger',
+              onclick: () => {
+                state.pack.questions.splice(state.selection, 1);
+                state.selection = null;
+                render();
+                say('Question removed.');
+              },
+            }, 'Remove this question'),
+          );
+        }
+      }
+
+      // ----------------------------------------------------------------- wiring
+      $('openBtn').addEventListener('click', () => $('fileInput').click());
+      $('fileInput').addEventListener('change', async (event) => {
+        const file = event.target.files[0];
+        if (!file) return;
+        try {
+          const pack = JSON.parse(await file.text());
+          state.pack = pack;
+          state.selection = null;
+          state.kind = null;
+          render();
+          say(`Opened ${file.name}.`, true);
+        } catch (error) {
+          say(`Could not read the file: ${error.message}`);
+        }
+      });
+
+      $('createBtn').addEventListener('click', () => {
+        const id = $('newId').value.trim();
+        const title = $('newTitle').value.trim() || id;
+        if (!isId(id)) {
+          say('A pack id may only contain letters, digits, dot, dash and underscore.');
+          return;
+        }
+        state.pack = {
+          packId: id,
+          packVersion: '1.0.0',
+          schemaVersion: 1,
+          title,
+          description: '',
+          icon: 'star',
+          ageRange: '6-8',
+          color: '#3b82f6',
+          entries: [],
+          questions: [],
+          assets: [],
+          attributions: {},
+        };
+        state.selection = null;
+        state.kind = null;
+        render();
+        say(`Created a new pack: ${id}.`, true);
+      });
+
+      $('addEntry').addEventListener('click', () => {
+        state.pack.entries = state.pack.entries || [];
+        state.pack.entries.push({
+          id: 'entry-' + (state.pack.entries.length + 1),
+          title: 'New topic',
+          summary: '',
+          body: '',
+          facts: [],
+          imageIds: [],
+          keywords: [],
+          readMinutes: 2,
+        });
+        state.kind = 'entry';
+        state.selection = state.pack.entries.length - 1;
+        render();
+        say('Topic added.');
+      });
+
+      $('addQuestion').addEventListener('click', () => {
+        state.pack.questions = state.pack.questions || [];
+        state.pack.questions.push({
+          id: 'question-' + (state.pack.questions.length + 1),
+          type: 'multiple-choice',
+          prompt: 'New question',
+          options: ['First answer', 'Second answer'],
+          answerIndex: 0,
+          explanation: '',
+          difficulty: 1,
+          tags: [],
+        });
+        state.kind = 'question';
+        state.selection = state.pack.questions.length - 1;
+        render();
+        say('Question added.');
+      });
+
+      $('validateBtn').addEventListener('click', () => {
+        const problems = validate(state.pack);
+        $('report').hidden = false;
+        $('reportBody').textContent = problems.length
+          ? problems.join('\n')
+          : 'Everything checks out. You can export this pack.';
+        say(problems.length ? `${problems.length} problem(s) found.` : 'The pack is valid.', !problems.length);
+      });
+
+      $('exportBtn').addEventListener('click', () => {
+        const pack = state.pack;
+        const name = `${pack.packId}.src.json`;
+        download(name, JSON.stringify(pack, null, 2) + '\n', 'application/json');
+        say(`Exported ${name}. Put it in content/packs/${pack.packId}/.`, true);
+      });
+
+      ['packId', 'packVersion', 'packTitle', 'packIcon', 'packDescription'].forEach((id) => {
+        $(id).addEventListener('input', () => {
+          if (!state.pack) return;
+          state.pack[id === 'packTitle' ? 'title' : id === 'packDescription' ? 'description' : id] =
+            $(id).value;
+        });
+      });
+      $('packColor').addEventListener('input', () => {
+        if (state.pack) state.pack.color = $('packColor').value;
+      });
+    </script>
+  </body>
+</html>

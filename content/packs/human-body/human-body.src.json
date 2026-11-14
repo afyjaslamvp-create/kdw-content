@@ -1,0 +1,342 @@
+{
+  "packId": "human-body",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Human Body",
+  "description": "How our body works and keeps us healthy.",
+  "icon": "heart",
+  "ageRange": "6-8",
+  "color": "#ef4444",
+  "entries": [
+    {
+      "id": "heart",
+      "title": "The Heart",
+      "summary": "The heart is a muscle that pumps blood around your body.",
+      "body": "Your heart is about the size of your fist and it beats around 100,000 times a day. Blood carries oxygen from the lungs to the rest of the body and brings back carbon dioxide to be breathed out.",
+      "facts": [
+        "The heart never stops working, even while you sleep.",
+        "Blood travels through tubes called arteries and veins.",
+        "You can feel your pulse at your wrist or neck."
+      ],
+      "imageIds": [
+        "heart"
+      ],
+      "keywords": [
+        "body",
+        "heart"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "lungs",
+      "title": "Lungs",
+      "summary": "We breathe with our lungs.",
+      "body": "Your lungs are two spongy bags inside your chest. When you breathe in, air goes down the windpipe and fills them. Oxygen moves from the air into your blood, and carbon dioxide moves out when you breathe out.",
+      "facts": [
+        "We take about 20 breaths a minute.",
+        "The diaphragm is the muscle under the lungs that pulls air in.",
+        "Sneezing pushes air out very fast to clear the nose."
+      ],
+      "imageIds": [
+        "lungs"
+      ],
+      "keywords": [
+        "body",
+        "lungs"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "brain",
+      "title": "The Brain",
+      "summary": "The brain controls your body and your thinking.",
+      "body": "Your brain is made of about 86 billion nerve cells. It helps you remember, learn, feel and move. It also keeps your heart beating and your lungs breathing without you thinking about it.",
+      "facts": [
+        "The brain is protected by a hard skull.",
+        "Your brain uses a lot of energy for its size.",
+        "Sleep helps your brain sort out what you learned during the day."
+      ],
+      "imageIds": [
+        "brain"
+      ],
+      "keywords": [
+        "body",
+        "brain"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "skeleton",
+      "title": "The Skeleton",
+      "summary": "The skeleton holds your body up.",
+      "body": "Your skeleton has 206 bones. The skull protects the brain and the ribs protect the heart and lungs. Bones are strong but they are also a bit bendy, and they grow with you.",
+      "facts": [
+        "The biggest bone is the femur in your thigh.",
+        "Bones make blood cells inside them.",
+        "Babies are born with about 300 bones; some join up as they grow."
+      ],
+      "imageIds": [
+        "skeleton"
+      ],
+      "keywords": [
+        "body",
+        "bones"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "digestion",
+      "title": "Digestion",
+      "summary": "Food is broken down so the body can use it.",
+      "body": "Food travels down a long tube from the mouth to the stomach and on to the intestines. In the stomach, strong juice breaks the food into smaller pieces. The body takes what it needs and the rest leaves the body.",
+      "facts": [
+        "The stomach makes acid to kill germs in the food.",
+        "The small intestine is where most nutrients are absorbed.",
+        "Chewing is the first step of digestion."
+      ],
+      "imageIds": [
+        "digestion"
+      ],
+      "keywords": [
+        "body",
+        "food"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "sleep",
+      "title": "Sleep",
+      "summary": "Sleep helps the body and brain repair.",
+      "body": "While you sleep your body repairs itself and your brain sorts out the day. Children need about 9 to 11 hours of sleep each night. Sleep happens in cycles, and we dream during some of them.",
+      "facts": [
+        "Growing children need more sleep than grown-ups.",
+        "Going to bed at the same time each night helps.",
+        "Screens before bed can make it harder to fall asleep."
+      ],
+      "imageIds": [
+        "sleep"
+      ],
+      "keywords": [
+        "body",
+        "sleep"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "hb-q1",
+      "type": "multiple-choice",
+      "prompt": "What does the heart do?",
+      "options": [
+        "It pumps blood",
+        "It digests food",
+        "It controls breathing"
+      ],
+      "answerIndex": 0,
+      "explanation": "The heart is a muscle that pumps blood around the body.",
+      "imageId": "heart",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q2",
+      "type": "multiple-choice",
+      "prompt": "Where do we breathe?",
+      "options": [
+        "The lungs",
+        "The stomach",
+        "The brain"
+      ],
+      "answerIndex": 0,
+      "explanation": "Our lungs fill with air when we breathe in.",
+      "imageId": "lungs",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q3",
+      "type": "multiple-choice",
+      "prompt": "How many bones are in an adult body?",
+      "options": [
+        "About 106",
+        "About 206",
+        "About 306"
+      ],
+      "answerIndex": 1,
+      "explanation": "An adult skeleton has 206 bones.",
+      "imageId": "skeleton",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q4",
+      "type": "true-false",
+      "prompt": "The brain helps you remember and learn.",
+      "answer": true,
+      "explanation": "The brain is made of billions of nerve cells that work together.",
+      "imageId": "brain",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q5",
+      "type": "multiple-choice",
+      "prompt": "Where is food digested?",
+      "options": [
+        "In the stomach and intestines",
+        "In the lungs",
+        "In the heart"
+      ],
+      "answerIndex": 0,
+      "explanation": "The stomach and intestines break food down and take the good parts out.",
+      "imageId": "digestion",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q6",
+      "type": "short-answer",
+      "prompt": "What is the big muscle that pumps blood called?",
+      "acceptedAnswers": [
+        "the heart",
+        "heart"
+      ],
+      "explanation": "It is the heart.",
+      "imageId": "heart",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "hb-q7",
+      "type": "multiple-choice",
+      "prompt": "How many hours of sleep do children need?",
+      "options": [
+        "About 5",
+        "About 9 to 11",
+        "About 2"
+      ],
+      "answerIndex": 1,
+      "explanation": "Children need roughly 9 to 11 hours of sleep each night.",
+      "imageId": "sleep",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q8",
+      "type": "true-false",
+      "prompt": "Blood carries oxygen around the body.",
+      "answer": true,
+      "explanation": "Blood picks up oxygen from the lungs and delivers it everywhere.",
+      "imageId": "heart",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q9",
+      "type": "multiple-choice",
+      "prompt": "What protects the brain?",
+      "options": [
+        "The skull",
+        "The ribs",
+        "The spine"
+      ],
+      "answerIndex": 0,
+      "explanation": "The hard skull keeps the brain safe.",
+      "imageId": "brain",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hb-q10",
+      "type": "multiple-choice",
+      "prompt": "What is the first step of digestion?",
+      "options": [
+        "Chewing",
+        "Swallowing air",
+        "Running"
+      ],
+      "answerIndex": 0,
+      "explanation": "Chewing breaks the food into smaller pieces to start with.",
+      "imageId": "digestion",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "heart",
+      "full": "images/heart.webp",
+      "thumb": "images/heart.thumb.webp"
+    },
+    {
+      "id": "lungs",
+      "full": "images/lungs.webp",
+      "thumb": "images/lungs.thumb.webp"
+    },
+    {
+      "id": "brain",
+      "full": "images/brain.webp",
+      "thumb": "images/brain.thumb.webp"
+    },
+    {
+      "id": "skeleton",
+      "full": "images/skeleton.webp",
+      "thumb": "images/skeleton.thumb.webp"
+    },
+    {
+      "id": "digestion",
+      "full": "images/digestion.webp",
+      "thumb": "images/digestion.thumb.webp"
+    },
+    {
+      "id": "sleep",
+      "full": "images/sleep.webp",
+      "thumb": "images/sleep.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "heart": {
+      "title": "Anterior surface of heart",
+      "creator": "xranatomy.com",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_heart.png",
+      "attributionRequired": true
+    },
+    "lungs": {
+      "title": "2312 Gross Anatomy of the Lungs",
+      "creator": "OpenStax College",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2312_Gross_Anatomy_of_the_Lungs.jpg",
+      "attributionRequired": true
+    },
+    "brain": {
+      "title": "Brain Anatomy (Sagittal)",
+      "creator": "BruceBlaus",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brain_Anatomy_(Sagittal).png",
+      "attributionRequired": true
+    },
+    "skeleton": {
+      "title": "3D Female Skeleton Anatomy",
+      "creator": "Bernhard Ungerer",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Female_Skeleton_Anatomy.png",
+      "attributionRequired": true
+    },
+    "digestion": {
+      "title": "17th century Persian digestive system",
+      "creator": "From:",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:17th_century_Persian_digestive_system.jpg",
+      "attributionRequired": true
+    },
+    "sleep": {
+      "title": "\"In October\" - illustration for \"Baby's Lullaby Book ... by Charles Stuart Pratt\" showing parents looking in on a child asleep in a bed LCCN2017650219",
+      "creator": "L. Prang &amp; Co., publisher; L. Prang &amp; Co., copyright claimant; Taylor, William Ladd, 1854-1926, artist; Pratt, Charles Stuart, 1854-1921.; Chadwick, G. W. (George Whitefield), 1854-1931.",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22In_October%22_-_illustration_for_%22Baby's_Lullaby_Book_..._by_Charles_Stuart_Pratt%22_showing_parents_looking_in_on_a_child_asleep_in_a_bed_LCCN2017650219.jpg",
+      "attributionRequired": true
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# The built library is generated - it is rebuilt on every publish.
+dist/
+__pycache__/
+*.pyc
+fetch_log.txt
+.DS_Store

@@ -1,0 +1,341 @@
+{
+  "packId": "animal-kingdom",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Animal Kingdom",
+  "description": "Meet the animals that live on land.",
+  "icon": "paw",
+  "ageRange": "6-8",
+  "color": "#ef4444",
+  "entries": [
+    {
+      "id": "lion",
+      "title": "Lion",
+      "summary": "Lions live in groups called prides in Africa.",
+      "body": "A lion is strong and lives in a group called a pride. The family group is mostly mother lions and their cubs. Lions hunt together and rest in the shade during the hot part of the day.",
+      "facts": [
+        "Lions can sleep for up to 20 hours a day.",
+        "A lion's roar can be heard about 8 kilometres away.",
+        "Cubs are born with spots that fade as they grow."
+      ],
+      "imageIds": [
+        "lion"
+      ],
+      "keywords": [
+        "lion",
+        "cat"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "elephant",
+      "title": "Elephant",
+      "summary": "Elephants are the biggest animals that walk on land.",
+      "body": "An elephant has a very long trunk that it uses to pick up food, drink water and spray water to cool down. Elephants live in herds and they help each other. Their big ears help them hear far away sounds.",
+      "facts": [
+        "Elephants can hear through their feet.",
+        "A baby elephant is called a calf.",
+        "Elephants can live for more than 60 years."
+      ],
+      "imageIds": [
+        "elephant"
+      ],
+      "keywords": [
+        "elephant",
+        "big"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "giraffe",
+      "title": "Giraffe",
+      "summary": "Giraffes have the longest necks in the animal kingdom.",
+      "body": "A giraffe uses its long neck to reach leaves high up in trees. Its long legs help it run fast. Giraffes usually sleep for only a few minutes at a time.",
+      "facts": [
+        "A giraffe's tongue is long and dark to protect it from the hot sun.",
+        "A baby giraffe is called a calf.",
+        "Giraffes can be almost 6 metres tall."
+      ],
+      "imageIds": [
+        "giraffe"
+      ],
+      "keywords": [
+        "giraffe",
+        "tall"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "tiger",
+      "title": "Tiger",
+      "summary": "Tigers have beautiful stripes and live in Asia.",
+      "body": "A tiger is a big cat with stripes. Each tiger has its own pattern, like our fingerprints. Tigers live alone and are very good at hiding in the grass.",
+      "facts": [
+        "Tigers can jump very far.",
+        "The white tiger is not a different animal - it is a rare colour.",
+        "A tiger's stripes help it hide."
+      ],
+      "imageIds": [
+        "tiger"
+      ],
+      "keywords": [
+        "tiger",
+        "cat"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "monkey",
+      "title": "Monkey",
+      "summary": "Monkeys have hands and feet and love to climb.",
+      "body": "Monkeys live in trees in warm places. They use their long arms and tails to balance while they climb. Monkeys are clever and they play with each other and learn new tricks.",
+      "facts": [
+        "Some monkeys use tools, like sticks to pull food from holes.",
+        "A baby monkey is called a baby or an infant.",
+        "Monkeys have fingerprints just like we do."
+      ],
+      "imageIds": [
+        "monkey"
+      ],
+      "keywords": [
+        "monkey",
+        "climb"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "bear",
+      "title": "Bear",
+      "summary": "Bears are strong animals with thick fur.",
+      "body": "Bears sleep for months during the cold winter. They eat fish, berries, honey and many other things. A brown bear can run faster than a person.",
+      "facts": [
+        "A female bear is called a sow.",
+        "Bears hibernate, but they wake up sometimes during winter.",
+        "A polar bear has fur, not white skin."
+      ],
+      "imageIds": [
+        "bear"
+      ],
+      "keywords": [
+        "bear",
+        "winter"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "ak-q1",
+      "type": "multiple-choice",
+      "prompt": "What is a group of lions called?",
+      "options": [
+        "A pack",
+        "A pride",
+        "A herd"
+      ],
+      "answerIndex": 1,
+      "explanation": "A group of lions is called a pride.",
+      "imageId": "lion",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q2",
+      "type": "multiple-choice",
+      "prompt": "Which animal is the tallest?",
+      "options": [
+        "Elephant",
+        "Giraffe",
+        "Bear"
+      ],
+      "answerIndex": 1,
+      "explanation": "A giraffe can be nearly 6 metres tall.",
+      "imageId": "giraffe",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q3",
+      "type": "multiple-choice",
+      "prompt": "What is an elephant's long nose called?",
+      "options": [
+        "A trunk",
+        "A tail",
+        "A tusk"
+      ],
+      "answerIndex": 0,
+      "explanation": "It is called a trunk. Elephants use it to pick up food and drink.",
+      "imageId": "elephant",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q4",
+      "type": "short-answer",
+      "prompt": "A baby elephant is called a what?",
+      "acceptedAnswers": [
+        "calf",
+        "a calf"
+      ],
+      "explanation": "Young elephants are called calves.",
+      "imageId": "elephant",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "ak-q5",
+      "type": "true-false",
+      "prompt": "Tigers live in groups like lions.",
+      "answer": false,
+      "explanation": "Tigers usually live alone. Lions live in prides.",
+      "imageId": "tiger",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q6",
+      "type": "multiple-choice",
+      "prompt": "Which animal sleeps the most?",
+      "options": [
+        "Monkey",
+        "Bear",
+        "Giraffe"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bears sleep through the cold winter for months.",
+      "imageId": "bear",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q7",
+      "type": "multiple-choice",
+      "prompt": "What do monkeys use to balance while climbing?",
+      "options": [
+        "Their tail",
+        "Their ears",
+        "Their nose"
+      ],
+      "answerIndex": 0,
+      "explanation": "A long tail helps a monkey balance in the trees.",
+      "imageId": "monkey",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q8",
+      "type": "true-false",
+      "prompt": "Every tiger has a different stripe pattern.",
+      "answer": true,
+      "explanation": "Just like our fingerprints, no two tigers have the same stripes.",
+      "imageId": "tiger",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q9",
+      "type": "multiple-choice",
+      "prompt": "What is the biggest animal that walks on land?",
+      "options": [
+        "The elephant",
+        "The whale",
+        "The horse"
+      ],
+      "answerIndex": 0,
+      "explanation": "The elephant is the biggest land animal. The blue whale is bigger but lives in the sea.",
+      "imageId": "elephant",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "ak-q10",
+      "type": "short-answer",
+      "prompt": "Which animal has thick fur and sleeps through the winter?",
+      "acceptedAnswers": [
+        "bear",
+        "the bear",
+        "polar bear"
+      ],
+      "explanation": "Bears hibernate in winter.",
+      "imageId": "bear",
+      "difficulty": 2,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "lion",
+      "full": "images/lion.webp",
+      "thumb": "images/lion.thumb.webp"
+    },
+    {
+      "id": "elephant",
+      "full": "images/elephant.webp",
+      "thumb": "images/elephant.thumb.webp"
+    },
+    {
+      "id": "giraffe",
+      "full": "images/giraffe.webp",
+      "thumb": "images/giraffe.thumb.webp"
+    },
+    {
+      "id": "tiger",
+      "full": "images/tiger.webp",
+      "thumb": "images/tiger.thumb.webp"
+    },
+    {
+      "id": "monkey",
+      "full": "images/monkey.webp",
+      "thumb": "images/monkey.thumb.webp"
+    },
+    {
+      "id": "bear",
+      "full": "images/bear.webp",
+      "thumb": "images/bear.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "lion": {
+      "title": "002 Male Lion prowling in the Serengeti National Park Photo by Giles Laurent",
+      "creator": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:002_Male_Lion_prowling_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+      "attributionRequired": true
+    },
+    "elephant": {
+      "title": "016a Desert-adapted elephant dust bathing in Damaraland Photo by Giles Laurent",
+      "creator": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:016a_Desert-adapted_elephant_dust_bathing_in_Damaraland_Photo_by_Giles_Laurent.jpg",
+      "attributionRequired": true
+    },
+    "giraffe": {
+      "title": "Angolan giraffe (Giraffa camelopardalis angolensis) female head",
+      "creator": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angolan_giraffe_(Giraffa_camelopardalis_angolensis)_female_head.jpg",
+      "attributionRequired": true
+    },
+    "tiger": {
+      "title": "Amur Tiger Panthera tigris altaica Eye 2112px edit",
+      "creator": "Photo (c)2007 Derek and Julie Ramsey (Ram-Man) edit by Chris_huh.",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amur_Tiger_Panthera_tigris_altaica_Eye_2112px_edit.jpg",
+      "attributionRequired": true
+    },
+    "monkey": {
+      "title": "006 Baby rhesus macaque in Jim Corbett National Park Photo by Giles Laurent",
+      "creator": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:006_Baby_rhesus_macaque_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg",
+      "attributionRequired": true
+    },
+    "bear": {
+      "title": "Eurasian brown bear (Ursus arctos arctos) 14 months 2",
+      "creator": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eurasian_brown_bear_(Ursus_arctos_arctos)_14_months_2.jpg",
+      "attributionRequired": true
+    }
+  }
+}

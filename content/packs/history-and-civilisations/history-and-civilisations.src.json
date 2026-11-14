@@ -1,0 +1,329 @@
+{
+  "packId": "history-and-civilisations",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "History and Civilisations",
+  "description": "People, places and stories from the past.",
+  "icon": "scroll",
+  "ageRange": "6-8",
+  "color": "#92400e",
+  "entries": [
+    {
+      "id": "history",
+      "title": "What Is History?",
+      "summary": "History is the story of people and places in the past.",
+      "body": "History is not only wars and kings. It is how people lived, what they ate, the tools they made and the stories they told. Archaeologists dig up objects like pots and tools to learn about the past.",
+      "facts": [
+        "Archaeologists study the past by digging up and studying old objects.",
+        "Writing was one of the biggest inventions in human history.",
+        "History helps us understand how people live now."
+      ],
+      "imageIds": [
+        "pyramid"
+      ],
+      "keywords": [
+        "history"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "writing",
+      "title": "The First Writing",
+      "summary": "Writing let people keep records and share ideas.",
+      "body": "The earliest writing we know about was invented in Mesopotamia about 5,000 years ago, in the city of Ur. Soon the Egyptians made hieroglyphs, a picture writing system. Writing let people keep records, write laws and pass on stories.",
+      "facts": [
+        "Cuneiform was written by pressing marks into soft clay.",
+        "Hieroglyphs are pictures used as writing.",
+        "Paper was invented in China about 2,000 years ago."
+      ],
+      "imageIds": [
+        "hieroglyphs"
+      ],
+      "keywords": [
+        "history",
+        "writing"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "ancient-rome",
+      "title": "Ancient Rome",
+      "summary": "The Romans built roads, aqueducts and a huge empire.",
+      "body": "The Romans built roads all across Europe that still exist today. They built aqueducts to carry water to towns, and they used arches, which is why so many Roman buildings still stand.",
+      "facts": [
+        "Roman roads were very straight and well made.",
+        "The Romans invented concrete.",
+        "Roman children went to school to learn Latin and Greek."
+      ],
+      "imageIds": [
+        "roman-columns"
+      ],
+      "keywords": [
+        "history",
+        "rome"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "pyramids-history",
+      "title": "The Great Pyramid",
+      "summary": "The pyramids of Egypt are about 4,500 years old.",
+      "body": "The Great Pyramid at Giza was built as a tomb for the king Khufu. It took about 20 years and thousands of workers. It was the tallest building in the world for more than 3,800 years.",
+      "facts": [
+        "The Great Pyramid is made of about 2.3 million blocks.",
+        "It was the tallest building on Earth for over 3,800 years.",
+        "The workers were organised in teams and were well fed."
+      ],
+      "imageIds": [
+        "pyramid"
+      ],
+      "keywords": [
+        "history",
+        "egypt"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "silk-road",
+      "title": "The Silk Road",
+      "summary": "The Silk Road linked Asia with Europe.",
+      "body": "The Silk Road was not one road but many routes across Asia. Traders carried silk, spices, tea and ideas between China, India, Persia and Europe. Ideas travelled too, like the way of writing numbers.",
+      "facts": [
+        "Silk travelled more than 6,000 kilometres to reach Europe.",
+        "Traders on the Silk Road also shared religions and inventions.",
+        "The Chinese invented paper and gunpowder."
+      ],
+      "imageIds": [
+        "silk-road"
+      ],
+      "keywords": [
+        "history",
+        "trade"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "castle",
+      "title": "Castles",
+      "summary": "Castles were strong homes for nobles and their families.",
+      "body": "Castles were built to be safe. They had thick stone walls, a big gate and towers to look out from. Inside there were kitchens, storerooms and a great hall. Most people in a village did not live in the castle.",
+      "facts": [
+        "Castles were built with thick stone walls and narrow arrow slits.",
+        "A moat filled with water helped keep enemies out.",
+        "Most ordinary people lived in villages, not castles."
+      ],
+      "imageIds": [
+        "castle"
+      ],
+      "keywords": [
+        "history",
+        "castle"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "hi-q1",
+      "type": "multiple-choice",
+      "prompt": "What do archaeologists study?",
+      "options": [
+        "The past",
+        "The stars",
+        "The weather"
+      ],
+      "answerIndex": 0,
+      "explanation": "Archaeologists dig up and study objects from the past.",
+      "imageId": "pyramid",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q2",
+      "type": "multiple-choice",
+      "prompt": "Where was the earliest writing invented?",
+      "options": [
+        "Mesopotamia",
+        "China",
+        "Egypt"
+      ],
+      "answerIndex": 0,
+      "explanation": "The earliest writing we know was made in Mesopotamia, around Ur.",
+      "imageId": "hieroglyphs",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q3",
+      "type": "multiple-choice",
+      "prompt": "How old is the Great Pyramid?",
+      "options": [
+        "About 450 years",
+        "About 4,500 years",
+        "About 50 years"
+      ],
+      "answerIndex": 1,
+      "explanation": "The Great Pyramid is about 4,500 years old.",
+      "imageId": "pyramid",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q4",
+      "type": "multiple-choice",
+      "prompt": "What did the Romans build to carry water?",
+      "options": [
+        "An aqueduct",
+        "A pyramid",
+        "A windmill"
+      ],
+      "answerIndex": 0,
+      "explanation": "Roman aqueducts carried fresh water to the towns.",
+      "imageId": "roman-columns",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q5",
+      "type": "true-false",
+      "prompt": "Ideas travelled along the Silk Road as well as goods.",
+      "answer": true,
+      "explanation": "Traders shared religions, inventions and writing along the routes.",
+      "imageId": "silk-road",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q6",
+      "type": "multiple-choice",
+      "prompt": "What was a castle mainly for?",
+      "options": [
+        "Safety and defence",
+        "Racing horses",
+        "Growing food"
+      ],
+      "answerIndex": 0,
+      "explanation": "Thick walls, towers and a moat made castles safe places.",
+      "imageId": "castle",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q7",
+      "type": "short-answer",
+      "prompt": "What was the Egyptian picture writing called?",
+      "acceptedAnswers": [
+        "hieroglyphs",
+        "hieroglyphs"
+      ],
+      "explanation": "It was called hieroglyphs.",
+      "imageId": "hieroglyphs",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "hi-q8",
+      "type": "multiple-choice",
+      "prompt": "What is the word for writing pressed into clay?",
+      "options": [
+        "Cuneiform",
+        "Runes",
+        "Scroll"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cuneiform was pressed into soft clay tablets with a reed.",
+      "imageId": "hieroglyphs",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q9",
+      "type": "multiple-choice",
+      "prompt": "About how long did it take to build the Great Pyramid?",
+      "options": [
+        "2 days",
+        "20 years",
+        "200 years"
+      ],
+      "answerIndex": 1,
+      "explanation": "It took around 20 years of hard work by thousands of people.",
+      "imageId": "pyramid",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hi-q10",
+      "type": "true-false",
+      "prompt": "Most people in a medieval village lived inside the castle.",
+      "answer": false,
+      "explanation": "Most people lived in wooden houses in the village. The castle was for the lord.",
+      "imageId": "castle",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "pyramid",
+      "full": "images/pyramid.webp",
+      "thumb": "images/pyramid.thumb.webp"
+    },
+    {
+      "id": "hieroglyphs",
+      "full": "images/hieroglyphs.webp",
+      "thumb": "images/hieroglyphs.thumb.webp"
+    },
+    {
+      "id": "roman-columns",
+      "full": "images/roman-columns.webp",
+      "thumb": "images/roman-columns.thumb.webp"
+    },
+    {
+      "id": "silk-road",
+      "full": "images/silk-road.webp",
+      "thumb": "images/silk-road.thumb.webp"
+    },
+    {
+      "id": "castle",
+      "full": "images/castle.webp",
+      "thumb": "images/castle.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "pyramid": {
+      "title": "Egypt.Giza.Sphinx.01",
+      "creator": "en:User:Hajor",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egypt.Giza.Sphinx.01.jpg",
+      "attributionRequired": true
+    },
+    "hieroglyphs": {
+      "title": "Egypt Hieroglyphe4",
+      "creator": "NaySay",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egypt_Hieroglyphe4.jpg",
+      "attributionRequired": true
+    },
+    "roman-columns": {
+      "title": "0 la colonne de Phocas et le forum Romain à Rome",
+      "creator": "Jean-Pol GRANDMONT",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:0_la_colonne_de_Phocas_et_le_forum_Romain_%C3%A0_Rome.jpg",
+      "attributionRequired": true
+    },
+    "silk-road": {
+      "title": "Bactrian camel in Kazakhstan",
+      "creator": "Petar Milošević",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bactrian_camel_in_Kazakhstan.jpg",
+      "attributionRequired": true
+    },
+    "castle": {
+      "title": "02022 0989-001 An early medieval interlaced stone cross-shaft from Wawel Castle, Kraków",
+      "creator": "Silar",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:02022_0989-001_An_early_medieval_interlaced_stone_cross-shaft_from_Wawel_Castle,_Krak%C3%B3w.jpg",
+      "attributionRequired": true
+    }
+  }
+}

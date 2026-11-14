@@ -1,0 +1,348 @@
+{
+  "packId": "health-and-hygiene",
+  "packVersion": "1.0.0",
+  "schemaVersion": 1,
+  "title": "Health and Hygiene",
+  "description": "Keeping our bodies strong and well.",
+  "icon": "heartPulse",
+  "ageRange": "6-8",
+  "color": "#16a34a",
+  "entries": [
+    {
+      "id": "washing",
+      "title": "Hand Washing",
+      "summary": "Soap and water wash germs away.",
+      "body": "Germs live on hands and can go into the mouth through food. Washing with soap and water for at least twenty seconds removes them. It is the simplest way to stay well.",
+      "facts": [
+        "Wash hands before eating and after the toilet.",
+        "Twenty seconds of scrubbing is what really removes germs.",
+        "Germs spread easily by touch."
+      ],
+      "imageIds": [
+        "handwashing"
+      ],
+      "keywords": [
+        "health",
+        "hygiene"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "teeth",
+      "title": "Looking After Teeth",
+      "summary": "Brushing twice a day keeps teeth strong.",
+      "body": "A layer of plaque builds up on teeth and the acid in it makes holes called cavities. Brushing twice a day and using floss keeps teeth and gums healthy. Teeth cannot heal once they have decayed.",
+      "facts": [
+        "Brush your teeth twice every day.",
+        "Sugar and fizzy drinks are not good for teeth.",
+        "Floss reaches the places a brush cannot."
+      ],
+      "imageIds": [
+        "toothbrush"
+      ],
+      "keywords": [
+        "health",
+        "teeth"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "healthy-food",
+      "title": "Healthy Food",
+      "summary": "A plate with a bit of everything helps you grow.",
+      "body": "Our bodies need protein for growing muscles, carbohydrates for energy, and fruit and vegetables for vitamins. Drinking enough water every day is just as important as eating well.",
+      "facts": [
+        "Water is the best drink for most of the day.",
+        "Fruit and vegetables give us vitamins.",
+        "Breakfast is called the most important meal for a reason."
+      ],
+      "imageIds": [
+        "healthy-food"
+      ],
+      "keywords": [
+        "health",
+        "food"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "exercise",
+      "title": "Exercise",
+      "summary": "Moving your body makes you stronger.",
+      "body": "Exercise makes your heart and lungs stronger and your bones tougher. Running, swimming, cycling and playing all count. Even a walk after school helps a child sleep well and feel happy.",
+      "facts": [
+        "Children should aim for about 60 minutes of activity a day.",
+        "Playing outside is exercise too.",
+        "Sleep and exercise work together to make you well."
+      ],
+      "imageIds": [
+        "children-running"
+      ],
+      "keywords": [
+        "health",
+        "exercise"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "rest",
+      "title": "Rest and Sleep",
+      "summary": "Sleep is when your body repairs itself.",
+      "body": "While you sleep, your body grows and repairs itself and your brain sorts out the day. Children need about 9 to 11 hours of sleep. A steady bedtime and a calm room help you fall asleep.",
+      "facts": [
+        "Children need more sleep than adults.",
+        "Your body grows mostly while you sleep.",
+        "A calm, dark room helps you sleep."
+      ],
+      "imageIds": [
+        "sleep"
+      ],
+      "keywords": [
+        "health",
+        "sleep"
+      ],
+      "readMinutes": 2
+    },
+    {
+      "id": "safety-illness",
+      "title": "When You Feel Unwell",
+      "summary": "Telling an adult quickly helps you get better.",
+      "body": "If you feel hot, shivery or tired, or your tummy hurts, tell a grown-up straight away. Rest, drink fluids and let a doctor check anything that does not improve.",
+      "facts": [
+        "Tell an adult if you feel unwell.",
+        "Rest and fluids help your body fight illness.",
+        "Never take medicine that is not for you."
+      ],
+      "imageIds": [
+        "thermometer"
+      ],
+      "keywords": [
+        "health",
+        "safety"
+      ],
+      "readMinutes": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "hh-q1",
+      "type": "multiple-choice",
+      "prompt": "How long should you wash your hands?",
+      "options": [
+        "One second",
+        "About twenty seconds",
+        "One minute"
+      ],
+      "answerIndex": 1,
+      "explanation": "Twenty seconds of scrubbing with soap removes germs.",
+      "imageId": "handwashing",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q2",
+      "type": "multiple-choice",
+      "prompt": "How often should you brush your teeth?",
+      "options": [
+        "Once a year",
+        "Twice a day",
+        "Never"
+      ],
+      "answerIndex": 1,
+      "explanation": "Brushing twice a day keeps teeth healthy.",
+      "imageId": "toothbrush",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q3",
+      "type": "multiple-choice",
+      "prompt": "Which drink is best most of the day?",
+      "options": [
+        "Fizzy juice",
+        "Water",
+        "Sweet tea"
+      ],
+      "answerIndex": 1,
+      "explanation": "Water is the best everyday drink.",
+      "imageId": "healthy-food",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q4",
+      "type": "multiple-choice",
+      "prompt": "How much activity should children get each day?",
+      "options": [
+        "About 10 minutes",
+        "About 60 minutes",
+        "None"
+      ],
+      "answerIndex": 1,
+      "explanation": "About an hour of movement a day is a good goal.",
+      "imageId": "children-running",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q5",
+      "type": "short-answer",
+      "prompt": "How many hours of sleep do children need?",
+      "acceptedAnswers": [
+        "9 to 11",
+        "9-11",
+        "nine to eleven"
+      ],
+      "explanation": "Children need roughly 9 to 11 hours of sleep.",
+      "imageId": "sleep",
+      "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "hh-q6",
+      "type": "true-false",
+      "prompt": "You should tell an adult if you feel unwell.",
+      "answer": true,
+      "explanation": "A grown-up can help you rest and get the right help.",
+      "imageId": "thermometer",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q7",
+      "type": "multiple-choice",
+      "prompt": "Which food helps you build muscles?",
+      "options": [
+        "Protein like beans and eggs",
+        "Candy",
+        "Crisps"
+      ],
+      "answerIndex": 0,
+      "explanation": "Protein helps the body build and repair muscles.",
+      "imageId": "healthy-food",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q8",
+      "type": "multiple-choice",
+      "prompt": "What causes holes in teeth?",
+      "options": [
+        "Plaque and sugar",
+        "Too much water",
+        "Brushing"
+      ],
+      "answerIndex": 0,
+      "explanation": "Plaque and sugar make acid that causes cavities.",
+      "imageId": "toothbrush",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q9",
+      "type": "multiple-choice",
+      "prompt": "What happens to your body while you sleep?",
+      "options": [
+        "It repairs and grows",
+        "It stops working",
+        "It gets smaller"
+      ],
+      "answerIndex": 0,
+      "explanation": "Your body repairs itself and grows while you sleep.",
+      "imageId": "sleep",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "hh-q10",
+      "type": "multiple-choice",
+      "prompt": "What should you do before eating?",
+      "options": [
+        "Wash your hands",
+        "Run fast",
+        "Turn off the light"
+      ],
+      "answerIndex": 0,
+      "explanation": "Washing hands before eating keeps germs out of your body.",
+      "imageId": "handwashing",
+      "difficulty": 1,
+      "tags": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "handwashing",
+      "full": "images/handwashing.webp",
+      "thumb": "images/handwashing.thumb.webp"
+    },
+    {
+      "id": "toothbrush",
+      "full": "images/toothbrush.webp",
+      "thumb": "images/toothbrush.thumb.webp"
+    },
+    {
+      "id": "healthy-food",
+      "full": "images/healthy-food.webp",
+      "thumb": "images/healthy-food.thumb.webp"
+    },
+    {
+      "id": "children-running",
+      "full": "images/children-running.webp",
+      "thumb": "images/children-running.thumb.webp"
+    },
+    {
+      "id": "sleep",
+      "full": "images/sleep.webp",
+      "thumb": "images/sleep.thumb.webp"
+    },
+    {
+      "id": "thermometer",
+      "full": "images/thermometer.webp",
+      "thumb": "images/thermometer.thumb.webp"
+    }
+  ],
+  "attributions": {
+    "handwashing": {
+      "title": "A running tap and carbonated soap for hand washing in Ghana",
+      "creator": "Edithobayaa1",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_running_tap_and_carbonated_soap_for_hand_washing_in_Ghana.jpg",
+      "attributionRequired": true
+    },
+    "toothbrush": {
+      "title": "Metallic Toothbrush Holder",
+      "creator": "Galikben",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metallic_Toothbrush_Holder.jpg",
+      "attributionRequired": true
+    },
+    "healthy-food": {
+      "title": "A local fruit Vendor in the old town",
+      "creator": "Erasmus Kamugisha",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_local_fruit_Vendor_in_the_old_town.jpg",
+      "attributionRequired": true
+    },
+    "children-running": {
+      "title": "2009KC014 (3852018721)",
+      "creator": "Dawn Hopkins from Calgary",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009KC014_(3852018721).jpg",
+      "attributionRequired": true
+    },
+    "sleep": {
+      "title": "\"In October\" - illustration for \"Baby's Lullaby Book ... by Charles Stuart Pratt\" showing parents looking in on a child asleep in a bed LCCN2017650219",
+      "creator": "L. Prang &amp; Co., publisher; L. Prang &amp; Co., copyright claimant; Taylor, William Ladd, 1854-1926, artist; Pratt, Charles Stuart, 1854-1921.; Chadwick, G. W. (George Whitefield), 1854-1931.",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22In_October%22_-_illustration_for_%22Baby's_Lullaby_Book_..._by_Charles_Stuart_Pratt%22_showing_parents_looking_in_on_a_child_asleep_in_a_bed_LCCN2017650219.jpg",
+      "attributionRequired": true
+    },
+    "thermometer": {
+      "title": "2023 Elektroniczny termometr lekarski",
+      "creator": "Jacek Halicki",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Elektroniczny_termometr_lekarski.jpg",
+      "attributionRequired": true
+    }
+  }
+}
