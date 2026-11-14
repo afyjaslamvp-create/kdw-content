@@ -15,9 +15,8 @@ jobs:
   enable:
     runs-on: ubuntu-latest
     steps:
-      - name: Show what the token can do
+      - name: Show whether Pages already exists
         run: |
-          echo "token: ${{ github.token }}"
           gh api /repos/${{ github.repository }}/pages 2>&1 || true
 
       - name: Create the Pages site
