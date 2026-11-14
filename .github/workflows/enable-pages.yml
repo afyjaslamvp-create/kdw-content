@@ -1,0 +1,33 @@
+name: Enable Pages
+
+# Creates the GitHub Pages site for this repository using the workflow's own
+# GITHUB_TOKEN. Run it once per repository, then delete it if you like.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  enable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show what the token can do
+        run: |
+          echo "token: ${{ github.token }}"
+          gh api /repos/${{ github.repository }}/pages 2>&1 || true
+
+      - name: Create the Pages site
+        run: |
+          gh api --method POST /repos/${{ github.repository }}/pages \
+            -f build_type=workflow 2>&1 \
+            || gh api --method PUT /repos/${{ github.repository }}/pages \
+            -f build_type=workflow 2>&1 \
+            || echo "Could not create the Pages site with GITHUB_TOKEN"
+
+      - name: Check
+        run: |
+          gh api /repos/${{ github.repository }}/pages 2>&1 || true

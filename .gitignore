@@ -3,4 +3,11 @@ dist/
 __pycache__/
 *.pyc
 fetch_log.txt
+refresh_log.txt
+force_log.txt
 .DS_Store
+
+# Safety net: never commit a stray credential file. (GitHub push protection
+# also blocks this, but it should never reach a commit in the first place.)
+*creds*.txt
+*token*.txt
