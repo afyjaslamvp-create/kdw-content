@@ -12,20 +12,119 @@
       "id": "lion",
       "title": "Lion",
       "summary": "Lions live in groups called prides in Africa.",
-      "body": "A lion is strong and lives in a group called a pride. The family group is mostly mother lions and their cubs. Lions hunt together and rest in the shade during the hot part of the day.",
-      "facts": [
-        "Lions can sleep for up to 20 hours a day.",
-        "A lion's roar can be heard about 8 kilometres away.",
-        "Cubs are born with spots that fade as they grow."
+      "introduction": "Have you ever heard a lion's roar?",
+      "curiosityQuestion": "Why do you think lions live in groups instead of alone?",
+      "grade1": {
+        "body": "A lion is strong and lives in a group called a pride. The family group is mostly mother lions and their cubs. Lions hunt together and rest in the shade during the hot part of the day.",
+        "keyWords": ["lion", "pride", "Africa", "roar"]
+      },
+      "grade2": {
+        "body": "Lions are big cats that live in Africa. They live in family groups called prides. A pride is mostly made up of mother lions, their cubs, and a few father lions. The mother lions do most of the hunting together. Lions rest in the shade during the hottest part of the day to stay cool. A lion's roar can be heard far away and tells other lions where they are.",
+        "keyWords": ["pride", "cub", "hunt", "savanna", "roar"]
+      },
+      "sections": [
+        {
+          "id": "lion-explain",
+          "title": "About lions",
+          "type": "explanation",
+          "grade": "both",
+          "paragraphs": [
+            "Lions are strong big cats that live in Africa.",
+            "They live in family groups called prides.",
+            "A pride is mostly mother lions and their cubs.",
+            "Lions hunt together and rest in the shade during the hot day."
+          ]
+        },
+        {
+          "id": "lion-facts",
+          "title": "Lion facts",
+          "type": "facts",
+          "grade": "both",
+          "facts": [
+            {
+              "title": "Sleepy lions",
+              "text": "Lions can sleep for up to 20 hours a day."
+            },
+            {
+              "title": "Loud roar",
+              "text": "A lion's roar can be heard about 8 kilometres away."
+            },
+            {
+              "title": "Cub spots",
+              "text": "Cubs are born with spots that fade as they grow."
+            }
+          ]
+        },
+        {
+          "id": "lion-examples",
+          "title": "Lions in real life",
+          "type": "examples",
+          "grade": "both",
+          "examples": [
+            "Lions live on the grassy plains of Africa called the savanna.",
+            "Mother lions work together to catch food for the pride.",
+            "Lion cubs play and wrestle with each other to learn hunting skills."
+          ]
+        },
+        {
+          "id": "lion-vocab",
+          "title": "Words to know",
+          "type": "vocabulary",
+          "grade": "both",
+          "vocabulary": [
+            {
+              "term": "pride",
+              "definition": "A family group of lions that lives together."
+            },
+            {
+              "term": "cub",
+              "definition": "A baby lion."
+            },
+            {
+              "term": "savanna",
+              "definition": "A grassy plain with scattered trees where lions live."
+            },
+            {
+              "term": "roar",
+              "definition": "A loud call that lions make to talk to each other."
+            }
+          ]
+        },
+        {
+          "id": "lion-activity",
+          "title": "Lion movements",
+          "type": "activity",
+          "grade": "1",
+          "activity": {
+            "title": "Move like a lion",
+            "description": "Prowl slowly, then pounce like a lion hunting. Rest in the shade like lions do in the hot afternoon.",
+            "materials": ["Space to move"],
+            "steps": [
+              "Prowl slowly on your hands and knees.",
+              "Pause and listen like a lion.",
+              "Pounce gently forward.",
+              "Curl up and rest in a shady spot."
+            ]
+          }
+        },
+        {
+          "id": "lion-curiosity",
+          "title": "Something to wonder about",
+          "type": "curiosity",
+          "grade": "2",
+          "curiosity": "Lions are the only cats that live in groups. Why do you think that helps them survive?"
+        },
+        {
+          "id": "lion-related",
+          "title": "Keep exploring",
+          "type": "related",
+          "grade": "both",
+          "relatedIds": []
+        }
       ],
-      "imageIds": [
-        "lion"
-      ],
-      "keywords": [
-        "lion",
-        "cat"
-      ],
-      "readMinutes": 2
+      "imageIds": ["lion"],
+      "keywords": ["lion", "cat", "Africa"],
+      "readMinutes": 3
     },
     {
       "id": "elephant",

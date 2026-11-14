@@ -11,79 +11,497 @@
     {
       "id": "day-and-night",
       "title": "Day and Night",
-      "summary": "The Sun gives us day, and the Moon helps us see at night.",
-      "body": "The Sun is a big glowing star. When our side of the Earth turns towards it, it is day. When we turn away, it is night. The Moon goes around the Earth and shows us its light at night.",
-      "facts": [
-        "The Sun is about 8 light minutes away - its light takes 8 minutes to reach us.",
-        "The Moon does not make its own light, it reflects the Sun's light.",
-        "The Earth spins once every 24 hours."
+      "summary": "The Earth spins, which gives us day and night.",
+      "introduction": "Have you ever wondered why the sky goes dark at night and bright again in the morning?",
+      "curiosityQuestion": "What do you think would happen if the Earth stopped spinning?",
+      "grade1": {
+        "body": "The Sun is a big glowing star in the sky. When our side of the Earth faces the Sun, it is daytime. We can play outside and see everything clearly. When our side turns away from the Sun, it is nighttime. It gets dark, and we can see the Moon and stars. The Earth keeps spinning all the time, like a top.",
+        "keyWords": ["Sun", "Moon", "Earth", "day", "night"]
+      },
+      "grade2": {
+        "body": "The Earth spins around an imaginary line called its axis. One full spin takes about 24 hours. The side of Earth facing the Sun has daylight because sunlight reaches it. The side facing away from the Sun is in darkness, which is night. As Earth keeps spinning, every place moves from day into night and back into day again. The Moon does not make its own light; it reflects light from the Sun.",
+        "keyWords": ["axis", "rotation", "horizon", "reflects", "daylight"]
+      },
+      "sections": [
+        {
+          "id": "dn-intro",
+          "title": "What makes day and night?",
+          "type": "explanation",
+          "grade": "both",
+          "paragraphs": [
+            "The Earth is always spinning. It turns all the way around once every 24 hours.",
+            "When your part of the Earth faces the Sun, the sky is bright and it is daytime.",
+            "When your part turns away from the Sun, the sky is dark and it is nighttime.",
+            "The Sun does not move across the sky - it only looks like it does because the Earth is turning."
+          ]
+        },
+        {
+          "id": "dn-steps",
+          "title": "How a day goes by",
+          "type": "steps",
+          "grade": "both",
+          "steps": [
+            "Morning: Your part of Earth turns toward the Sun. The sky gets bright.",
+            "Midday: The Sun is high in the sky. It is the brightest part of the day.",
+            "Evening: Your part of Earth turns away from the Sun. The sky gets darker.",
+            "Night: Your part faces away from the Sun. It is dark, and you can see the Moon and stars."
+          ]
+        },
+        {
+          "id": "dn-facts",
+          "title": "Amazing facts",
+          "type": "facts",
+          "grade": "both",
+          "facts": [
+            {
+              "title": "The Sun is a star",
+              "text": "The Sun is the closest star to Earth. Its light takes about 8 minutes to reach us."
+            },
+            {
+              "title": "The Moon reflects light",
+              "text": "The Moon does not make its own light. It shines because it reflects light from the Sun."
+            },
+            {
+              "title": "Earth spins every day",
+              "text": "The Earth makes one full spin every 24 hours, which is one whole day."
+            },
+            {
+              "title": "Night is just a shadow",
+              "text": "Nighttime happens when your part of Earth is in Earth's own shadow, turned away from the Sun."
+            }
+          ]
+        },
+        {
+          "id": "dn-examples",
+          "title": "Day and night in real life",
+          "type": "examples",
+          "grade": "both",
+          "examples": [
+            "You wake up in the morning because the sky is bright with daylight.",
+            "At bedtime, the sky is dark and you can see the Moon outside your window.",
+            "When you play at the park in the afternoon, the Sun is shining on you.",
+            "If you look up at night, you can see stars that are always there but hidden by daylight."
+          ]
+        },
+        {
+          "id": "dn-vocab",
+          "title": "Words to know",
+          "type": "vocabulary",
+          "grade": "both",
+          "vocabulary": [
+            {
+              "term": "Sun",
+              "definition": "The star at the centre of our solar system that gives us light and warmth."
+            },
+            {
+              "term": "Moon",
+              "definition": "Earth's natural satellite that shines at night by reflecting sunlight."
+            },
+            {
+              "term": "Earth",
+              "definition": "The planet we live on. It spins around once every 24 hours."
+            },
+            {
+              "term": "spin",
+              "definition": "To turn around and around, like a top or the Earth turning."
+            },
+            {
+              "term": "reflects",
+              "definition": "To bounce light off a surface, like the Moon bouncing sunlight."
+            }
+          ]
+        },
+        {
+          "id": "dn-activity",
+          "title": "Track a shadow",
+          "type": "activity",
+          "grade": "both",
+          "activity": {
+            "title": "Watch how shadows move",
+            "description": "Find out how the Sun's position changes during the day by watching a shadow.",
+            "materials": [
+              "A pencil or stick",
+              "A piece of paper or chalk",
+              "A sunny outdoor spot"
+            ],
+            "steps": [
+              "Stand the pencil upright in a sunny spot.",
+              "Mark where the shadow falls on the paper or ground.",
+              "Wait an hour, then mark the shadow again.",
+              "Compare the two marks - the shadow has moved because the Earth has turned."
+            ],
+            "imageId": "shadow"
+          }
+        },
+        {
+          "id": "dn-quiz",
+          "title": "Quick quiz",
+          "type": "quiz",
+          "grade": "both",
+          "questionId": "gk-q2"
+        },
+        {
+          "id": "dn-curiosity",
+          "title": "Something to wonder about",
+          "type": "curiosity",
+          "grade": "2",
+          "curiosity": "If the Earth stopped spinning, one side would always face the Sun and be hot all the time. The other side would be dark and cold all the time. Would you like to live in a place with no night?"
+        },
+        {
+          "id": "dn-related",
+          "title": "Keep exploring",
+          "type": "related",
+          "grade": "both",
+          "relatedIds": ["seasons", "shadows", "moon"]
+        }
       ],
-      "imageIds": [
-        "sun"
-      ],
-      "keywords": [
-        "sun",
-        "moon",
-        "day"
-      ],
-      "readMinutes": 2
+      "imageIds": ["sun", "moon"],
+      "keywords": ["sun", "moon", "day", "night", "space"],
+      "readMinutes": 3
     },
     {
       "id": "seasons",
       "title": "Why Do We Have Seasons?",
       "summary": "Seasons happen because the Earth is tilted as it goes around the Sun.",
-      "body": "The Earth leans a little to one side while it travels around the Sun. That tilt makes some places get more sunlight in summer and less in winter. Australia has summer when we have winter.",
-      "facts": [
-        "The Earth takes one whole year to go around the Sun.",
-        "Summer is warm and winter is cool because of the tilt.",
-        "Places near the equator feel warm all year."
+      "introduction": "Have you noticed how summer is warm and winter is cool? Why does that happen?",
+      "curiosityQuestion": "What would it be like if every day was the same temperature?",
+      "grade1": {
+        "body": "The Earth leans to one side as it travels around the Sun. This lean is called a tilt. When your part of Earth leans toward the Sun, it is summer there. When your part leans away from the Sun, it is winter there. Spring and autumn are in between.",
+        "keyWords": ["season", "summer", "winter", "tilt", "Earth"]
+      },
+      "grade2": {
+        "body": "Earth's axis is tilted at about 23.5 degrees. As Earth travels around the Sun, this tilt means different parts of Earth get more or less direct sunlight at different times of year. When your hemisphere tilts toward the Sun, you have summer. When it tilts away, you have winter. Spring and autumn happen when neither hemisphere is tilted strongly toward or away from the Sun. That is why Australia has summer when the northern hemisphere has winter.",
+        "keyWords": ["axis", "tilt", "hemisphere", "orbit", "equinox"]
+      },
+      "sections": [
+        {
+          "id": "seasons-explain",
+          "title": "Why seasons happen",
+          "type": "explanation",
+          "grade": "both",
+          "paragraphs": [
+            "Earth does not sit straight up. It leans a little to one side.",
+            "Earth travels around the Sun once every year.",
+            "Because of the lean, sometimes your part of Earth gets more direct sunlight.",
+            "More sunlight means warmer weather - that is summer. Less sunlight means cooler weather - that is winter."
+          ]
+        },
+        {
+          "id": "seasons-facts",
+          "title": "Season facts",
+          "type": "facts",
+          "grade": "both",
+          "facts": [
+            {
+              "title": "One year",
+              "text": "Earth takes one whole year to travel around the Sun."
+            },
+            {
+              "title": "Opposite sides",
+              "text": "When it is summer in the northern hemisphere, it is winter in the southern hemisphere."
+            },
+            {
+              "title": "Warm all year",
+              "text": "Places near the equator feel warm all year because they get about the same sunlight all year."
+            }
+          ]
+        },
+        {
+          "id": "seasons-examples",
+          "title": "Seasons in real life",
+          "type": "examples",
+          "grade": "both",
+          "examples": [
+            "In summer you can go swimming and eat ice cream to stay cool.",
+            "In winter you wear coats, hats and gloves to stay warm.",
+            "In spring flowers start to bloom and baby animals are born.",
+            "In autumn leaves turn yellow, orange and red before falling from trees."
+          ]
+        },
+        {
+          "id": "seasons-vocab",
+          "title": "Words to know",
+          "type": "vocabulary",
+          "grade": "both",
+          "vocabulary": [
+            {
+              "term": "season",
+              "definition": "One of the four times of year: spring, summer, autumn and winter."
+            },
+            {
+              "term": "tilt",
+              "definition": "To lean to one side. Earth's axis is tilted."
+            },
+            {
+              "term": "hemisphere",
+              "definition": "Half of Earth - the northern half or the southern half."
+            },
+            {
+              "term": "orbit",
+              "definition": "The path Earth follows as it travels around the Sun."
+            }
+          ]
+        },
+        {
+          "id": "seasons-curiosity",
+          "title": "Something to wonder about",
+          "type": "curiosity",
+          "grade": "2",
+          "curiosity": "If Earth did not tilt at all, every place would have the same weather all year. Would you miss having different seasons?"
+        },
+        {
+          "id": "seasons-related",
+          "title": "Keep exploring",
+          "type": "related",
+          "grade": "both",
+          "relatedIds": ["day-and-night", "clouds", "rain"]
+        }
       ],
-      "imageIds": [
-        "earth-seasons"
-      ],
-      "keywords": [
-        "seasons",
-        "weather"
-      ],
-      "readMinutes": 2
+      "imageIds": ["earth-seasons"],
+      "keywords": ["seasons", "weather", "sun", "earth"],
+      "readMinutes": 3
     },
     {
       "id": "rain",
       "title": "Where Does Rain Come From?",
       "summary": "Rain is water that goes up into the sky and comes back down.",
-      "body": "The Sun warms water in rivers, lakes and the sea. The water becomes vapour and floats up into the sky. When the vapour cools high up, it turns back into tiny drops. Those drops fall as rain.",
-      "facts": [
-        "Water never disappears, it just changes shape.",
-        "Clouds are made of tiny drops of water.",
-        "Rain helps plants grow and fills up rivers."
+      "introduction": "Have you ever wondered where rain comes from before it falls?",
+      "curiosityQuestion": "Where do you think the water goes after it soaks into the ground?",
+      "grade1": {
+        "body": "The Sun warms water in rivers, lakes and the sea. The water becomes vapour and floats up into the sky. When the vapour cools high up, it turns back into tiny drops. Those drops fall as rain.",
+        "keyWords": ["rain", "water", "vapour", "cloud", "Sun"]
+      },
+      "grade2": {
+        "body": "The Sun heats water in oceans, lakes and rivers. The water turns into an invisible gas called water vapour and rises into the air. High up where it is cold, the vapour cools and turns back into tiny water drops. These drops gather in clouds. When the drops join together and become heavy enough, they fall as rain. This is part of the water cycle.",
+        "keyWords": ["vapour", "evaporates", "condenses", "water cycle", "clouds"]
+      },
+      "sections": [
+        {
+          "id": "rain-explain",
+          "title": "The water cycle",
+          "type": "explanation",
+          "grade": "both",
+          "paragraphs": [
+            "The Sun warms water in rivers, lakes and the sea.",
+            "The water becomes vapour and floats up into the sky.",
+            "High up where it is cold, the vapour turns back into tiny drops.",
+            "The drops gather in clouds.",
+            "When the drops become heavy enough, they fall as rain."
+          ]
+        },
+        {
+          "id": "rain-facts",
+          "title": "Rain facts",
+          "type": "facts",
+          "grade": "both",
+          "facts": [
+            {
+              "title": "Water never disappears",
+              "text": "Water never disappears, it just changes shape."
+            },
+            {
+              "title": "Clouds are water",
+              "text": "Clouds are made of tiny drops of water."
+            },
+            {
+              "title": "Rain helps plants",
+              "text": "Rain helps plants grow and fills up rivers."
+            }
+          ]
+        },
+        {
+          "id": "rain-examples",
+          "title": "Rain in real life",
+          "type": "examples",
+          "grade": "both",
+          "examples": [
+            "Puddles forming on the pavement after rain.",
+            "Plants drinking rainwater to grow.",
+            "Wearing a raincoat and boots on a rainy day."
+          ]
+        },
+        {
+          "id": "rain-vocab",
+          "title": "Words to know",
+          "type": "vocabulary",
+          "grade": "both",
+          "vocabulary": [
+            {
+              "term": "vapour",
+              "definition": "Water that has turned into an invisible gas and floated into the air."
+            },
+            {
+              "term": "cloud",
+              "definition": "A collection of tiny water drops floating in the sky."
+            },
+            {
+              "term": "evaporates",
+              "definition": "Turns from liquid into vapour because of heat."
+            }
+          ]
+        },
+        {
+          "id": "rain-activity",
+          "title": "Water cycle in a bowl",
+          "type": "activity",
+          "grade": "2",
+          "activity": {
+            "title": "Make a mini water cycle",
+            "description": "Warm water in a bowl, cover it with plastic wrap, and watch droplets form and fall like rain.",
+            "materials": ["A bowl", "Warm water", "Plastic wrap", "A small weight"],
+            "steps": [
+              "Pour warm water into a bowl.",
+              "Cover the bowl tightly with plastic wrap.",
+              "Put a small weight in the centre of the wrap.",
+              "Wait and watch drops form and fall."
+            ],
+            "imageId": "rain-cloud"
+          }
+        },
+        {
+          "id": "rain-curiosity",
+          "title": "Something to wonder about",
+          "type": "curiosity",
+          "grade": "1",
+          "curiosity": "If you could ride on a raindrop, where do you think it would take you?"
+        },
+        {
+          "id": "rain-related",
+          "title": "Keep exploring",
+          "type": "related",
+          "grade": "both",
+          "relatedIds": ["clouds", "day-and-night", "shadows"]
+        }
       ],
-      "imageIds": [
-        "rain-cloud"
-      ],
-      "keywords": [
-        "rain",
-        "water"
-      ],
-      "readMinutes": 2
+      "imageIds": ["rain-cloud"],
+      "keywords": ["rain", "water", "clouds"],
+      "readMinutes": 3
     },
     {
       "id": "shadows",
       "title": "Shadows",
       "summary": "A shadow appears when something blocks light.",
-      "body": "Light travels in straight lines. When a tree or a person stands in front of the Sun, the light cannot pass through, so behind them it is dark. That dark shape is a shadow.",
-      "facts": [
-        "Shadows can be sharp on a sunny day and blurry on a cloudy day.",
-        "At noon the shadow of a stick is short.",
-        "Shadows change direction as the Sun moves."
+      "introduction": "Have you noticed your shadow follows you around on a sunny day?",
+      "curiosityQuestion": "Why can't you see your shadow at night?",
+      "grade1": {
+        "body": "Light travels in straight lines. When something like a tree or a person stands in front of the Sun, the light cannot pass through. Behind them it is dark. That dark shape is a shadow.",
+        "keyWords": ["light", "shadow", "Sun", "block"]
+      },
+      "grade2": {
+        "body": "Light travels in straight lines from the Sun. When an object blocks the light, the area behind the object stays dark because the light cannot reach it. That dark shape is a shadow. The shape of the shadow matches the object that blocks the light. As the Sun moves across the sky, shadows change direction and length.",
+        "keyWords": ["light", "shadow", "block", "straight line", "direction"]
+      },
+      "sections": [
+        {
+          "id": "shadows-explain",
+          "title": "How shadows are made",
+          "type": "explanation",
+          "grade": "both",
+          "paragraphs": [
+            "Light moves in straight lines from the Sun.",
+            "When an object stands in the way, the light cannot pass through it.",
+            "The area behind the object stays dark.",
+            "That dark shape is called a shadow."
+          ]
+        },
+        {
+          "id": "shadows-steps",
+          "title": "Shadow changes during the day",
+          "type": "steps",
+          "grade": "both",
+          "steps": [
+            "Morning: The Sun is low in the sky, so shadows are long.",
+            "Midday: The Sun is high overhead, so shadows are short.",
+            "Afternoon: The Sun moves lower again, and shadows get longer."
+          ]
+        },
+        {
+          "id": "shadows-facts",
+          "title": "Shadow facts",
+          "type": "facts",
+          "grade": "both",
+          "facts": [
+            {
+              "title": "Sharp or blurry",
+              "text": "Shadows are sharp on a sunny day and blurry on a cloudy day."
+            },
+            {
+              "title": "Short at noon",
+              "text": "At noon the shadow of a stick is at its shortest."
+            },
+            {
+              "title": "Changing direction",
+              "text": "Shadows change direction as the Sun moves across the sky."
+            }
+          ]
+        },
+        {
+          "id": "shadows-examples",
+          "title": "Shadows in real life",
+          "type": "examples",
+          "grade": "both",
+          "examples": [
+            "Your shadow on the playground when you run.",
+            "The shadow of a tree on the grass.",
+            "The shadow of your hand on a wall when you make shadow puppets."
+          ]
+        },
+        {
+          "id": "shadows-vocab",
+          "title": "Words to know",
+          "type": "vocabulary",
+          "grade": "both",
+          "vocabulary": [
+            {
+              "term": "shadow",
+              "definition": "A dark shape that appears when something blocks light."
+            },
+            {
+              "term": "blocks",
+              "definition": "Stands in the way so light cannot pass through."
+            },
+            {
+              "term": "straight line",
+              "definition": "The path light travels, without bending."
+            }
+          ]
+        },
+        {
+          "id": "shadows-activity",
+          "title": "Shadow tracing",
+          "type": "activity",
+          "grade": "both",
+          "activity": {
+            "title": "Trace your shadow",
+            "description": "Go outside on a sunny day and trace your shadow with chalk. Come back later and trace it again to see how it moved.",
+            "materials": ["Chalk", "A sunny outdoor spot"],
+            "steps": [
+              "Stand in a sunny spot.",
+              "Ask a friend to trace around your shadow with chalk.",
+              "Wait one hour and stand in the same spot.",
+              "Trace your shadow again and compare."
+            ],
+            "imageId": "shadow"
+          }
+        },
+        {
+          "id": "shadows-curiosity",
+          "title": "Something to wonder about",
+          "type": "curiosity",
+          "grade": "2",
+          "curiosity": "At night there is no Sun, so why do you think you cannot see your shadow then?"
+        },
+        {
+          "id": "shadows-related",
+          "title": "Keep exploring",
+          "type": "related",
+          "grade": "both",
+          "relatedIds": ["day-and-night", "clouds", "sun"]
+        }
       ],
-      "imageIds": [
-        "shadow"
-      ],
-      "keywords": [
-        "light",
-        "shadow"
-      ],
-      "readMinutes": 2
+      "imageIds": ["shadow"],
+      "keywords": ["light", "shadow", "sun"],
+      "readMinutes": 3
     },
     {
       "id": "clouds",
@@ -260,6 +678,30 @@
       "explanation": "It is called water vapour.",
       "imageId": "rain-cloud",
       "difficulty": 2,
+      "tags": []
+    },
+    {
+      "id": "gk-q11",
+      "type": "ordering",
+      "prompt": "Put these parts of the day in order from morning to night",
+      "items": ["Morning", "Midday", "Evening", "Night"],
+      "explanation": "The day goes morning → midday → evening → night as the Earth keeps turning.",
+      "imageId": "sun",
+      "difficulty": 1,
+      "tags": []
+    },
+    {
+      "id": "gk-q12",
+      "type": "matching",
+      "prompt": "Match each object to what it does",
+      "pairs": [
+        { "left": "Sun", "right": "Gives us light and warmth" },
+        { "left": "Moon", "right": "Reflects the Sun's light" },
+        { "left": "Earth", "right": "Spins once every 24 hours" }
+      ],
+      "explanation": "The Sun makes light, the Moon bounces it, and the Earth's spin gives us day and night.",
+      "imageId": "moon",
+      "difficulty": 1,
       "tags": []
     }
   ],

@@ -13,6 +13,7 @@
         --bg: #f4f7fb;
         --bad: #b42318;
         --good: #14804a;
+        --warn: #9a6700;
       }
       * { box-sizing: border-box; }
       body {
@@ -52,6 +53,8 @@
         margin-bottom: 10px;
       }
       textarea { min-height: 90px; resize: vertical; }
+      input[type="checkbox"], input[type="radio"] { width: auto; margin-right: 6px; }
+      input[type="color"] { padding: 3px; height: 42px; }
       button {
         font: inherit;
         font-weight: 700;
@@ -63,6 +66,8 @@
       }
       button.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
       button.danger { color: var(--bad); }
+      button.small { padding: 4px 10px; font-size: 0.82rem; }
+      button:disabled { opacity: 0.45; cursor: not-allowed; }
       .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
       .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
       ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -78,8 +83,21 @@
         background: #fbfcfe;
       }
       li.item.active { border-color: var(--brand); background: #eef4ff; }
+      li.item .item-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .item-buttons { display: flex; gap: 6px; flex-shrink: 0; }
       .muted { color: var(--soft); font-size: 0.88rem; }
-      .pill { font-size: 0.78rem; padding: 2px 9px; border-radius: 999px; background: #eef2f8; }
+      .pill {
+        font-size: 0.78rem;
+        padding: 2px 9px;
+        border-radius: 999px;
+        background: #eef2f8;
+        white-space: nowrap;
+      }
+      .pill.diff-1 { background: #e2f6ea; color: var(--good); }
+      .pill.diff-2 { background: #fff3d6; color: var(--warn); }
+      .pill.diff-3 { background: #fde8e6; color: var(--bad); }
+      .pill.bad { background: #fde8e6; color: var(--bad); }
+      .pill.good { background: #e2f6ea; color: var(--good); }
       #status {
         position: sticky;
         bottom: 0;
@@ -88,51 +106,168 @@
         padding: 10px 20px;
         font-size: 0.9rem;
       }
-      .err { color: var(--bad); }
-      .ok { color: #b7f0d0; }
-      pre { background: #0f1b2d; color: #d8e6ff; padding: 12px; border-radius: 10px; overflow: auto; max-height: 320px; }
+      #status.ok { background: #11482f; }
+      #status.err { background: #571d15; }
+      .report { display: grid; gap: 6px; }
+      .report .line {
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-size: 0.88rem;
+        word-break: break-word;
+      }
+      .report .line.error { background: #fde8e6; color: var(--bad); }
+      .report .line.note { background: #fff8e1; color: var(--warn); }
+      .report .line.ok { background: #e2f6ea; color: var(--good); font-weight: 700; }
       .pill-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
       .pill-row button { padding: 5px 12px; font-size: 0.85rem; }
       .pill-row button.active { background: var(--brand); border-color: var(--brand); color: #fff; }
       h3 { font-size: 0.95rem; margin: 14px 0 6px; }
+      .asset-thumb {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+        object-fit: cover;
+        border: 1px solid var(--line);
+        background: #eef2f8;
+        flex-shrink: 0;
+      }
+      .asset-thumb-missing {
+        width: 56px;
+        height: 56px;
+        border-radius: 8px;
+        border: 1px dashed var(--line);
+        background: #eef2f8;
+        color: var(--soft);
+        font-size: 0.68rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-shrink: 0;
+        padding: 4px;
+      }
+      .check-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+      .check-card {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 8px;
+        background: #fbfcfe;
+        font-size: 0.85rem;
+      }
+      .check-card img {
+        width: 44px;
+        height: 44px;
+        border-radius: 6px;
+        object-fit: cover;
+        border: 1px solid var(--line);
+        background: #eef2f8;
+      }
+      .check-card .check-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+      .opt-row, .pair-row, .vocab-row, .kv-row, .row-actions {
+        display: grid;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      .opt-row { grid-template-columns: 90px 1fr auto; }
+      .pair-row { grid-template-columns: 1fr 1fr auto; }
+      .vocab-row { grid-template-columns: 1fr 140px 1.4fr auto; }
+      .kv-row { grid-template-columns: 1fr 1.6fr auto; }
+      .opt-row input[type="text"], .pair-row input, .vocab-row input, .kv-row input { margin-bottom: 0; }
+      .radio-box {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+      /* preview, mimics the app screens */
+      .preview {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px;
+        background: #fbfcfe;
+        max-width: 720px;
+      }
+      .preview h3 { margin: 0 0 6px; font-size: 1.25rem; }
+      .preview .preview-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+      .preview figure { margin: 0 0 12px; }
+      .preview figure img { width: 100%; border-radius: 10px; }
+      .preview figure figcaption { font-size: 0.78rem; color: var(--soft); margin-top: 6px; }
+      .preview .img-missing {
+        background: #eef2f8;
+        color: var(--soft);
+        border-radius: 10px;
+        padding: 26px;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+      .preview .preview-summary { font-size: 1.02rem; }
+      .preview .preview-body { white-space: pre-wrap; margin-top: 10px; }
+      .preview .fact-list { padding-left: 20px; display: grid; gap: 6px; margin: 8px 0 14px; }
+      .preview dl.vocabulary { display: grid; gap: 8px; margin: 8px 0 14px; }
+      .preview dl.vocabulary dt { font-weight: 700; }
+      .preview dl.vocabulary dd { margin: 0; color: var(--soft); }
+      .preview .keyword-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+      .preview .correct-mark { color: var(--good); font-weight: 700; }
+      .preview ul.preview-options { list-style: none; padding: 0; display: grid; gap: 6px; }
+      .preview ul.preview-options li {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 8px 10px;
+        background: #fff;
+      }
+      .preview ul.preview-options li.right { border-color: var(--good); background: #e2f6ea; }
+      .attr-note {
+        background: #fff8e1;
+        border: 1px solid #f2dfa0;
+        color: var(--warn);
+        border-radius: 10px;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Kids Discovery World - Content Editor</h1>
       <span class="note">
-        Runs entirely in this browser. Nothing is uploaded anywhere. Open a pack, edit it, then
-        export the JSON and the pictures and put them in
-        <code>content/packs/&lt;pack-id&gt;/</code> and <code>content/images/</code> of the content
-        repository.
+        Runs entirely in this browser; nothing is uploaded anywhere. Open a pack, edit topics,
+        questions and pictures, watch the live check, then export the JSON. Put it in
+        <code>content/packs/&lt;pack-id&gt;/</code> and the pictures in
+        <code>content/images/</code>, then run the publishing helper to build and push.
       </span>
       <button id="openBtn">Open a pack file</button>
       <input id="fileInput" type="file" accept="application/json,.json" hidden />
       <button id="exportBtn" class="primary" disabled>Export pack JSON</button>
-      <button id="validateBtn" disabled>Validate</button>
     </header>
 
     <main>
-      <section id="emptyState">
-        <h2>Nothing open yet</h2>
-        <p class="muted">
-          Choose a pack file (<code>content/packs/&lt;pack-id&gt;/&lt;pack-id&gt;.src.json</code>) to
-          start editing. You can also create a new pack from scratch below.
-        </p>
+      <section id="newPackSection">
+        <h2>Create a new pack</h2>
         <div class="row">
           <div>
-            <label for="newId">New pack id</label>
-            <input id="newId" placeholder="space-and-astronomy" />
+            <label for="newId">Pack id (letters, digits, dot, dash, underscore)</label>
+            <input id="newId" placeholder="dinosaurs-and-extinction" />
           </div>
           <div>
-            <label for="newTitle">New pack title</label>
-            <input id="newTitle" placeholder="Space and Astronomy" />
+            <label for="newTitle">Pack title</label>
+            <input id="newTitle" placeholder="Dinosaurs and Extinction" />
           </div>
         </div>
         <button id="createBtn">Create empty pack</button>
       </section>
 
       <section id="editor" hidden>
+        <h2>Pack details</h2>
         <div class="row">
           <div>
             <label for="packId">Pack id</label>
@@ -151,6 +286,10 @@
             <input id="packIcon" />
           </div>
           <div>
+            <label for="packAgeRange">Age range</label>
+            <input id="packAgeRange" />
+          </div>
+          <div>
             <label for="packColor">Colour</label>
             <input id="packColor" type="color" />
           </div>
@@ -167,93 +306,421 @@
           <div>
             <h3>Questions</h3>
             <ul id="questionList"></ul>
-            <button id="addQuestion">+ Add question</button>
+            <div class="row" style="margin-top: 8px">
+              <div>
+                <label for="newQuestionType">Type of new question</label>
+                <select id="newQuestionType">
+                  <option value="multiple-choice">Multiple choice</option>
+                  <option value="true-false">True or false</option>
+                  <option value="short-answer">Short answer</option>
+                  <option value="matching">Matching</option>
+                </select>
+              </div>
+              <div style="align-self: end">
+                <button id="addQuestion">+ Add question</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <section id="imagesSection" hidden>
+        <h2>Pictures</h2>
+        <p class="muted">
+          Every picture needs its licence details (who made it, where it came from, under which
+          licence). The app shows those details next to every picture, and the build refuses to
+          publish a picture without them. Save the picture files themselves in
+          <code>content/images/</code> using exactly the paths below.
+        </p>
+        <ul id="assetList"></ul>
+        <button id="addAsset">+ Add picture</button>
+        <div id="assetEditor" style="margin-top: 14px"></div>
+      </section>
+
       <section id="detail" hidden>
-        <h2 id="detailTitle">Detail</h2>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px">
+          <h2 id="detailTitle" style="margin: 0">Detail</h2>
+          <div class="pill-row" style="margin: 0">
+            <button id="tabEdit" class="active">Edit</button>
+            <button id="tabPreview">Preview</button>
+          </div>
+        </div>
         <div id="detailBody"></div>
       </section>
 
-      <section id="report" hidden>
-        <h2>Validation report</h2>
-        <pre id="reportBody"></pre>
+      <section id="reportSection" hidden>
+        <h2>Live check</h2>
+        <div class="muted" style="margin-bottom: 8px">
+          Updated as you type. The build runs the same checks, plus file checks that need the
+          pictures on your disk.
+        </div>
+        <div id="reportBody" class="report"></div>
       </section>
     </main>
 
-    <div id="status">Ready.</div>
+    <div id="status">Ready. Open a pack file or create a new one.</div>
 
     <script>
       // ---------------------------------------------------------------- state
-      const state = { pack: null, selection: null, kind: null };
-
-      const $ = (id) => document.getElementById(id);
-      const say = (message, good) => {
-        $('status').textContent = message;
-        $('status').className = good ? 'ok' : '';
+      const state = {
+        pack: null,
+        sel: null, // { kind: 'entry' | 'question', index }
+        tab: 'edit',
+        assetSel: null, // index into pack.assets of the picture being edited
+        assetDraft: null, // licence details while the picture id is not valid yet
+        report: { problems: [], notes: [] },
       };
 
-      const isId = (v) => typeof v === 'string' && /^[a-z0-9][a-z0-9._-]*$/i.test(v);
-      const text = (v, max = 20000) => typeof v === 'string' && v.length <= max;
+      const $ = (id) => document.getElementById(id);
+      const say = (message, kind) => {
+        $('status').textContent = message;
+        $('status').className = kind || '';
+      };
 
       // ------------------------------------------------------------ validation
+      // Mirrors app/src/content/schema.ts and tools/content_lib.py, so anything
+      // that shows green here will also pass the build.
+      const ID_RE = /^[a-z0-9][a-z0-9._-]*$/i;
+      const isId = (v) => typeof v === 'string' && v.length > 0 && v.length <= 96 && ID_RE.test(v);
+      const isText = (v, max = 20000) => typeof v === 'string' && v.length >= 1 && v.length <= max;
+      const isInt = (v) => typeof v === 'number' && Number.isInteger(v);
+      const isUrl = (v) => {
+        try {
+          new URL(v);
+          return true;
+        } catch {
+          return false;
+        }
+      };
+
+      const ENTRY_FIELDS = [
+        'id', 'title', 'summary', 'body', 'facts', 'imageIds', 'keywords', 'readMinutes',
+        'ageLevel', 'difficulty', 'learningObjectives', 'vocabulary', 'sources', 'relatedIds',
+        'extra',
+      ];
+      const QUESTION_FIELDS = [
+        'id', 'type', 'prompt', 'explanation', 'imageId', 'difficulty', 'tags',
+        'options', 'answerIndex', 'answer', 'acceptedAnswers', 'pairs',
+      ];
+      const QUESTION_TYPES = ['multiple-choice', 'true-false', 'short-answer', 'matching'];
+      const ASSET_FIELDS = ['id', 'full', 'thumb', 'width', 'height', 'alt'];
+      const ATTRIBUTION_FIELDS = [
+        'title', 'creator', 'creatorUrl', 'license', 'licenseUrl', 'sourceUrl',
+        'attributionRequired', 'modifications',
+      ];
+      const RICH_ENTRY_FIELDS = [
+        'ageLevel', 'difficulty', 'learningObjectives', 'vocabulary', 'sources', 'relatedIds',
+        'extra',
+      ];
+      const RICH_APP_VERSION = '1.1.0';
+
       function validate(pack) {
         const problems = [];
-        const push = (m) => problems.push(m);
+        const notes = [];
+        const push = (message) => problems.push(message);
 
-        if (!pack || typeof pack !== 'object') return ['The pack must be a JSON object.'];
-        if (!isId(pack.packId)) push('packId must contain only letters, digits, dot, dash and underscore.');
-        if (!/^\d+\.\d+\.\d+$/.test(pack.packVersion || '')) push('packVersion must look like 1.0.0.');
-        if (!text(pack.title, 120)) push('title is required.');
+        if (!pack || typeof pack !== 'object' || Array.isArray(pack)) {
+          return { problems: ['The pack must be a JSON object.'], notes };
+        }
 
-        const entryIds = new Set();
-        (pack.entries || []).forEach((entry, i) => {
-          if (!isId(entry.id)) push(`Topic ${i + 1}: id is missing or invalid.`);
-          if (entryIds.has(entry.id)) push(`Topic ${i + 1}: duplicate id "${entry.id}".`);
-          entryIds.add(entry.id);
-          if (!text(entry.title, 200)) push(`Topic ${i + 1}: title is required.`);
-          if (!text(entry.summary, 1200)) push(`Topic ${i + 1}: summary is required.`);
-          (entry.imageIds || []).forEach((imageId) => {
-            if (!(pack.assets || []).some((a) => a.id === imageId))
-              push(`Topic ${i + 1}: image "${imageId}" is not in the asset list.`);
-            if (!(pack.attributions || {})[imageId])
-              push(`Topic ${i + 1}: image "${imageId}" has no attribution.`);
-          });
+        const packAllowed = [
+          'packId', 'packVersion', 'schemaVersion', 'title', 'description', 'icon', 'ageRange',
+          'color', 'entries', 'questions', 'assets', 'attributions',
+        ];
+        Object.keys(pack).forEach((key) => {
+          if (!packAllowed.includes(key)) push(`Pack has an unknown field "${key}" - the app will reject it.`);
         });
+        if (!isId(pack.packId)) push('packId must start with a letter or digit and use only letters, digits, dot, dash and underscore.');
+        if (typeof pack.packVersion !== 'string' || !/^\d+\.\d+\.\d+$/.test(pack.packVersion))
+          push('packVersion must look like 1.0.0.');
+        if (pack.schemaVersion !== undefined && !isInt(pack.schemaVersion) || (isInt(pack.schemaVersion) && (pack.schemaVersion < 1 || pack.schemaVersion > 999)))
+          push('schemaVersion must be a whole number between 1 and 999.');
+        if (!isText(pack.title, 120)) push('title is required (up to 120 characters).');
+        if (pack.description !== undefined && !isText(pack.description, 600) && typeof pack.description !== 'string')
+          push('description must be text.');
+        if (pack.description !== undefined && typeof pack.description === 'string' && pack.description.length > 600)
+          push('description must be at most 600 characters.');
+        if (pack.icon !== undefined && (typeof pack.icon !== 'string' || pack.icon.length > 40))
+          push('icon must be a short name.');
+        if (pack.ageRange !== undefined && (typeof pack.ageRange !== 'string' || pack.ageRange.length > 40))
+          push('ageRange must be short text such as 6-8.');
+        if (pack.color !== undefined && (typeof pack.color !== 'string' || !/^#[0-9a-fA-F]{6}$/.test(pack.color)))
+          push('color must be a hex colour such as #3b82f6.');
 
-        const questionIds = new Set();
-        (pack.questions || []).forEach((q, i) => {
-          if (!isId(q.id)) push(`Question ${i + 1}: id is missing or invalid.`);
-          if (questionIds.has(q.id)) push(`Question ${i + 1}: duplicate id "${q.id}".`);
-          questionIds.add(q.id);
-          if (!text(q.prompt, 2000)) push(`Question ${i + 1}: prompt is required.`);
-          if (q.type === 'multiple-choice') {
-            if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 6)
-              push(`Question ${i + 1}: needs 2 to 6 options.`);
-            else if (typeof q.answerIndex !== 'number' || q.answerIndex < 0 || q.answerIndex >= q.options.length)
-              push(`Question ${i + 1}: answerIndex must point at one of the options.`);
-          } else if (q.type === 'true-false') {
-            if (typeof q.answer !== 'boolean') push(`Question ${i + 1}: answer must be true or false.`);
-          } else if (q.type === 'short-answer') {
-            if (!Array.isArray(q.acceptedAnswers) || !q.acceptedAnswers.length)
-              push(`Question ${i + 1}: acceptedAnswers needs at least one answer.`);
-          } else {
-            push(`Question ${i + 1}: type must be multiple-choice, true-false or short-answer.`);
+        const entries = Array.isArray(pack.entries) ? pack.entries : [];
+        const questions = Array.isArray(pack.questions) ? pack.questions : [];
+        const assets = Array.isArray(pack.assets) ? pack.assets : [];
+        const attributions =
+          pack.attributions && typeof pack.attributions === 'object' && !Array.isArray(pack.attributions)
+            ? pack.attributions
+            : {};
+        if (!Array.isArray(pack.entries)) push('entries must be a list.');
+        if (!Array.isArray(pack.questions)) push('questions must be a list.');
+        if (!Array.isArray(pack.assets)) push('assets must be a list.');
+        if (!Array.isArray(pack.attributions) && pack.attributions !== undefined && (typeof pack.attributions !== 'object' || pack.attributions === null))
+          push('attributions must be an object.');
+
+        // ---- topics
+        const entryIds = new Set();
+        entries.forEach((entry, i) => {
+          const where = `Topic ${i + 1}`;
+          if (!entry || typeof entry !== 'object') {
+            push(`${where}: must be an object.`);
+            return;
+          }
+          Object.keys(entry).forEach((key) => {
+            if (!ENTRY_FIELDS.includes(key)) push(`${where}: unknown field "${key}" - the app will reject it.`);
+          });
+          if (!isId(entry.id)) push(`${where}: id is missing or invalid.`);
+          else {
+            if (entryIds.has(entry.id)) push(`${where}: duplicate id "${entry.id}".`);
+            entryIds.add(entry.id);
+          }
+          if (!isText(entry.title, 200)) push(`${where}: title is required.`);
+          if (!isText(entry.summary, 1200)) push(`${where}: summary is required.`);
+          if (entry.body !== undefined && typeof entry.body !== 'string') push(`${where}: body must be text.`);
+          else if (entry.body && entry.body.length > 20000) push(`${where}: body is longer than 20000 characters.`);
+          const strList = (key, maxItems, maxLen) => {
+            if (entry[key] === undefined) return;
+            if (!Array.isArray(entry[key])) { push(`${where}: ${key} must be a list.`); return; }
+            if (entry[key].length > maxItems) push(`${where}: ${key} may hold at most ${maxItems} items.`);
+            entry[key].forEach((item, j) => {
+              if (!isText(item, maxLen)) push(`${where}: ${key} item ${j + 1} must be text of at most ${maxLen} characters.`);
+            });
+          };
+          strList('facts', 50, 1000);
+          strList('keywords', 30, 60);
+          strList('learningObjectives', 10, 300);
+          strList('sources', 20, 2000);
+          if (entry.imageIds !== undefined) {
+            if (!Array.isArray(entry.imageIds)) push(`${where}: imageIds must be a list.`);
+            else {
+              if (entry.imageIds.length > 12) push(`${where}: at most 12 pictures per topic.`);
+              entry.imageIds.forEach((imageId) => {
+                if (!isId(imageId)) { push(`${where}: image "${imageId}" is not a valid id.`); return; }
+                if (!assets.some((a) => a && a.id === imageId))
+                  push(`${where}: picture "${imageId}" is used but not declared in the picture list.`);
+                if (!attributions[imageId])
+                  push(`${where}: picture "${imageId}" has no licence details.`);
+              });
+            }
+          }
+          if (entry.readMinutes !== undefined && (!isInt(entry.readMinutes) || entry.readMinutes < 1 || entry.readMinutes > 60))
+            push(`${where}: reading time must be a whole number between 1 and 60.`);
+          if (entry.ageLevel !== undefined && !isText(entry.ageLevel, 40))
+            push(`${where}: age level must be short text such as "6-8".`);
+          if (entry.difficulty !== undefined && (!isInt(entry.difficulty) || entry.difficulty < 1 || entry.difficulty > 3))
+            push(`${where}: difficulty must be 1, 2 or 3.`);
+          if (entry.vocabulary !== undefined) {
+            if (!Array.isArray(entry.vocabulary)) push(`${where}: vocabulary must be a list.`);
+            else {
+              if (entry.vocabulary.length > 20) push(`${where}: at most 20 vocabulary words.`);
+              entry.vocabulary.forEach((word, j) => {
+                const w = `Vocabulary word ${j + 1} (topic ${i + 1})`;
+                if (!word || typeof word !== 'object') { push(`${w}: must be an object.`); return; }
+                Object.keys(word).forEach((key) => {
+                  if (!['term', 'definition', 'pronunciation'].includes(key))
+                    push(`${w}: unknown field "${key}".`);
+                });
+                if (!isText(word.term, 120)) push(`${w}: term is required.`);
+                if (!isText(word.definition, 600)) push(`${w}: definition is required.`);
+                if (word.pronunciation !== undefined && !isText(word.pronunciation, 200))
+                  push(`${w}: pronunciation must be short text.`);
+              });
+            }
+          }
+          if (entry.relatedIds !== undefined) {
+            if (!Array.isArray(entry.relatedIds)) push(`${where}: relatedIds must be a list.`);
+            else {
+              if (entry.relatedIds.length > 20) push(`${where}: at most 20 related topics.`);
+              entry.relatedIds.forEach((relatedId) => {
+                if (!isId(relatedId)) { push(`${where}: related topic "${relatedId}" is not a valid id.`); return; }
+                if (!entryIds.has(relatedId))
+                  push(`${where}: links to topic "${relatedId}", which is not in this pack.`);
+              });
+            }
+          }
+          if (entry.extra !== undefined) {
+            if (!entry.extra || typeof entry.extra !== 'object' || Array.isArray(entry.extra))
+              push(`${where}: extra must be an object of name/value pairs.`);
+            else
+              Object.keys(entry.extra).forEach((key) => {
+                if (typeof key !== 'string' || key.length > 60)
+                  push(`${where}: extra field names must be short text (at most 60 characters).`);
+              });
           }
         });
 
-        const assetIds = new Set();
-        (pack.assets || []).forEach((asset, i) => {
-          if (!isId(asset.id)) push(`Image ${i + 1}: id is missing or invalid.`);
-          if (assetIds.has(asset.id)) push(`Image ${i + 1}: duplicate id "${asset.id}".`);
-          assetIds.add(asset.id);
-          if (!text(asset.full, 400) || !text(asset.thumb, 400))
-            push(`Image ${i + 1}: full and thumb paths are required.`);
+        // ---- questions
+        const questionIds = new Set();
+        questions.forEach((q, i) => {
+          const where = `Question ${i + 1}`;
+          if (!q || typeof q !== 'object') {
+            push(`${where}: must be an object.`);
+            return;
+          }
+          Object.keys(q).forEach((key) => {
+            if (!QUESTION_FIELDS.includes(key)) push(`${where}: unknown field "${key}" - the app will reject it.`);
+          });
+          if (!isId(q.id)) push(`${where}: id is missing or invalid.`);
+          else {
+            if (questionIds.has(q.id)) push(`${where}: duplicate id "${q.id}".`);
+            questionIds.add(q.id);
+          }
+          if (QUESTION_TYPES.includes(q.type)) {
+            if (!isText(q.prompt, 2000)) push(`${where}: prompt is required.`);
+          } else {
+            push(`${where}: type must be one of ${QUESTION_TYPES.join(', ')}.`);
+            return;
+          }
+          if (q.explanation !== undefined) {
+            if (typeof q.explanation !== 'string') push(`${where}: explanation must be text.`);
+            else if (q.explanation.length > 4000) push(`${where}: explanation is longer than 4000 characters.`);
+          }
+          if (q.difficulty !== undefined && (!isInt(q.difficulty) || q.difficulty < 1 || q.difficulty > 3))
+            push(`${where}: difficulty must be 1, 2 or 3.`);
+          if (q.tags !== undefined) {
+            if (!Array.isArray(q.tags)) push(`${where}: tags must be a list.`);
+            else {
+              if (q.tags.length > 20) push(`${where}: at most 20 tags.`);
+              q.tags.forEach((tag, j) => {
+                if (!isText(tag, 60)) push(`${where}: tag ${j + 1} must be short text.`);
+              });
+            }
+          }
+          if (q.imageId !== undefined && q.imageId !== null) {
+            if (!isId(q.imageId)) push(`${where}: imageId is not a valid id.`);
+            else {
+              if (!assets.some((a) => a && a.id === q.imageId))
+                push(`${where}: picture "${q.imageId}" is not declared in the picture list.`);
+              if (!attributions[q.imageId]) push(`${where}: picture "${q.imageId}" has no licence details.`);
+            }
+          }
+          if (q.type === 'multiple-choice') {
+            if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 6)
+              push(`${where}: needs 2 to 6 options.`);
+            else {
+              q.options.forEach((option, j) => {
+                if (!isText(option, 500)) push(`${where}: option ${j + 1} must be text of at most 500 characters.`);
+              });
+              if (!isInt(q.answerIndex) || q.answerIndex < 0 || q.answerIndex >= q.options.length)
+                push(`${where}: the correct answer must point at one of the options.`);
+            }
+          } else if (q.type === 'true-false') {
+            if (typeof q.answer !== 'boolean') push(`${where}: answer must be true or false.`);
+          } else if (q.type === 'short-answer') {
+            if (!Array.isArray(q.acceptedAnswers) || q.acceptedAnswers.length < 1 || q.acceptedAnswers.length > 12)
+              push(`${where}: needs 1 to 12 accepted answers.`);
+            else
+              q.acceptedAnswers.forEach((answer, j) => {
+                if (!isText(answer, 200)) push(`${where}: accepted answer ${j + 1} must be short text.`);
+              });
+          } else if (q.type === 'matching') {
+            if (!Array.isArray(q.pairs) || q.pairs.length < 2 || q.pairs.length > 8)
+              push(`${where}: needs 2 to 8 pairs.`);
+            else {
+              const lefts = new Set();
+              const rights = new Set();
+              q.pairs.forEach((pair, j) => {
+                const p = `Pair ${j + 1} (question ${i + 1})`;
+                if (!pair || typeof pair !== 'object') { push(`${p}: must be an object.`); return; }
+                Object.keys(pair).forEach((key) => {
+                  if (!['left', 'right'].includes(key)) push(`${p}: unknown field "${key}".`);
+                });
+                if (!isText(pair.left, 200)) push(`${p}: left item is required.`);
+                else if (lefts.has(pair.left)) push(`${p}: repeats the left item "${pair.left}".`);
+                if (!isText(pair.right, 200)) push(`${p}: right item is required.`);
+                else if (rights.has(pair.right)) push(`${p}: repeats the answer "${pair.right}".`);
+                if (isText(pair.left, 200)) lefts.add(pair.left);
+                if (isText(pair.right, 200)) rights.add(pair.right);
+              });
+            }
+          }
         });
 
-        return problems;
+        // ---- pictures
+        const assetIds = new Set();
+        assets.forEach((asset, i) => {
+          const where = `Picture ${i + 1}`;
+          if (!asset || typeof asset !== 'object') {
+            push(`${where}: must be an object.`);
+            return;
+          }
+          Object.keys(asset).forEach((key) => {
+            if (!ASSET_FIELDS.includes(key)) push(`${where}: unknown field "${key}".`);
+          });
+          if (!isId(asset.id)) push(`${where}: id is missing or invalid.`);
+          else {
+            if (assetIds.has(asset.id)) push(`${where}: duplicate id "${asset.id}".`);
+            assetIds.add(asset.id);
+          }
+          if (!isText(asset.full, 400)) push(`${where}: full size path is required.`);
+          if (!isText(asset.thumb, 400)) push(`${where}: thumbnail path is required.`);
+          if (asset.width !== undefined && (!isInt(asset.width) || asset.width < 1 || asset.width > 20000))
+            push(`${where}: width must be a whole number.`);
+          if (asset.height !== undefined && (!isInt(asset.height) || asset.height < 1 || asset.height > 20000))
+            push(`${where}: height must be a whole number.`);
+          if (asset.alt !== undefined && (typeof asset.alt !== 'string' || asset.alt.length > 300))
+            push(`${where}: alt text must be at most 300 characters.`);
+          if (asset.id && !attributions[asset.id])
+            push(`${where}: picture "${asset.id}" has no licence details.`);
+        });
+
+        // ---- licence details
+        Object.entries(attributions).forEach(([imageId, attribution]) => {
+          const where = `Licence details for "${imageId}"`;
+          if (!isId(imageId)) { push(`${where}: the id is not a valid picture id.`); return; }
+          if (!assetIds.has(imageId))
+            push(`${where}: does not belong to any picture in this pack.`);
+          if (!attribution || typeof attribution !== 'object') {
+            push(`${where}: must be an object.`);
+            return;
+          }
+          Object.keys(attribution).forEach((key) => {
+            if (!ATTRIBUTION_FIELDS.includes(key)) push(`${where}: unknown field "${key}".`);
+          });
+          if (!isText(attribution.title, 300)) push(`${where}: title is required.`);
+          if (!isText(attribution.license, 120)) push(`${where}: licence is required.`);
+          if (attribution.sourceUrl === undefined || !isUrl(attribution.sourceUrl))
+            push(`${where}: source URL is required and must be a full URL (https://…).`);
+          else if (attribution.sourceUrl.length > 2000) push(`${where}: source URL is too long.`);
+          if (attribution.creator !== undefined && !isText(attribution.creator, 300))
+            push(`${where}: creator must be text.`);
+          if (attribution.creatorUrl !== undefined && !isUrl(attribution.creatorUrl))
+            push(`${where}: creator URL must be a full URL.`);
+          if (attribution.licenseUrl !== undefined && !isUrl(attribution.licenseUrl))
+            push(`${where}: licence URL must be a full URL.`);
+          if (attribution.attributionRequired !== undefined && typeof attribution.attributionRequired !== 'boolean')
+            push(`${where}: "attribution required" must be true or false.`);
+          if (attribution.modifications !== undefined && !isText(attribution.modifications, 500))
+            push(`${where}: modifications must be short text.`);
+        });
+
+        // ---- notes (not errors)
+        if (assets.length) {
+          const paths = [];
+          assets.forEach((asset) => {
+            if (isText(asset.full, 400)) paths.push(asset.full);
+            if (isText(asset.thumb, 400)) paths.push(asset.thumb);
+          });
+          const shown = paths.slice(0, 4).join(', ');
+          notes.push(
+            `${paths.length} picture files must exist under content/ (the build checks this on disk): ${shown}` +
+              (paths.length > 4 ? ` …` : ''),
+          );
+        }
+        const usesRich =
+          entries.some((e) => e && RICH_ENTRY_FIELDS.some((f) => f in e)) ||
+          questions.some((q) => q && q.type === 'matching');
+        if (usesRich) {
+          notes.push(
+            `This pack uses the richer topic fields or matching questions. Set "minAppVersion" in ` +
+              `content/library.json to ${RICH_APP_VERSION} before publishing, and bump ` +
+              `"libraryVersionNumber" so installed apps download the update.`,
+          );
+        }
+
+        return { problems, notes };
       }
 
       // --------------------------------------------------------------- helpers
@@ -269,13 +736,18 @@
         setTimeout(() => URL.revokeObjectURL(url), 2000);
       }
 
+      let fieldCounter = 0;
       function el(tag, attrs = {}, children = []) {
         const node = document.createElement(tag);
         Object.entries(attrs).forEach(([key, value]) => {
+          if (value === undefined || value === null) return;
           if (key === 'class') node.className = value;
+          else if (key === 'hidden') node.hidden = !!value;
           else if (key.startsWith('on')) node.addEventListener(key.slice(2), value);
           else if (key === 'value') node.value = value;
           else if (key === 'checked') node.checked = !!value;
+          else if (key === 'disabled') node.disabled = !!value;
+          else if (key === 'dataset') Object.assign(node.dataset, value);
           else node.setAttribute(key, value);
         });
         (Array.isArray(children) ? children : [children]).forEach((child) => {
@@ -285,64 +757,160 @@
         return node;
       }
 
-      function field(label, value, onChange, type = 'text') {
-        const input = el('input', { type, value: value ?? '' });
+      function field(labelText, value, onChange, type = 'text') {
+        const id = 'f' + ++fieldCounter;
+        const input = el('input', { type, id, value: value ?? '' });
         input.addEventListener('input', () => onChange(input.value));
-        return el('div', {}, [el('label', {}, label), input]);
+        return el('div', {}, [el('label', { for: id }, labelText), input]);
       }
 
-      function area(label, value, onChange) {
-        const input = el('textarea', {}, value ?? '');
+      function area(labelText, value, onChange) {
+        const id = 'f' + ++fieldCounter;
+        const input = el('textarea', { id });
+        input.textContent = value ?? '';
         input.addEventListener('input', () => onChange(input.value));
-        return el('div', {}, [el('label', {}, label), input]);
+        return el('div', {}, [el('label', { for: id }, labelText), input]);
       }
 
-      function select(label, options, value, onChange) {
-        const node = el('select', {}, options.map((o) => el('option', { value: o.value }, o.label)));
-        node.value = value;
+      function select(labelText, options, value, onChange) {
+        const id = 'f' + ++fieldCounter;
+        const node = el(
+          'select',
+          { id },
+          options.map((o) => el('option', { value: o.value }, o.label)),
+        );
+        node.value = String(value ?? '');
         node.addEventListener('change', () => onChange(node.value));
-        return el('div', {}, [el('label', {}, label), node]);
+        return el('div', {}, [el('label', { for: id }, labelText), node]);
+      }
+
+      function lines(value) {
+        return (value || []).join('\n');
+      }
+      function fromLines(value, maximum) {
+        const items = value.split('\n').map((line) => line.trim()).filter(Boolean);
+        return items.slice(0, maximum);
+      }
+
+      // Picture preview path: this page lives in tools/authoring/, the pictures
+      // in content/images/. Works over file:// and over any web root.
+      const contentUrl = (rel) => '../../content/' + rel;
+
+      function thumbFor(asset) {
+        const rel = asset && (asset.thumb || asset.full);
+        if (!rel || typeof rel !== 'string') return el('div', { class: 'asset-thumb-missing' }, 'no path');
+        const img = el('img', { class: 'asset-thumb', src: contentUrl(rel), alt: asset.alt || asset.id || '' });
+        img.addEventListener('error', () => img.replaceWith(el('div', { class: 'asset-thumb-missing' }, 'not on disk')));
+        return img;
+      }
+
+      function nextId(base, taken) {
+        const root = String(base || 'item').slice(0, 90);
+        if (!taken.has(root)) return root;
+        let n = 2;
+        while (taken.has(`${root}-${n}`)) n += 1;
+        return `${root}-${n}`;
+      }
+
+      function difficultyLabel(value) {
+        return value === 1 ? 'Easy' : value === 2 ? 'Medium' : value === 3 ? 'Hard' : null;
       }
 
       // ---------------------------------------------------------------- render
-      function render() {
-        const hasPack = Boolean(state.pack);
-        $('emptyState').hidden = hasPack;
-        $('editor').hidden = !hasPack;
-        $('exportBtn').disabled = !hasPack;
-        $('validateBtn').disabled = !hasPack;
-        if (!hasPack) {
-          $('detail').hidden = true;
-          $('report').hidden = true;
-          return;
+      function fullRender() {
+        render();
+        renderLists();
+        renderDetail();
+        renderAssetEditor();
+        refresh();
+      }
+
+      // Re-validate and update the live check + status bar. Called on every edit.
+      function refresh() {
+        if (!state.pack) return;
+        state.report = validate(state.pack);
+        const { problems, notes } = state.report;
+
+        const reportBody = $('reportBody');
+        reportBody.innerHTML = '';
+        if (!problems.length) {
+          reportBody.appendChild(el('div', { class: 'line ok' }, 'Everything checks out. This pack is ready to export.'));
+        } else {
+          problems.forEach((problem) => reportBody.appendChild(el('div', { class: 'line error' }, '✗ ' + problem)));
         }
+        notes.forEach((note) => reportBody.appendChild(el('div', { class: 'line note' }, 'ℹ ' + note)));
 
         const pack = state.pack;
-        $('packId').value = pack.packId;
-        $('packVersion').value = pack.packVersion;
-        $('packTitle').value = pack.title;
-        $('packIcon').value = pack.icon || 'star';
-        $('packColor').value = pack.color || '#3b82f6';
-        $('packDescription').value = pack.description || '';
+        const entries = (pack.entries || []).length;
+        const questions = (pack.questions || []).length;
+        const assets = (pack.assets || []).length;
+        if (problems.length) {
+          say(`✗ ${problems.length} problem(s) in "${pack.packId}" - fix them before exporting (see the live check).`, 'err');
+        } else {
+          say(`✓ "${pack.packId}" v${pack.packVersion}: ${entries} topics, ${questions} questions, ${assets} pictures - all good.`, 'ok');
+        }
+        $('exportBtn').disabled = problems.length > 0;
+      }
+
+      function render() {
+        const hasPack = Boolean(state.pack);
+        $('editor').hidden = !hasPack;
+        $('imagesSection').hidden = !hasPack;
+        $('detail').hidden = !hasPack || state.sel === null;
+        $('reportSection').hidden = !hasPack;
+        $('exportBtn').disabled = !hasPack;
+        if (!hasPack) return;
+
+        const pack = state.pack;
+        const meta = { packId: 'packId', packVersion: 'packVersion', packTitle: 'title', packIcon: 'icon', packAgeRange: 'ageRange', packColor: 'color', packDescription: 'description' };
+        Object.entries(meta).forEach(([inputId, key]) => {
+          const node = $(inputId);
+          if (document.activeElement !== node) node.value = pack[key] ?? (key === 'icon' ? 'star' : key === 'color' ? '#3b82f6' : key === 'ageRange' ? '6-8' : '');
+        });
+      }
+
+      function renderLists() {
+        const pack = state.pack;
+        if (!pack) return;
 
         const entryList = $('entryList');
         entryList.innerHTML = '';
         (pack.entries || []).forEach((entry, index) => {
+          const label = el('span', { class: 'item-label' }, entry.title || '(no title)');
+          const pills = el('span', { style: 'display:flex;gap:6px;flex-shrink:0' }, [
+            el('span', { class: 'pill' }, `${(entry.facts || []).length} facts`),
+          ]);
+          const difficulty = difficultyLabel(entry.difficulty);
+          if (difficulty) pills.appendChild(el('span', { class: `pill diff-${entry.difficulty}` }, difficulty));
+          const buttons = el('span', { class: 'item-buttons' }, [
+            el('button', {
+              class: 'small',
+              title: 'Make a copy of this topic',
+              onclick: (event) => {
+                event.stopPropagation();
+                duplicateEntry(index);
+              },
+            }, 'Duplicate'),
+            el('button', {
+              class: 'small',
+              title: 'Remove this topic',
+              onclick: (event) => {
+                event.stopPropagation();
+                removeEntry(index);
+              },
+            }, 'Delete'),
+          ]);
           const item = el(
             'li',
             {
-              class:
-                'item' + (state.kind === 'entry' && state.selection === index ? ' active' : ''),
+              class: 'item' + (state.sel && state.sel.kind === 'entry' && state.sel.index === index ? ' active' : ''),
               onclick: () => {
-                state.kind = 'entry';
-                state.selection = index;
-                render();
+                state.sel = { kind: 'entry', index };
+                state.tab = 'edit';
+                fullRender();
               },
             },
-            [
-              el('span', {}, entry.title || '(no title)'),
-              el('span', { class: 'pill' }, `${(entry.facts || []).length} facts`),
-            ],
+            [label, pills, buttons],
           );
           entryList.appendChild(item);
         });
@@ -350,169 +918,927 @@
         const questionList = $('questionList');
         questionList.innerHTML = '';
         (pack.questions || []).forEach((question, index) => {
+          const buttons = el('span', { class: 'item-buttons' }, [
+            el('button', {
+              class: 'small',
+              title: 'Make a copy of this question',
+              onclick: (event) => {
+                event.stopPropagation();
+                duplicateQuestion(index);
+              },
+            }, 'Duplicate'),
+            el('button', {
+              class: 'small',
+              title: 'Remove this question',
+              onclick: (event) => {
+                event.stopPropagation();
+                removeQuestion(index);
+              },
+            }, 'Delete'),
+          ]);
           const item = el(
             'li',
             {
-              class:
-                'item' + (state.kind === 'question' && state.selection === index ? ' active' : ''),
+              class: 'item' + (state.sel && state.sel.kind === 'question' && state.sel.index === index ? ' active' : ''),
               onclick: () => {
-                state.kind = 'question';
-                state.selection = index;
-                render();
+                state.sel = { kind: 'question', index };
+                state.tab = 'edit';
+                fullRender();
               },
             },
             [
-              el('span', {}, (question.prompt || '(no question)').slice(0, 60)),
-              el('span', { class: 'pill' }, question.type),
+              el('span', { class: 'item-label' }, (question.prompt || '(no question)').slice(0, 70)),
+              el('span', { class: 'pill', style: 'flex-shrink:0' }, question.type || '?'),
+              buttons,
             ],
           );
           questionList.appendChild(item);
         });
 
-        renderDetail();
+        renderAssetList();
+      }
+
+      function renderAssetList() {
+        const pack = state.pack;
+        const list = $('assetList');
+        list.innerHTML = '';
+        (pack.assets || []).forEach((asset, index) => {
+          const hasAttr = Boolean(pack.attributions && pack.attributions[asset.id]);
+          const buttons = el('span', { class: 'item-buttons' }, [
+            el('button', {
+              class: 'small',
+              onclick: (event) => {
+                event.stopPropagation();
+                state.assetSel = index;
+                renderAssetEditor();
+                $('assetEditor').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              },
+            }, 'Edit'),
+            el('button', {
+              class: 'small danger',
+              title: 'Remove this picture and its licence details',
+              onclick: (event) => {
+                event.stopPropagation();
+                removeAsset(index);
+              },
+            }, 'Delete'),
+          ]);
+          const item = el(
+            'li',
+            {
+              class: 'item' + (state.assetSel === index ? ' active' : ''),
+              onclick: () => {
+                state.assetSel = index;
+                renderAssetEditor();
+              },
+            },
+            [
+              thumbFor(asset),
+              el('span', { class: 'item-label' }, [
+                el('strong', {}, asset.id || '(no id)'),
+                el('div', { class: 'muted' }, [asset.full || 'no full path', ' · ', asset.thumb || 'no thumb path']),
+              ]),
+              el('span', { class: 'pill ' + (hasAttr ? 'good' : 'bad') }, hasAttr ? 'licence ok' : 'licence missing'),
+              buttons,
+            ],
+          );
+          list.appendChild(item);
+        });
+      }
+
+      function renderAssetEditor() {
+        const host = $('assetEditor');
+        host.innerHTML = '';
+        const pack = state.pack;
+        if (state.assetSel === null || !pack || !pack.assets || !pack.assets[state.assetSel]) {
+          state.assetDraft = null;
+          return;
+        }
+        const asset = pack.assets[state.assetSel];
+
+        // Commit licence details straight into the pack whenever the id is
+        // valid; otherwise keep them in a draft so nothing is lost.
+        const stored =
+          asset.id && pack.attributions && pack.attributions[asset.id]
+            ? { ...pack.attributions[asset.id] }
+            : state.assetDraft || {};
+        const draft = { ...stored };
+
+        const commit = () => {
+          if (!isId(asset.id)) {
+            state.assetDraft = draft;
+            refresh();
+            return;
+          }
+          const cleaned = {};
+          Object.entries(draft).forEach(([key, value]) => {
+            if (value === '' || value === null || value === undefined) return;
+            cleaned[key] = value;
+          });
+          pack.attributions = pack.attributions || {};
+          pack.attributions[asset.id] = cleaned;
+          state.assetDraft = null;
+          renderAssetList();
+          refresh();
+        };
+        draft.attributionRequired = draft.attributionRequired === undefined ? true : !!draft.attributionRequired;
+
+        host.appendChild(el('h3', {}, 'Edit picture: ' + (asset.id || '(no id yet)')));
+        host.appendChild(el('div', { class: 'row' }, [
+          field('Id', asset.id, (v) => {
+            asset.id = v.trim();
+            renderAssetEditor();
+            renderLists();
+          }),
+          field('Full size path (under content/)', asset.full, (v) => {
+            asset.full = v;
+            renderAssetList();
+            refresh();
+          }),
+          field('Thumbnail path (under content/)', asset.thumb, (v) => {
+            asset.thumb = v;
+            renderAssetList();
+            refresh();
+          }),
+        ]));
+        host.appendChild(el('div', { class: 'row' }, [
+          field('Alt text (what the picture shows)', asset.alt ?? '', (v) => {
+            asset.alt = v;
+            refresh();
+          }),
+          field('Width in pixels (optional)', asset.width ?? '', (v) => {
+            const n = Number(v);
+            if (v === '' || Number.isInteger(n) && n > 0) asset.width = v === '' ? undefined : n;
+            refresh();
+          }, 'number'),
+          field('Height in pixels (optional)', asset.height ?? '', (v) => {
+            const n = Number(v);
+            if (v === '' || Number.isInteger(n) && n > 0) asset.height = v === '' ? undefined : n;
+            refresh();
+          }, 'number'),
+        ]));
+
+        host.appendChild(el('h3', {}, 'Licence details (shown to the child)'));
+        host.appendChild(el('div', { class: 'row' }, [
+          field('Title of the work', draft.title ?? '', (v) => {
+            draft.title = v;
+            commit();
+          }),
+          field('Creator (who made it)', draft.creator ?? '', (v) => {
+            draft.creator = v;
+            commit();
+          }),
+          field('Creator URL (optional)', draft.creatorUrl ?? '', (v) => {
+            draft.creatorUrl = v;
+            commit();
+          }),
+        ]));
+        host.appendChild(el('div', { class: 'row' }, [
+          field('Licence (for example CC BY 4.0)', draft.license ?? '', (v) => {
+            draft.license = v;
+            commit();
+          }),
+          field('Licence URL (optional)', draft.licenseUrl ?? '', (v) => {
+            draft.licenseUrl = v;
+            commit();
+          }),
+          field('Source URL (where it came from)', draft.sourceUrl ?? '', (v) => {
+            draft.sourceUrl = v;
+            commit();
+          }),
+        ]));
+        const attrRow = el('div', {}, [
+          el('label', {}, [
+            el('input', {
+              type: 'checkbox',
+              checked: draft.attributionRequired,
+              onchange: (event) => {
+                draft.attributionRequired = event.target.checked;
+                commit();
+              },
+            }),
+            'Show the credit next to the picture (recommended)',
+          ]),
+        ]);
+        host.appendChild(attrRow);
+        host.appendChild(
+          field('Modifications (optional, for example "cropped")', draft.modifications ?? '', (v) => {
+            draft.modifications = v;
+            commit();
+          }),
+        );
+        host.appendChild(
+          el('button', {
+            class: 'danger',
+            onclick: () => removeAsset(state.assetSel),
+          }, 'Remove this picture'),
+        );
       }
 
       function renderDetail() {
         const body = $('detailBody');
         body.innerHTML = '';
-        if (!state.pack || state.selection === null) {
+        const pack = state.pack;
+        if (!pack || state.sel === null) {
           $('detail').hidden = true;
           return;
         }
         $('detail').hidden = false;
+        $('tabEdit').classList.toggle('active', state.tab === 'edit');
+        $('tabPreview').classList.toggle('active', state.tab === 'preview');
 
-        if (state.kind === 'entry') {
-          const entry = state.pack.entries[state.selection];
+        if (state.sel.kind === 'entry') {
+          const index = state.sel.index;
+          const entry = pack.entries[index];
+          if (!entry) {
+            state.sel = null;
+            $('detail').hidden = true;
+            return;
+          }
           $('detailTitle').textContent = 'Edit topic';
+          if (state.tab === 'preview') {
+            body.appendChild(previewEntry(entry));
+            return;
+          }
+
           body.appendChild(el('div', { class: 'row' }, [
-            field('Id', entry.id, (v) => (entry.id = v)),
-            field('Title', entry.title, (v) => (entry.title = v)),
+            field('Id', entry.id, (v) => {
+              entry.id = v;
+              renderLists();
+            }),
+            field('Title', entry.title, (v) => {
+              entry.title = v;
+              renderLists();
+            }),
           ]));
-          body.appendChild(area('Summary', entry.summary, (v) => (entry.summary = v)));
-          body.appendChild(area('Body', entry.body, (v) => (entry.body = v)));
-          body.appendChild(
-            area('Facts (one per line)', (entry.facts || []).join('\n'), (v) => {
-              entry.facts = v.split('\n').filter((line) => line.trim());
+          body.appendChild(el('div', { class: 'row' }, [
+            field('Age level (optional, for example 6-8)', entry.ageLevel ?? '', (v) => {
+              entry.ageLevel = v === '' ? undefined : v;
             }),
+            select('Difficulty (optional)', [
+              { value: '', label: 'No rating' },
+              { value: '1', label: '1 - Easy' },
+              { value: '2', label: '2 - Medium' },
+              { value: '3', label: '3 - Hard' },
+            ], entry.difficulty ?? '', (v) => {
+              entry.difficulty = v === '' ? undefined : Number(v);
+              renderLists();
+            }),
+            field('Reading time in minutes', entry.readMinutes ?? 2, (v) => {
+              const n = Number(v);
+              entry.readMinutes = Number.isInteger(n) && n > 0 ? n : 2;
+            }, 'number'),
+          ]));
+          body.appendChild(area('Summary (the one line shown on the pack list)', entry.summary, (v) => (entry.summary = v)));
+          body.appendChild(area('Body (the full text of the topic)', entry.body ?? '', (v) => {
+            entry.body = v;
+          }));
+          body.appendChild(
+            area('Fun facts (one per line)', lines(entry.facts), (v) => (entry.facts = fromLines(v, 50))),
+          );
+
+          // Pictures: pick from the declared pictures so ids can never drift.
+          const assets = pack.assets || [];
+          const grid = el('div', { class: 'check-grid' });
+          if (!assets.length) {
+            grid.appendChild(el('span', { class: 'muted' }, 'No pictures in this pack yet - add some in the Pictures section.'));
+          }
+          assets.forEach((asset) => {
+            const selected = (entry.imageIds || []).includes(asset.id);
+            const hasAttr = Boolean(pack.attributions && pack.attributions[asset.id]);
+            const label = el(
+              'label',
+              { class: 'check-card' },
+              [
+                el('input', {
+                  type: 'checkbox',
+                  checked: selected,
+                  onchange: () => {
+                    const ids = entry.imageIds || [];
+                    entry.imageIds = ids.includes(asset.id)
+                      ? ids.filter((x) => x !== asset.id)
+                      : [...ids, asset.id];
+                    refresh();
+                  },
+                }),
+                thumbFor(asset),
+                el('span', { class: 'check-text' }, asset.id + (hasAttr ? '' : ' (no licence!)')),
+              ],
+            );
+            grid.appendChild(label);
+          });
+          body.appendChild(el('div', {}, [el('h3', {}, 'Pictures for this topic'), grid]));
+
+          body.appendChild(
+            area('Keywords (one per line)', lines(entry.keywords), (v) => (entry.keywords = fromLines(v, 30))),
           );
           body.appendChild(
-            area('Image ids (one per line)', (entry.imageIds || []).join('\n'), (v) => {
-              entry.imageIds = v.split('\n').filter((line) => line.trim());
+            area('What the child should learn (one per line, at most 10)', lines(entry.learningObjectives), (v) => {
+              entry.learningObjectives = v ? fromLines(v, 10) : undefined;
             }),
           );
+
+          // Vocabulary: term + pronunciation + definition rows.
+          const vocabHost = el('div', {});
+          (entry.vocabulary || []).forEach((word, i) => {
+            vocabHost.appendChild(
+              el('div', { class: 'vocab-row' }, [
+                el('input', {
+                  placeholder: 'Word',
+                  value: word.term || '',
+                  oninput: (event) => {
+                    word.term = event.target.value;
+                    refresh();
+                  },
+                }),
+                el('input', {
+                  placeholder: 'Sounding (optional)',
+                  value: word.pronunciation || '',
+                  oninput: (event) => {
+                    word.pronunciation = event.target.value === '' ? undefined : event.target.value;
+                    refresh();
+                  },
+                }),
+                el('input', {
+                  placeholder: 'What it means',
+                  value: word.definition || '',
+                  oninput: (event) => {
+                    word.definition = event.target.value;
+                    refresh();
+                  },
+                }),
+                el('button', {
+                  class: 'small danger',
+                  onclick: () => {
+                    entry.vocabulary.splice(i, 1);
+                    if (!entry.vocabulary.length) delete entry.vocabulary;
+                    renderDetail();
+                    refresh();
+                  },
+                }, '×'),
+              ]),
+            );
+          });
           body.appendChild(
-            area('Keywords (one per line)', (entry.keywords || []).join('\n'), (v) => {
-              entry.keywords = v.split('\n').filter((line) => line.trim());
+            el('div', {}, [
+              el('h3', {}, 'Words to know (at most 20)'),
+              vocabHost,
+              el('button', {
+                class: 'small',
+                disabled: (entry.vocabulary || []).length >= 20,
+                onclick: () => {
+                  entry.vocabulary = entry.vocabulary || [];
+                  entry.vocabulary.push({ term: '', definition: '' });
+                  renderDetail();
+                  refresh();
+                },
+              }, '+ Add word'),
+            ]),
+          );
+
+          body.appendChild(
+            area('Sources (one per line, at most 20 - full URLs work best)', lines(entry.sources), (v) => {
+              entry.sources = v ? fromLines(v, 20) : undefined;
             }),
           );
+
+          // Related topics: pick from the other topics in this pack.
+          const relatedHost = el('div', {});
+          pack.entries.forEach((other, j) => {
+            if (j === index) return;
+            const selected = (entry.relatedIds || []).includes(other.id);
+            relatedHost.appendChild(
+              el('label', { class: 'check-card', style: 'margin-bottom:6px' }, [
+                el('input', {
+                  type: 'checkbox',
+                  checked: selected,
+                  onchange: () => {
+                    const ids = entry.relatedIds || [];
+                    entry.relatedIds = ids.includes(other.id)
+                      ? ids.filter((x) => x !== other.id)
+                      : [...ids, other.id];
+                    refresh();
+                  },
+                }),
+                el('span', { class: 'check-text' }, (other.title || other.id) + ` (${other.id})`),
+              ]),
+            );
+          });
+          body.appendChild(el('div', {}, [el('h3', {}, 'Worth reading next (topics from this pack)'), relatedHost]));
+
+          // Extra fields for this kind of subject.
+          const extraHost = el('div', {});
+          Object.entries(entry.extra || {}).forEach(([key, value]) => {
+            const keyInput = el('input', { value: key, dataset: { oldKey: key }, placeholder: 'Name' });
+            const valueInput = el('input', { value: String(value ?? ''), placeholder: 'Value (text)' });
+            keyInput.addEventListener('input', () => {
+              const newKey = keyInput.value;
+              entry.extra = entry.extra || {};
+              if (keyInput.dataset.oldKey && keyInput.dataset.oldKey !== newKey) {
+                delete entry.extra[keyInput.dataset.oldKey];
+              }
+              entry.extra[newKey] = valueInput.value;
+              keyInput.dataset.oldKey = newKey;
+              refresh();
+            });
+            valueInput.addEventListener('input', () => {
+              entry.extra = entry.extra || {};
+              entry.extra[keyInput.value] = valueInput.value;
+              refresh();
+            });
+            extraHost.appendChild(
+              el('div', { class: 'kv-row' }, [
+                keyInput,
+                valueInput,
+                el('button', {
+                  class: 'small danger',
+                  onclick: () => {
+                    if (entry.extra) delete entry.extra[keyInput.dataset.oldKey || key];
+                    if (entry.extra && !Object.keys(entry.extra).length) delete entry.extra;
+                    renderDetail();
+                    refresh();
+                  },
+                }, '×'),
+              ]),
+            );
+          });
           body.appendChild(
+            el('div', {}, [
+              el('h3', {}, 'Extra fields for this kind of subject (optional)'),
+              el('p', { class: 'muted' }, 'Examples: habitat for an animal, capital for a country. Values are stored as text.'),
+              extraHost,
+              el('button', {
+                class: 'small',
+                onclick: () => {
+                  entry.extra = entry.extra || {};
+                  entry.extra[''] = '';
+                  renderDetail();
+                  refresh();
+                },
+              }, '+ Add field'),
+            ]),
+          );
+
+          body.appendChild(el('div', { class: 'pill-row' }, [
+            el('button', {
+              onclick: () => duplicateEntry(index),
+            }, 'Duplicate this topic'),
             el('button', {
               class: 'danger',
-              onclick: () => {
-                state.pack.entries.splice(state.selection, 1);
-                state.selection = null;
-                render();
-                say('Topic removed.');
-              },
-            }, 'Remove this topic'),
-          );
-        } else {
-          const question = state.pack.questions[state.selection];
-          $('detailTitle').textContent = 'Edit question';
-          body.appendChild(el('div', { class: 'row' }, [
-            field('Id', question.id, (v) => (question.id = v)),
-            select(
-              'Type',
-              [
-                { value: 'multiple-choice', label: 'Multiple choice' },
-                { value: 'true-false', label: 'True or false' },
-                { value: 'short-answer', label: 'Short answer' },
-              ],
-              question.type,
-              (v) => {
-                question.type = v;
-                if (v === 'multiple-choice') {
-                  question.options = question.options || ['First answer', 'Second answer'];
-                  question.answerIndex = question.answerIndex ?? 0;
-                  delete question.answer;
-                  delete question.acceptedAnswers;
-                } else if (v === 'true-false') {
-                  question.answer = typeof question.answer === 'boolean' ? question.answer : true;
-                  delete question.options;
-                  delete question.answerIndex;
-                  delete question.acceptedAnswers;
-                } else {
-                  question.acceptedAnswers = question.acceptedAnswers || [''];
-                  delete question.options;
-                  delete question.answerIndex;
-                  delete question.answer;
-                }
-                render();
-              },
-            ),
+              onclick: () => removeEntry(index),
+            }, 'Delete this topic'),
           ]));
-          body.appendChild(area('Prompt', question.prompt, (v) => (question.prompt = v)));
-          body.appendChild(area('Explanation', question.explanation, (v) => (question.explanation = v)));
+        } else {
+          const index = state.sel.index;
+          const question = pack.questions[index];
+          if (!question) {
+            state.sel = null;
+            $('detail').hidden = true;
+            return;
+          }
+          $('detailTitle').textContent = 'Edit question';
+          if (state.tab === 'preview') {
+            body.appendChild(previewQuestion(question));
+            return;
+          }
+
+          body.appendChild(el('div', { class: 'row' }, [
+            field('Id', question.id, (v) => {
+              question.id = v;
+              renderLists();
+            }),
+            select('Type', [
+              { value: 'multiple-choice', label: 'Multiple choice' },
+              { value: 'true-false', label: 'True or false' },
+              { value: 'short-answer', label: 'Short answer' },
+              { value: 'matching', label: 'Matching' },
+            ], question.type, (v) => changeQuestionType(question, v)),
+          ]));
+          body.appendChild(area('Question (the prompt the child sees)', question.prompt, (v) => {
+            question.prompt = v;
+            renderLists();
+          }));
+          body.appendChild(area('Explanation (shown after the child answers)', question.explanation ?? '', (v) => {
+            question.explanation = v;
+          }));
+
+          const assets = pack.assets || [];
+          body.appendChild(el('div', { class: 'row' }, [
+            select('Picture (for picture questions)', [
+              { value: '', label: 'No picture' },
+              ...assets.map((asset) => ({ value: asset.id, label: asset.id + (asset.alt ? ` - ${asset.alt}` : '') })),
+            ], question.imageId ?? '', (v) => {
+              question.imageId = v === '' ? undefined : v;
+              refresh();
+            }),
+            select('Difficulty', [
+              { value: '1', label: '1 - Easy' },
+              { value: '2', label: '2 - Medium' },
+              { value: '3', label: '3 - Hard' },
+            ], question.difficulty ?? 1, (v) => {
+              question.difficulty = Number(v);
+            }),
+          ]));
+          body.appendChild(area('Tags (one per line, at most 20)', lines(question.tags), (v) => {
+            question.tags = fromLines(v, 20);
+          }));
 
           if (question.type === 'multiple-choice') {
+            const optionsHost = el('div', {});
+            (question.options || []).forEach((option, i) => {
+              optionsHost.appendChild(
+                el('div', { class: 'opt-row' }, [
+                  el('span', { class: 'radio-box' }, [
+                    el('input', {
+                      type: 'radio',
+                      name: 'correct-option',
+                      checked: i === question.answerIndex,
+                      onchange: () => {
+                        question.answerIndex = i;
+                        refresh();
+                      },
+                    }),
+                    'correct',
+                  ]),
+                  el('input', {
+                    type: 'text',
+                    value: option,
+                    placeholder: `Option ${i + 1}`,
+                    oninput: (event) => {
+                      question.options[i] = event.target.value;
+                      refresh();
+                    },
+                  }),
+                  el('button', {
+                    class: 'small danger',
+                    disabled: (question.options || []).length <= 2,
+                    onclick: () => {
+                      question.options.splice(i, 1);
+                      if (question.answerIndex >= question.options.length) question.answerIndex = 0;
+                      renderDetail();
+                      refresh();
+                    },
+                  }, '×'),
+                ]),
+              );
+            });
             body.appendChild(
-              area('Options (one per line)', (question.options || []).join('\n'), (v) => {
-                question.options = v.split('\n').filter((line) => line.trim());
-              }),
-            );
-            body.appendChild(
-              field('Correct answer (0 is the first option)', question.answerIndex ?? 0, (v) => {
-                question.answerIndex = Number(v);
-              }, 'number'),
+              el('div', {}, [
+                el('h3', {}, 'Options (2 to 6)'),
+                optionsHost,
+                el('button', {
+                  class: 'small',
+                  disabled: (question.options || []).length >= 6,
+                  onclick: () => {
+                    question.options = question.options || [];
+                    question.options.push('');
+                    renderDetail();
+                    refresh();
+                  },
+                }, '+ Add option'),
+              ]),
             );
           } else if (question.type === 'true-false') {
             body.appendChild(
-              select(
-                'Correct answer',
-                [
-                  { value: 'true', label: 'True' },
-                  { value: 'false', label: 'False' },
-                ],
-                String(question.answer),
-                (v) => (question.answer = v === 'true'),
-              ),
-            );
-          } else {
-            body.appendChild(
-              area('Accepted answers (one per line)', (question.acceptedAnswers || []).join('\n'), (v) => {
-                question.acceptedAnswers = v.split('\n').filter((line) => line.trim());
+              select('Correct answer', [
+                { value: 'true', label: 'True' },
+                { value: 'false', label: 'False' },
+              ], String(question.answer ?? true), (v) => {
+                question.answer = v === 'true';
               }),
+            );
+          } else if (question.type === 'short-answer') {
+            body.appendChild(
+              area('Accepted answers (one per line - any of them counts, 1 to 12)', lines(question.acceptedAnswers), (v) => {
+                question.acceptedAnswers = fromLines(v, 12);
+              }),
+            );
+          } else if (question.type === 'matching') {
+            const pairsHost = el('div', {});
+            (question.pairs || []).forEach((pair, i) => {
+              pairsHost.appendChild(
+                el('div', { class: 'pair-row' }, [
+                  el('input', {
+                    value: pair.left || '',
+                    placeholder: `Item ${i + 1}`,
+                    oninput: (event) => {
+                      pair.left = event.target.value;
+                      refresh();
+                    },
+                  }),
+                  el('input', {
+                    value: pair.right || '',
+                    placeholder: `Its match ${i + 1}`,
+                    oninput: (event) => {
+                      pair.right = event.target.value;
+                      refresh();
+                    },
+                  }),
+                  el('button', {
+                    class: 'small danger',
+                    disabled: (question.pairs || []).length <= 2,
+                    onclick: () => {
+                      question.pairs.splice(i, 1);
+                      renderDetail();
+                      refresh();
+                    },
+                  }, '×'),
+                ]),
+              );
+            });
+            body.appendChild(
+              el('div', {}, [
+                el('h3', {}, 'Pairs (2 to 8 - item on the left, its match on the right)'),
+                pairsHost,
+                el('button', {
+                  class: 'small',
+                  disabled: (question.pairs || []).length >= 8,
+                  onclick: () => {
+                    question.pairs = question.pairs || [];
+                    question.pairs.push({ left: '', right: '' });
+                    renderDetail();
+                    refresh();
+                  },
+                }, '+ Add pair'),
+              ]),
             );
           }
 
-          body.appendChild(
+          body.appendChild(el('div', { class: 'pill-row' }, [
+            el('button', {
+              onclick: () => duplicateQuestion(index),
+            }, 'Duplicate this question'),
             el('button', {
               class: 'danger',
-              onclick: () => {
-                state.pack.questions.splice(state.selection, 1);
-                state.selection = null;
-                render();
-                say('Question removed.');
-              },
-            }, 'Remove this question'),
+              onclick: () => removeQuestion(index),
+            }, 'Delete this question'),
+          ]));
+        }
+      }
+
+      function changeQuestionType(question, type) {
+        question.type = type;
+        delete question.options;
+        delete question.answerIndex;
+        delete question.answer;
+        delete question.acceptedAnswers;
+        delete question.pairs;
+        if (type === 'multiple-choice') {
+          question.options = ['First answer', 'Second answer'];
+          question.answerIndex = 0;
+        } else if (type === 'true-false') {
+          question.answer = true;
+        } else if (type === 'short-answer') {
+          question.acceptedAnswers = [''];
+        } else if (type === 'matching') {
+          question.pairs = [
+            { left: 'Item 1', right: 'Match 1' },
+            { left: 'Item 2', right: 'Match 2' },
+          ];
+        }
+        renderDetail();
+        refresh();
+      }
+
+      // -------------------------------------------------------------- preview
+      function attributionCaption(pack, imageId) {
+        const attribution = (pack.attributions || {})[imageId];
+        if (!attribution) return 'Missing licence details';
+        const parts = [];
+        if (attribution.creator) parts.push(attribution.creator);
+        else parts.push(attribution.title);
+        if (attribution.license) parts.push(attribution.license);
+        let caption = 'Photo: ' + parts.join(' - ');
+        if (attribution.sourceUrl) caption += ` (source: ${attribution.sourceUrl})`;
+        return caption;
+      }
+
+      function previewEntry(entry) {
+        const pack = state.pack;
+        const card = el('div', { class: 'preview' });
+        card.appendChild(el('h3', {}, entry.title || '(no title)'));
+        const badges = el('div', { class: 'preview-badges' });
+        if (entry.ageLevel) badges.appendChild(el('span', { class: 'pill' }, `ages ${entry.ageLevel}`));
+        const difficulty = difficultyLabel(entry.difficulty);
+        if (difficulty) badges.appendChild(el('span', { class: `pill diff-${entry.difficulty}` }, difficulty));
+        badges.appendChild(el('span', { class: 'pill' }, `${entry.readMinutes ?? 2} min read`));
+        card.appendChild(badges);
+
+        (entry.imageIds || []).forEach((imageId) => {
+          const asset = (pack.assets || []).find((a) => a.id === imageId);
+          const figure = el('figure', {});
+          if (asset && isText(asset.full, 400)) {
+            const img = el('img', { src: contentUrl(asset.full), alt: asset.alt || imageId });
+            img.addEventListener('error', () =>
+              img.replaceWith(el('div', { class: 'img-missing' }, 'Picture file not found on this computer')),
+            );
+            figure.appendChild(img);
+          } else {
+            figure.appendChild(el('div', { class: 'img-missing' }, `Picture "${imageId}" is not declared`));
+          }
+          if ((pack.attributions || {})[imageId] && (pack.attributions[imageId].attributionRequired !== false)) {
+            figure.appendChild(el('figcaption', {}, attributionCaption(pack, imageId)));
+          }
+          card.appendChild(figure);
+        });
+
+        if (entry.summary) card.appendChild(el('p', { class: 'preview-summary' }, entry.summary));
+        if (entry.body) card.appendChild(el('div', { class: 'preview-body' }, entry.body));
+        if ((entry.facts || []).length) {
+          card.appendChild(el('h3', {}, 'Fun facts'));
+          card.appendChild(
+            el('ul', { class: 'fact-list' }, entry.facts.map((fact) => el('li', {}, fact))),
           );
         }
+        if ((entry.learningObjectives || []).length) {
+          card.appendChild(el('h3', {}, 'What you will learn'));
+          card.appendChild(
+            el('ul', { class: 'fact-list' }, entry.learningObjectives.map((objective) => el('li', {}, objective))),
+          );
+        }
+        if ((entry.vocabulary || []).length) {
+          card.appendChild(el('h3', {}, 'Words to know'));
+          card.appendChild(
+            el('dl', { class: 'vocabulary' },
+              entry.vocabulary.map((word) =>
+                el('div', {}, [
+                  el('dt', {}, word.term + (word.pronunciation ? ` (${word.pronunciation})` : '')),
+                  el('dd', {}, word.definition || ''),
+                ]),
+              ),
+            ),
+          );
+        }
+        if ((entry.sources || []).length) {
+          card.appendChild(el('h3', {}, 'Where this came from'));
+          card.appendChild(
+            el('ul', { class: 'fact-list' }, entry.sources.map((source) => el('li', {}, source))),
+          );
+        }
+        const extraEntries = Object.entries(entry.extra || {});
+        if (extraEntries.length) {
+          card.appendChild(el('h3', {}, 'About this'));
+          card.appendChild(
+            el('ul', { class: 'fact-list' },
+              extraEntries.map(([key, value]) => el('li', {}, `${key}: ${value}`)),
+            ),
+          );
+        }
+        if ((entry.keywords || []).length) {
+          card.appendChild(el('div', { class: 'keyword-pills' }, entry.keywords.map((keyword) => el('span', { class: 'pill' }, keyword))));
+        }
+        const related = (entry.relatedIds || [])
+          .map((id) => pack.entries.find((e) => e.id === id))
+          .filter(Boolean);
+        if (related.length) {
+          card.appendChild(el('h3', {}, 'Worth reading next'));
+          card.appendChild(el('ul', { class: 'fact-list' }, related.map((e) => el('li', {}, e.title))));
+        }
+        return card;
+      }
+
+      function previewQuestion(question) {
+        const pack = state.pack;
+        const card = el('div', { class: 'preview' });
+        const asset = question.imageId ? (pack.assets || []).find((a) => a.id === question.imageId) : null;
+        if (asset && isText(asset.full, 400)) {
+          const img = el('img', { src: contentUrl(asset.full), alt: asset.alt || question.imageId });
+          img.addEventListener('error', () =>
+            img.replaceWith(el('div', { class: 'img-missing' }, 'Picture file not found on this computer')),
+          );
+          card.appendChild(img);
+        }
+        card.appendChild(el('h3', {}, question.prompt || '(no prompt)'));
+
+        if (question.type === 'multiple-choice') {
+          card.appendChild(
+            el('ul', { class: 'preview-options' },
+              (question.options || []).map((option, i) =>
+                el('li', { class: i === question.answerIndex ? 'right' : '' }, [
+                  option || '(empty option)',
+                  i === question.answerIndex ? el('span', { class: 'correct-mark' }, '  ✓ correct') : null,
+                ]),
+              ),
+            ),
+          );
+        } else if (question.type === 'true-false') {
+          card.appendChild(
+            el('ul', { class: 'preview-options' }, [
+              el('li', { class: question.answer ? 'right' : '' }, ['True', question.answer ? el('span', { class: 'correct-mark' }, '  ✓ correct') : null]),
+              el('li', { class: question.answer === false ? 'right' : '' }, ['False', question.answer === false ? el('span', { class: 'correct-mark' }, '  ✓ correct') : null]),
+            ]),
+          );
+        } else if (question.type === 'short-answer') {
+          card.appendChild(
+            el('p', { class: 'muted' }, 'Accepted answers: ' + (question.acceptedAnswers || []).join(' / ')),
+          );
+        } else if (question.type === 'matching') {
+          card.appendChild(
+            el('ul', { class: 'fact-list' },
+              (question.pairs || []).map((pair) => el('li', {}, `${pair.left || '?'}  →  ${pair.right || '?'}`)),
+            ),
+          );
+        }
+        if (question.explanation) {
+          card.appendChild(el('h3', {}, 'Explanation'));
+          card.appendChild(el('p', {}, question.explanation));
+        }
+        return card;
+      }
+
+      // -------------------------------------------------------- structural ops
+      function duplicateEntry(index) {
+        const pack = state.pack;
+        const entry = JSON.parse(JSON.stringify(pack.entries[index]));
+        const taken = new Set(pack.entries.map((e) => e.id));
+        const base = entry.id ? entry.id + '-copy' : 'entry-copy';
+        entry.id = nextId(base, taken);
+        pack.entries.splice(index + 1, 0, entry);
+        state.sel = { kind: 'entry', index: index + 1 };
+        state.tab = 'edit';
+        fullRender();
+        say(`Topic duplicated as "${entry.id}".`);
+      }
+
+      function duplicateQuestion(index) {
+        const pack = state.pack;
+        const question = JSON.parse(JSON.stringify(pack.questions[index]));
+        const taken = new Set(pack.questions.map((q) => q.id));
+        question.id = nextId(question.id + '-copy', taken);
+        pack.questions.splice(index + 1, 0, question);
+        state.sel = { kind: 'question', index: index + 1 };
+        state.tab = 'edit';
+        fullRender();
+        say(`Question duplicated as "${question.id}".`);
+      }
+
+      function removeEntry(index) {
+        const pack = state.pack;
+        const entry = pack.entries[index];
+        if (!confirm(`Delete the topic "${entry.title || entry.id}"? This cannot be undone.`)) return;
+        pack.entries.splice(index, 1);
+        if (state.sel && state.sel.kind === 'entry') state.sel = null;
+        // Related-topic links pointing at the deleted id become errors in the
+        // live check, so clean them up here.
+        (pack.entries || []).forEach((other) => {
+          if (other.relatedIds && other.relatedIds.includes(entry.id)) {
+            other.relatedIds = other.relatedIds.filter((id) => id !== entry.id);
+          }
+        });
+        fullRender();
+        say('Topic removed.');
+      }
+
+      function removeQuestion(index) {
+        const pack = state.pack;
+        const question = pack.questions[index];
+        if (!confirm(`Delete the question "${(question.prompt || question.id).slice(0, 60)}"? This cannot be undone.`)) return;
+        pack.questions.splice(index, 1);
+        if (state.sel && state.sel.kind === 'question') state.sel = null;
+        fullRender();
+        say('Question removed.');
+      }
+
+      function removeAsset(index) {
+        const pack = state.pack;
+        const asset = pack.assets[index];
+        const usedBy = [];
+        (pack.entries || []).forEach((entry) => {
+          if ((entry.imageIds || []).includes(asset.id)) usedBy.push(`topic "${entry.title || entry.id}"`);
+        });
+        (pack.questions || []).forEach((q) => {
+          if (q.imageId === asset.id) usedBy.push(`question "${q.id}"`);
+        });
+        const message =
+          usedBy.length
+            ? `Delete the picture "${asset.id}"? It is still used by ${usedBy.join(', ')} - those will show a problem until you unselect it.`
+            : `Delete the picture "${asset.id}" and its licence details?`;
+        if (!confirm(message)) return;
+        pack.assets.splice(index, 1);
+        if (pack.attributions) delete pack.attributions[asset.id];
+        state.assetSel = null;
+        fullRender();
+        say('Picture removed.');
       }
 
       // ----------------------------------------------------------------- wiring
       $('openBtn').addEventListener('click', () => $('fileInput').click());
       $('fileInput').addEventListener('change', async (event) => {
         const file = event.target.files[0];
+        event.target.value = '';
         if (!file) return;
+        if (state.pack && !confirm('Replace the pack currently open? Unsaved work will be lost.')) return;
         try {
           const pack = JSON.parse(await file.text());
           state.pack = pack;
-          state.selection = null;
-          state.kind = null;
-          render();
-          say(`Opened ${file.name}.`, true);
+          state.sel = null;
+          state.tab = 'edit';
+          state.assetSel = null;
+          state.assetDraft = null;
+          fullRender();
+          say(`Opened ${file.name}.`, 'ok');
         } catch (error) {
-          say(`Could not read the file: ${error.message}`);
+          say(`Could not read the file: ${error.message}`, 'err');
         }
       });
 
@@ -520,9 +1846,10 @@
         const id = $('newId').value.trim();
         const title = $('newTitle').value.trim() || id;
         if (!isId(id)) {
-          say('A pack id may only contain letters, digits, dot, dash and underscore.');
+          say('A pack id may only contain letters, digits, dot, dash and underscore, and must start with a letter or digit.', 'err');
           return;
         }
+        if (state.pack && !confirm('Replace the pack currently open? Unsaved work will be lost.')) return;
         state.pack = {
           packId: id,
           packVersion: '1.0.0',
@@ -537,16 +1864,21 @@
           assets: [],
           attributions: {},
         };
-        state.selection = null;
-        state.kind = null;
-        render();
-        say(`Created a new pack: ${id}.`, true);
+        state.sel = null;
+        state.tab = 'edit';
+        state.assetSel = null;
+        state.assetDraft = null;
+        fullRender();
+        say(`Created a new pack: ${id}.`, 'ok');
       });
 
       $('addEntry').addEventListener('click', () => {
-        state.pack.entries = state.pack.entries || [];
-        state.pack.entries.push({
-          id: 'entry-' + (state.pack.entries.length + 1),
+        const pack = state.pack;
+        pack.entries = pack.entries || [];
+        const taken = new Set(pack.entries.map((e) => e.id));
+        const id = nextId('entry', taken);
+        pack.entries.push({
+          id,
           title: 'New topic',
           summary: '',
           body: '',
@@ -555,55 +1887,98 @@
           keywords: [],
           readMinutes: 2,
         });
-        state.kind = 'entry';
-        state.selection = state.pack.entries.length - 1;
-        render();
-        say('Topic added.');
+        state.sel = { kind: 'entry', index: pack.entries.length - 1 };
+        state.tab = 'edit';
+        fullRender();
+        say('Topic added - fill in at least the summary.', 'ok');
       });
 
       $('addQuestion').addEventListener('click', () => {
-        state.pack.questions = state.pack.questions || [];
-        state.pack.questions.push({
-          id: 'question-' + (state.pack.questions.length + 1),
-          type: 'multiple-choice',
+        const pack = state.pack;
+        const type = $('newQuestionType').value;
+        pack.questions = pack.questions || [];
+        const taken = new Set(pack.questions.map((q) => q.id));
+        const question = {
+          id: nextId('question', taken),
+          type,
           prompt: 'New question',
-          options: ['First answer', 'Second answer'],
-          answerIndex: 0,
           explanation: '',
           difficulty: 1,
           tags: [],
-        });
-        state.kind = 'question';
-        state.selection = state.pack.questions.length - 1;
-        render();
-        say('Question added.');
+        };
+        if (type === 'multiple-choice') {
+          question.options = ['First answer', 'Second answer'];
+          question.answerIndex = 0;
+        } else if (type === 'true-false') {
+          question.answer = true;
+        } else if (type === 'short-answer') {
+          question.acceptedAnswers = [''];
+        } else if (type === 'matching') {
+          question.pairs = [
+            { left: 'Item 1', right: 'Match 1' },
+            { left: 'Item 2', right: 'Match 2' },
+          ];
+        }
+        pack.questions.push(question);
+        state.sel = { kind: 'question', index: pack.questions.length - 1 };
+        state.tab = 'edit';
+        fullRender();
+        say('Question added.', 'ok');
       });
 
-      $('validateBtn').addEventListener('click', () => {
-        const problems = validate(state.pack);
-        $('report').hidden = false;
-        $('reportBody').textContent = problems.length
-          ? problems.join('\n')
-          : 'Everything checks out. You can export this pack.';
-        say(problems.length ? `${problems.length} problem(s) found.` : 'The pack is valid.', !problems.length);
+      $('addAsset').addEventListener('click', () => {
+        const pack = state.pack;
+        pack.assets = pack.assets || [];
+        const taken = new Set(pack.assets.map((a) => a.id));
+        const asset = { id: nextId('image', taken), full: '', thumb: '' };
+        pack.assets.push(asset);
+        state.assetSel = pack.assets.length - 1;
+        renderAssetList();
+        renderAssetEditor();
+        refresh();
+        $('assetEditor').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        say('Picture added - set its paths and licence details.', 'ok');
       });
 
       $('exportBtn').addEventListener('click', () => {
         const pack = state.pack;
+        if (!pack) return;
+        const problems = validate(pack).problems;
+        if (problems.length) {
+          say('Fix the problems in the live check before exporting.', 'err');
+          return;
+        }
         const name = `${pack.packId}.src.json`;
         download(name, JSON.stringify(pack, null, 2) + '\n', 'application/json');
-        say(`Exported ${name}. Put it in content/packs/${pack.packId}/.`, true);
+        say(
+          `Exported ${name} - save it in content/packs/${pack.packId}/ (plus the picture files in content/images/), then run the publishing helper.`,
+          'ok',
+        );
       });
 
-      ['packId', 'packVersion', 'packTitle', 'packIcon', 'packDescription'].forEach((id) => {
+      ['packId', 'packVersion', 'packTitle', 'packIcon', 'packAgeRange', 'packDescription'].forEach((id) => {
         $(id).addEventListener('input', () => {
           if (!state.pack) return;
-          state.pack[id === 'packTitle' ? 'title' : id === 'packDescription' ? 'description' : id] =
-            $(id).value;
+          const key = id === 'packTitle' ? 'title' : id === 'packAgeRange' ? 'ageRange' : id === 'packDescription' ? 'description' : id;
+          state.pack[key] = $(id).value;
+          renderLists();
+          refresh();
         });
       });
       $('packColor').addEventListener('input', () => {
-        if (state.pack) state.pack.color = $('packColor').value;
+        if (state.pack) {
+          state.pack.color = $('packColor').value;
+          refresh();
+        }
+      });
+
+      $('tabEdit').addEventListener('click', () => {
+        state.tab = 'edit';
+        renderDetail();
+      });
+      $('tabPreview').addEventListener('click', () => {
+        state.tab = 'preview';
+        renderDetail();
       });
     </script>
   </body>

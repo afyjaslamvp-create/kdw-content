@@ -12,20 +12,119 @@
       "id": "solar-system",
       "title": "The Solar System",
       "summary": "Our Sun has eight planets going around it.",
-      "body": "The Sun is at the centre and eight planets travel around it. From closest to farthest they are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Between them are lots of moons, asteroids and comets.",
-      "facts": [
-        "The Sun is 109 times wider than the Earth.",
-        "Jupiter is the biggest planet.",
-        "It takes Earth 365 days to go around the Sun."
+      "introduction": "Have you ever wondered how many planets are near us?",
+      "curiosityQuestion": "If you could visit one planet, which would you choose and why?",
+      "grade1": {
+        "body": "The Sun is at the centre and eight planets travel around it. From closest to farthest they are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Between them are lots of moons, asteroids and comets.",
+        "keyWords": ["Sun", "planet", "Earth", "orbit"]
+      },
+      "grade2": {
+        "body": "The Sun is a star at the centre of our solar system. Eight planets travel around the Sun in paths called orbits. From closest to farthest they are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. The four inner planets are made of rock. The four outer planets are much bigger and mostly made of gas. Between the planets are moons, asteroids and comets.",
+        "keyWords": ["solar system", "orbit", "planet", "asteroid", "comet"]
+      },
+      "sections": [
+        {
+          "id": "solar-explain",
+          "title": "The Sun and planets",
+          "type": "explanation",
+          "grade": "both",
+          "paragraphs": [
+            "The Sun is a star at the centre of our solar system.",
+            "Eight planets travel around the Sun.",
+            "The planets move in paths called orbits.",
+            "From closest to farthest: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune."
+          ]
+        },
+        {
+          "id": "solar-facts",
+          "title": "Solar system facts",
+          "type": "facts",
+          "grade": "both",
+          "facts": [
+            {
+              "title": "Huge Sun",
+              "text": "The Sun is 109 times wider than the Earth."
+            },
+            {
+              "title": "Biggest planet",
+              "text": "Jupiter is the biggest planet."
+            },
+            {
+              "title": "One year",
+              "text": "It takes Earth 365 days to go around the Sun."
+            }
+          ]
+        },
+        {
+          "id": "solar-examples",
+          "title": "Space in real life",
+          "type": "examples",
+          "grade": "both",
+          "examples": [
+            "Seeing the Moon and stars in the night sky.",
+            "Watching a rocket launch on television.",
+            "Learning planet names in school."
+          ]
+        },
+        {
+          "id": "solar-vocab",
+          "title": "Words to know",
+          "type": "vocabulary",
+          "grade": "both",
+          "vocabulary": [
+            {
+              "term": "solar system",
+              "definition": "The Sun and all the planets that travel around it."
+            },
+            {
+              "term": "orbit",
+              "definition": "The path a planet follows as it travels around the Sun."
+            },
+            {
+              "term": "planet",
+              "definition": "A big ball of rock or gas that travels around a star."
+            },
+            {
+              "term": "asteroid",
+              "definition": "A rocky object that travels around the Sun, smaller than a planet."
+            }
+          ]
+        },
+        {
+          "id": "solar-activity",
+          "title": "Planet walk",
+          "type": "activity",
+          "grade": "2",
+          "activity": {
+            "title": "Pace out the solar system",
+            "description": "Use steps to show how far apart the planets are from the Sun.",
+            "materials": ["8 markers or stones", "Open space"],
+            "steps": [
+              "Place one marker for the Sun.",
+              "Take steps to place each planet marker at the right distance.",
+              "Walk from the Sun to each planet and back."
+            ],
+            "imageId": "solar-system"
+          }
+        },
+        {
+          "id": "solar-curiosity",
+          "title": "Something to wonder about",
+          "type": "curiosity",
+          "grade": "1",
+          "curiosity": "What do you think it would be like to stand on another planet?"
+        },
+        {
+          "id": "solar-related",
+          "title": "Keep exploring",
+          "type": "related",
+          "grade": "both",
+          "relatedIds": ["moon", "planets", "stars"]
+        }
       ],
-      "imageIds": [
-        "solar-system"
-      ],
-      "keywords": [
-        "space",
-        "planet"
-      ],
-      "readMinutes": 2
+      "imageIds": ["solar-system"],
+      "keywords": ["space", "planet", "sun"],
+      "readMinutes": 3
     },
     {
       "id": "moon",
